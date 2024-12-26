@@ -26,6 +26,7 @@ The UI divides Roms up by Class, there is some overlap in the systems that are e
 Emulator: [FBNeo](https://github.com/finalburnneo/FBNeo)  
 Version string: FBNeo v1.0.0.01  
 Binary: ```/emus/fbneo/fbneo```  
+Hash: ```[SHA-256] 24B4026764C6B8F218D56222A534EDB3D21210A2C8FCDEE8A5F96505D6B85E9F```  
 
 The emulator derives from source code from somewhere around this era: [https://github.com/finalburnneo/FBNeo/commit/e5b867384117fdf0a05f9d312b63bdc51d8c6c80](https://github.com/finalburnneo/FBNeo/commit/e5b867384117fdf0a05f9d312b63bdc51d8c6c80)
 
@@ -70,6 +71,7 @@ Usage is restricted by the license at https://raw.githubusercontent.com/finalbur
 Emulator: [FCEUX](https://fceux.com/)  
 Version string: FCEUX 2.2.3-interim svn  
 Binary: ```/emus/fceux/fceux```  
+Hash: ```[SHA-256] 809CA2B23E049D55F211099CF2AF2A0FF4A01240B023C245D455874A20FAD862```  
 
 ### Emulated Systems:
 The website claims support for the following systems:
@@ -83,6 +85,7 @@ The website claims support for the following systems:
 ## Class: SFC
 Emulator: [snes9x4d](https://github.com/m45t3r/snes9x4d)  
 Binary: ```/emus/snes9x4d/snes9x4d.dge```  
+Hash: ```[SHA-256] 4E7FA039B9D0950BD6D01571E4147EAACB9741D36D71C59B9E41DB28E28B38BD```  
 
 ### Emulated Systems:
 * Super Nintendo Entertainment System
@@ -99,6 +102,7 @@ usage: snes9x <options> <rom image filename>
 Emulator: gambatte  
 Version string: Gambatte SDL SVN r309  
 Binary: ```/emus/gamebatte/gambatte_sdl```  
+Hash: ```[SHA-256] 1CE888678AC6B5EB71081F09B60DF0A25A6196ADC32CE3733233522073CAA8FC```  
 
 The emulator derives from source code from somewhere around this era:
 [gambatte_src-0.5.0-wip2v2](https://sourceforge.net/projects/gambatte/files/gambatte/0.5.0-wip2/)  
@@ -156,6 +160,7 @@ Usage: gambatte_sdl [OPTION]... romfile
 ## Class: GBA
 Emulator: [gpsp](https://gpsp-dev.blogspot.com/)  
 Binary: ```/emus/gpsp/gpsp```  
+Hash: ```[SHA-256] AD6942C9B5CEAC8C401F13B624FA52CD5E297C8C72629647730C136BFF28BB31```  
 
 ### Emulated Systems:
 * Nintendo Gameboy Advance
@@ -165,6 +170,7 @@ Binary: ```/emus/gpsp/gpsp```
 ## Class: MD
 Emulator: [PicoDrive](https://github.com/notaz/picodrive)  
 Binary: ```/emus/picodrive/PicoDrive```  
+Hash: ```[SHA-256] 9B86B683EBC3216DDAEB538692D0C2E4BE22C8078A0800B63954449FD2AFAF88```  
 
 ### Emulated Systems:
 * Sega Megadrive
@@ -180,6 +186,7 @@ Binary: ```/emus/picodrive/PicoDrive```
 Emulator: PCSX or PCSX4ALL  
 Binary: ```/emus/pcsx4all/pcsx```  
 Command line: ```/emus/pcsx4all/pcsx -cdfile```
+Hash: ```[SHA-256] 56A02A9FCE4C2A6FB58C098FEA424078E208C4DEA7854B8B14246936FA2FAB6C```  
 
 ### Emulated Systems:
 * Sony Playstation 1
@@ -193,6 +200,7 @@ Command line: ```/emus/pcsx4all/pcsx -cdfile```
 Emulator: [FBNeo](https://github.com/finalburnneo/FBNeo)  
 Version: v1.0.0.01  
 Binary: ```/emus/mame/fbneo```  
+Hash: ```[SHA-256] 24B4026764C6B8F218D56222A534EDB3D21210A2C8FCDEE8A5F96505D6B85E9F```  
 
 ### Notes:
 * It is just a copy of the FBNeo emulator with no added value
@@ -202,6 +210,7 @@ Binary: ```/emus/mame/fbneo```
 ## Class: PCE
 Emulator: [Temper](https://cajas.us/mirrors/trimui/temper/)  
 Binary: ```/emus/temper/temper```  
+Hash: ```[SHA-256] 9B86B683EBC3216DDAEB538692D0C2E4BE22C8078A0800B63954449FD2AFAF88```  
 
 ### Emulated Systems:
 * PC-Engine
