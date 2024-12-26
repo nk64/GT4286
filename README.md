@@ -1,18 +1,22 @@
 # Retro Arcade Game Console (GT-4286)
 
-Hopefully I will get my thoughts together and write up what I have learnt about this product. Backup your SD card before reading on.
+Hopefully I will get my thoughts together and write up what I have learnt about this product through reverse engineering some of the emulators and exploring the SD card and the underlying OS (Linux).
+
+Please backup your SD card before going any further.
 
 ## For now, you can find:
 
 1. [dat](./dats/) files for the FBNeo emulator.
 
 2. a [screenshot](./img/fbneo-hexedit-fix-p1-r-and-l-buttons.png) of a couple of bytes to patch to enable the P1 R and P1 L buttons to work in the FBNeo emulator. 
-This screenshot show the changes to be made to /emus/fbneo/fbneo and assume that the file SHA-256 hash of the file is 24B4026764C6B8F218D56222A534EDB3D21210A2C8FCDEE8A5F96505D6B85E9F
-If your file has a different hash then please don't perform this edit.
+This screenshot show the changes to be made to /emus/fbneo/fbneo.
+Please check the SHA-256 hash of the file first and if it is not ```24B4026764C6B8F218D56222A534EDB3D21210A2C8FCDEE8A5F96505D6B85E9F``` then please don't perform this edit.
 
 3. a [remap](./sdcard_tweaks/keyremap) file for the (patched) FBNeo emulator that orders the 6 buttons (of each player) correctly for Street Fighter 2 (maybe more).
 
-4. some [information](./sdcard_tweaks/roms/MAME/output/) extracted from the running system
+4. some [information](./sdcard_tweaks/roms/MAME/output/) extracted from the running system.
+
+5. a [list](./dats/built-in%20roms.txt) of the built-in games.
 
 ## In the future I hope to show how to:
 
@@ -33,8 +37,10 @@ If your file has a different hash then please don't perform this edit.
 
 * MAME is shown as a separate emulator but it is just a copy of the FBNeo (aka FBA) emulator. Let's repurpose it.
 
-* If you add roms to the appropriate emulator sub dir in /downloads, duplicate entries for some games might appear after saving a game and rebooting the console. This is because while most emulators save their game state in the emulator folder, some emulators eg GB, GBC, MD save their state in the rom folder and next time the console is rebooted it will rescan the download folder and add a non working entry to the list.
+* If you add roms to the appropriate emulator sub dir in /downloads, duplicate entries for some games might appear after saving a game and rebooting the console. This is because while most emulators save their game state in the emulator folder, some emulators eg GB, GBC, MD save their state in the rom folder and the next time the console is rebooted it will rescan the download folder and add a non working entry to the list (you will end up with a non working entry for every save state slot you use).
 
-* FBNeo emulator (and it's clone MAME) have a misconfiguration which means that the Player 1 L and R buttons have no effect. (fixable by patching emulator and adding a keyremap files)
+* FBNeo emulator (and it's clone MAME) have a misconfiguration which means that the Player 1 L and R buttons have no effect, which impacts many fighting games. (fixable by patching emulator and adding a keyremap files)
 
-* FBNeo games are listed as their cryptic rom .zip file name which is ugly by comparison to the other emulators which can have nice human readable name. (See page 10 in the [manual](https://media.jaycar.com.au/product/resources/GT4286_manualMain_130153.pdf) for an example of this). Let's do something about this.
+* FBNeo games are listed as their cryptic rom .zip file name which is ugly by comparison to the other emulators which can have nice human readable names. (See page 10 in the [manual](https://media.jaycar.com.au/product/resources/GT4286_manualMain_130153.pdf) for an example of this). (let's do something about this)
+
+* Most emulators are fully stretched to fill the screen. It would be nice to be able to control the scaling especially for Gameboy games. (no luck so far)

@@ -1,0 +1,158 @@
+\roms\FBA\2020bb.zip: 2020 Super Baseball (set 1)
+\roms\FBA\3in1semi.zip: XESS - The New Revolution (SemiCom 3-in-1)
+\roms\FBA\3wonders.zip: Three Wonders (wonder 3 910520 etc)
+\roms\FBA\4in1.zip: 4 Fun in 1 [Bootleg]
+\roms\FBA\4in1boot.zip: Puzzle King [Bootleg]
+\roms\FBA\800fath.zip: 800 Fathoms
+\roms\FBA\88games.zip: '88 Games
+\roms\FBA\abscam.zip: Abscam
+\roms\FBA\acrobatm.zip: Acrobat Mission
+\roms\FBA\ad2083.zip: A.D. 2083 [Incomplete Sound]
+\roms\FBA\aerofgt.zip: Aero Fighters
+\roms\FBA\airattck.zip: Air Attack (set 1)
+\roms\FBA\airbustr.zip: Air Buster: Trouble Specialty Raid Unit (World)
+\roms\FBA\airwolf.zip: Airwolf
+\roms\FBA\alpham2.zip: Alpha Mission II / ASO II - Last Guardian (NGM-007)(NGH-007)
+\roms\FBA\alphaxz.zip: The Alphax Z (Japan)
+\roms\FBA\androdun.zip: Andro Dunos (NGM-049)(NGH-049)
+\roms\FBA\aodk.zip: Aggressors of Dark Kombat / Tsuukai GANGAN Koushinkyoku (ADM-008)(ADH-008)
+\roms\FBA\aof.zip: Art of Fighting / Ryuuko no Ken (NGM-044)(NGH-044)
+\roms\FBA\aof2.zip: Art of Fighting 2 / Ryuuko no Ken 2 (NGM-056)
+\roms\FBA\aof3.zip: Art of Fighting 3 - The Path of the Warrior / Art of Fighting - Ryuuko no Ken Gaiden
+\roms\FBA\arabian.zip: Arabian
+\roms\FBA\b2b.zip: Bang Bang Busters (2010 NCI release) [Prototype]
+\roms\FBA\backfirt.zip: Back Fire (Tecmo, bootleg)
+\roms\FBA\baddudes.zip: Bad Dudes vs. Dragonninja (US)
+\roms\FBA\ballbros.zip: Balloon Brothers
+\roms\FBA\battlnts.zip: Battlantis (program code G)
+\roms\FBA\bbmanw.zip: Bomber Man World / New Dyna Blaster - Global Quest
+\roms\FBA\bestbest.zip: Best Of Best
+\roms\FBA\bestri.zip: Bestri (Korea, set 1)
+\roms\FBA\bgaregga.zip: Battle Garegga (Europe / USA / Japan / Asia) (Sat Feb 3 1996)
+\roms\FBA\bigbang.zip: Big Bang (9th Nov. 1993)
+\roms\FBA\blandia.zip: Blandia
+\roms\FBA\blazstar.zip: Blazing Star
+\roms\FBA\blmbycar.zip: Blomby Car
+\roms\FBA\blswhstl.zip: Bells & Whistles (World, version L)
+\roms\FBA\bombkick.zip: Bomb Kick (set 1)
+\roms\FBA\bottom9.zip: Bottom of the Ninth (ver. T)
+\roms\FBA\breakers.zip: Breakers
+\roms\FBA\breakrev.zip: Breakers Revenge
+\roms\FBA\bssoccer.zip: Back Street Soccer
+\roms\FBA\growl.zip: Growl (World, Rev 1)
+\roms\FBA\gtmr.zip: 1000 Miglia: Great 1000 Miles Rally (Taiwan 94/07/18)
+\roms\FBA\gulfstrm.zip: Gulf Storm (set 1)
+\roms\FBA\gundamex.zip: Mobile Suit Gundam EX Revue
+\roms\FBA\gunfront.zip: Gun & Frontier (World)
+\roms\FBA\gunmast.zip: Gun Master
+\roms\FBA\gunnail.zip: GunNail (28th May. 1992)
+\roms\FBA\gunsmoke.zip: Gun.Smoke (World, 851115)
+\roms\FBA\gyruss.zip: Gyruss (Konami)
+\roms\FBA\hellfire.zip: Hellfire (2P set)
+\roms\FBA\hharry.zip: Hammerin' Harry (World, M81 hardware))
+\roms\FBA\hopprobo.zip: Hopper Robo
+\roms\FBA\horizon.zip: Horizon
+\roms\FBA\hotdogst.zip: Hotdog Storm - The First Supersonics (korea)
+\roms\FBA\hyperspt.zip: Hyper Sports
+\roms\FBA\joyfulr.zip: Joyful Road (Japan)
+\roms\FBA\jumpshot.zip: Jump Shot
+\roms\FBA\kamenrid.zip: Masked Riders Club Battle Race
+\roms\FBA\kizuna.zip: Kizuna Encounter - Super Tag Battle / Fu'un Super Tag Battle
+\roms\FBA\kotm.zip: King of the Monsters (set 1)
+\roms\FBA\trally.zip: Thrash Rally (ALM-003)(ALH-003)
+\roms\FBA\wakuwak7.zip: Waku Waku 7
+\roms\FBA\whp.zip: World Heroes Perfect
+\roms\FBA\yamagchi.zip: Go Go Mr. Yamaguchi / Yuke Yuke Yamaguchi-kun
+\roms\FBA\yamato.zip: Yamato (US)
+\roms\FBA\zedblade.zip: Zed Blade / Operation Ragnarok
+\roms\FC\16 channel truck.nes
+\roms\FC\Abbe Road X.nes
+\roms\FC\Action 4 in 1.nes
+\roms\FC\Adventure kid Jack.nes
+\roms\FC\Air Contra.nes
+\roms\FC\Alfred Chicken.nes
+\roms\FC\American ice hockey.nes
+\roms\FC\American soldiers.nes
+\roms\FC\Antarctic pengu.nes
+\roms\FC\Arcade 4 in 1.nes
+\roms\FC\Arctic.nes
+\roms\FC\Arkanoid.nes
+\roms\FC\Attack on Bogling Harbour.nes
+\roms\FC\Attacking animal school.nes
+\roms\FC\Bai Qingge.nes
+\roms\FC\Baseball simulation 1000.nes
+\roms\FC\Baseball warrior.nes
+\roms\FC\Basketball enemies.nes
+\roms\FC\Bastu and Taylor.nes
+\roms\FC\Battle Dragon Fighter.nes
+\roms\FC\Battle of Chester.nes
+\roms\FC\Beyond the horizon.nes
+\roms\FC\Big shot of the universe.nes
+\roms\FC\Bird story.nes
+\roms\FC\Blasting expert.nes
+\roms\FC\Bokosuka War.nes
+\roms\FC\Bomb jack.nes
+\roms\FC\BrickBreaker 2.nes
+\roms\FC\Carpenter brother (thump-thump).nes
+\roms\FC\Cat maze.nes
+\roms\FC\Challenge dragon.nes
+\roms\FC\Combat formula racing.nes
+\roms\FC\Cosmic elf.nes
+\roms\FC\Critical Strike Warrior 87.nes
+\roms\FC\Deformation fighter Z.nes
+\roms\FC\Demon Leader - Electric Strike.nes
+\roms\FC\Dice box.nes
+\roms\FC\Digging mine.nes
+\roms\FC\Rainbow Island.nes
+\roms\FC\Red Shadow Warrior.nes
+\roms\FC\Red towel special forces.nes
+\roms\FC\Road pursuit 16.nes
+\roms\FC\Robert Magical Adventure.nes
+\roms\FC\Robot demon.nes
+\roms\FC\Roller brush.nes
+\roms\FC\Shanghai 2.nes
+\roms\FC\Shanghai Mahjong.nes
+\roms\FC\Space helicopter.nes
+\roms\FC\Space warrior.nes
+\roms\FC\Spiral helicopter.nes
+\roms\FC\Stanley - Search for Dr. Livingstone.nes
+\roms\FC\Star block.nes
+\roms\FC\Stealing.nes
+\roms\FC\Steel warrior.nes
+\roms\FC\Subway crossing.nes
+\roms\FC\Summit warship.nes
+\roms\FC\Super bowling.nes
+\roms\FC\Super confusing star war.nes
+\roms\FC\Super floating fortress.nes
+\roms\FC\Taekwondo.nes
+\roms\FC\Ten yards battle.nes
+\roms\FC\The fate of the tile.nes
+\roms\FC\Thunder Zone.nes
+\roms\FC\Time and space avenger.nes
+\roms\FC\Titan marbles.nes
+\roms\FC\Tom Sawyer Adventure.nes
+\roms\FC\Underground station.nes
+\roms\FC\Western rodent.nes
+\roms\FC\World Formula Grand Prix.nes
+\roms\GBA\Ranch hide.gba
+\roms\GBA\Sinister nemesis X.gba
+\roms\GBA\Sledgehammer hero.gba
+\roms\GBA\Super music.gba
+\roms\GBA\Three-dimensional roller.gba
+\roms\GBA\Top friend.gba
+\roms\GBA\Tower of Hanno.gba
+\roms\GBA\Undersea joy brick.gba
+\roms\GBA\Yo-yo apple ball.gba
+\roms\MD\Adventure experience.bin
+\roms\MD\Super table tennis.bin
+\roms\MD\Super turret.bin
+\roms\MD\Test driver 2 - duel.bin
+\roms\MD\Wrestling.bin
+\roms\MD\Zombie college.bin
+\roms\PS\DeltaForce-UrbanWarfare.img
+\roms\PS\G Darius.img
+\roms\PS\GundamBattleAssault.img
+\roms\SFC\Ant warrior.sfc
+\roms\SFC\BUST-A-MOUE.smc
+\roms\SFC\Champion billiard.sfc
+
