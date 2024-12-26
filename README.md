@@ -20,6 +20,8 @@ Please check the SHA-256 hash of the file first and if it is not ```24B4026764C6
 
 6. some details and pictures of the [hardware](./Hardware.md)
 
+7. some details of the [emulators](./Emulators.md)
+
 ## In the future I hope to show how to:
 
 1. Use a program to refresh the /game.db sqlite db.
