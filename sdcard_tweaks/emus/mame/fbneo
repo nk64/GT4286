@@ -1,0 +1,16 @@
+#!/bin/sh
+logfile="$0.log"; log () { echo $1 >> $logfile && /bin/sync; }
+
+log "---------------------------------------------------"
+log "Current Working Directory: $PWD"
+filename=$1
+log "Script: $filename"
+
+if [[ -f $filename ]];
+then
+    $filename
+else
+    log "Script not Found: $filename"
+fi
+
+/bin/sync

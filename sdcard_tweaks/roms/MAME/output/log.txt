@@ -1,0 +1,22 @@
+Dump CPU Info
+DF
+Touch
+PS
+Mount
+Memory Info
+LS
+LogCat
+FileCopy
+Dumping Envinoment and Shell Variables
+Dumping FBNeo Data Files
+Dump CPU Info
+DF
+Dumping FBNeo Help
+Dumping FCEux Help
+Dumping Gambatte Help
+Dumping gpSP Help
+Dumping pcsx Help
+Dumping PicoDrive Help
+Dumping PicoDrive Help
+Dumping snes9x4d Help
+Dumping temper Help

@@ -1,0 +1,9 @@
+Filesystem           1024-blocks    Used Available Use% Mounted on
+/dev/root                 3328      3328         0 100% /
+tmpfs                    52096        32     52064   0% /dev
+tmpfs                    52096         0     52096   0% /tmp
+/dev/block/mtdblock4      1280      1280         0 100% /config
+mtd:data                   512       216       296  42% /data
+/dev/block/mtdblock3       256       256         0 100% /res
+/dev/block/vold/179:1
+                      15608832   2066732  13542100  13% /mnt/extsd

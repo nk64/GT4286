@@ -1,0 +1,4042 @@
+--------- beginning of system
+D/Vold    (  796): *********************Vold 2.1 (the revenge) firing up
+--------- beginning of main
+E/Volume  (  796): line=203,setState oldState=-1,state=0
+E/Volume  (  796): line=222,sendBroadcast start
+E/Volume  (  796): line=225,sendBroadcast end
+E/Volume  (  796): line=203,setState oldState=-1,state=0
+E/Volume  (  796): line=222,sendBroadcast start
+E/Volume  (  796): line=225,sendBroadcast end
+E/Volume  (  796): line=203,setState oldState=-1,state=0
+E/Volume  (  796): line=222,sendBroadcast start
+E/Volume  (  796): line=225,sendBroadcast end
+E/Volume  (  796): line=203,setState oldState=-1,state=0
+E/Volume  (  796): line=222,sendBroadcast start
+E/Volume  (  796): line=225,sendBroadcast end
+V/SocketListener(  796): got mSock = 9 for vold
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd4/mtdblock4
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd4/mtdblock4
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd4/mtdblock4
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd4/mtdblock4
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd2/mtdblock2
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd2/mtdblock2
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd2/mtdblock2
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd2/mtdblock2
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd0/mtdblock0
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd0/mtdblock0
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd0/mtdblock0
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd0/mtdblock0
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd5/mtdblock5
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd5/mtdblock5
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd5/mtdblock5
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd5/mtdblock5
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd3/mtdblock3
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd3/mtdblock3
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd3/mtdblock3
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd3/mtdblock3
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd1/mtdblock1
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd1/mtdblock1
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd1/mtdblock1
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd1/mtdblock1
+D/DirectVolume(  796): line=94,dp=/devices/soc0/soc/soc:sdmmc/mmc_host/mmc0/mmc0:59b4/block/mmcblk0
+D/Volume  (  796): ---createDeviceNode---path=/dev/block/vold/179:0
+E/Volume  (  796): line=203,setState oldState=0,state=2
+E/Volume  (  796): line=222,sendBroadcast start
+E/Volume  (  796): line=225,sendBroadcast end
+D/DirectVolume(  796): line=128,devtype=disk
+E/NetlinkEvent(  796): NetlinkEvent::FindParam(): Parameter 'NPARTS' not found
+W/DirectVolume(  796): Kernel block uevent missing 'NPARTS'
+D/DirectVolume(  796): line=179,handleDiskAdded mDiskNumParts=1
+E/Volume  (  796): line=203,setState oldState=2,state=2
+W/Volume  (  796): line=205,Duplicate state (2)
+D/Volume  (  796): line=195,mState=2
+D/DirectVolume(  796): line=94,dp=/devices/soc0/soc/soc:sdmmc/mmc_host/mmc0/mmc0:59b4/block/mmcblk0/mmcblk0p1
+D/Volume  (  796): ---createDeviceNode---path=/dev/block/vold/179:1
+E/Volume  (  796): line=203,setState oldState=2,state=2
+W/Volume  (  796): line=205,Duplicate state (2)
+D/DirectVolume(  796): line=131,devtype=partition
+D/DirectVolume(  796): handlePartitionAdded devpath=/devices/soc0/soc/soc:sdmmc/mmc_host/mmc0/mmc0:59b4/block/mmcblk0/mmcblk0p1,mPartsEventCnt=0
+D/DirectVolume(  796): handlePartitionAdded mDiskNumParts=1,mPartsEventCnt=1
+D/Volume  (  796): line=195,mState=2
+E/Volume  (  796): line=203,setState oldState=2,state=1
+E/Volume  (  796): line=222,sendBroadcast start
+E/Volume  (  796): line=225,sendBroadcast end
+D/Volume  (  796): getShareFlags mShareFlags = 0
+D/DirectVolume(  796): line-262,handlePartitionAdded
+D/Volume  (  796): line=195,mState=1
+D/Volume  (  796): line=475,mountVol state : 1
+D/Volume  (  796): line=195,mState=1
+D/Volume  (  796): line=195,mState=1
+D/DirectVolume(  796): getDeviceNodes mPartIdx = -1, mDiskNumParts = 1, mPartsChangeFlag = 0, mDiskMinor = 0
+D/Volume  (  796): line=566,Volume::mountVol: mMountpoint /mnt/extsd
+I/Volume  (  796): line=574,mountVol: n=1 
+I/Volume  (  796): line=581,/dev/block/vold/179:1 being considered for volume extsd
+E/Volume  (  796): line=203,setState oldState=1,state=3
+E/Volume  (  796): line=222,sendBroadcast start
+E/Volume  (  796): line=225,sendBroadcast end
+W/Vold    (  796): Skipping fs checks
+D/Volume  (  796): line=617,FS checks /dev/block/vold/179:1
+D/Vold    (  796): line=126,mount ret=0
+E/Volume  (  796): line=643,Device /dev/block/vold/179:1, target /mnt/extsd mounted @ /mnt/secure/staging
+E/Volume  (  796): line=203,setState oldState=3,state=4
+E/Volume  (  796): line=222,sendBroadcast start
+E/Volume  (  796): line=225,sendBroadcast end
+D/Volume  (  796): line=195,mState=4
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd6/mtdblock6
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd6/mtdblock6
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd6/mtdblock6
+D/DirectVolume(  796): line=94,dp=/devices/virtual/mtd/mtd6/mtdblock6
+D/zkgui   (  929): register control: zk_button
+D/zkgui   (  929): register control: zk_cameraview
+D/zkgui   (  929): register control: zk_checkbox
+D/zkgui   (  929): register control: zk_circlebar
+D/zkgui   (  929): register control: zk_diagram
+D/zkgui   (  929): register control: zk_digitalclock
+D/zkgui   (  929): register control: zk_edittext
+D/zkgui   (  929): register control: zk_listview
+D/zkgui   (  929): register control: zk_painter
+D/zkgui   (  929): register control: zk_pointer
+D/zkgui   (  929): register control: zk_qrcode
+D/zkgui   (  929): register control: zk_radiogroup
+D/zkgui   (  929): register control: zk_seekbar
+D/zkgui   (  929): register control: zk_slidetext
+D/zkgui   (  929): register control: zk_textview
+D/zkgui   (  929): register control: zk_videoview
+D/zkgui   (  929): register control: zk_slidewindow
+D/zkgui   (  929): register control: zk_window
+D/zkgui   (  929): registerActivity name: classlistActivity OK!
+D/zkgui   (  929): registerActivity name: downloadActivity OK!
+D/zkgui   (  929): registerActivity name: gamelistsActivity OK!
+D/zkgui   (  929): registerActivity name: mainActivity OK!
+D/zkgui   (  929): registerActivity name: mainbkActivity OK!
+D/zkgui   (  929): registerActivity name: mainlistActivity OK!
+D/zkgui   (  929): registerActivity name: searchActivity OK!
+D/zkgui   (  929): registerActivity name: settingsActivity OK!
+D/zkgui   (  929): Compile date: Sep  1 2021
+E/zkgui   (  929): initEasyUICfg ok!
+D/zkgui   (  929): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   (  929): Ex code: da_DA, language: 丹麦语
+D/zkgui   (  929): Ex code: de_DE, language: 德语
+D/zkgui   (  929): Ex code: es_ES, language: 西班牙语
+D/zkgui   (  929): Ex code: fr_FR, language: 法语
+D/zkgui   (  929): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   (  929): Ex code: it_IT, language: 意大利语
+D/zkgui   (  929): Ex code: jk_JK, language: 捷克语
+D/zkgui   (  929): Ex code: mg_MG, language: 蒙古语
+D/zkgui   (  929): Ex code: nl_NL, language: 荷兰语
+D/zkgui   (  929): Ex code: nw_NW, language: 挪威语
+D/zkgui   (  929): Ex code: pl_PL, language: 波兰语
+D/zkgui   (  929): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   (  929): Ex code: ru_RU, language: 俄语
+D/zkgui   (  929): Ex code: su_SU, language: 芬兰语
+D/zkgui   (  929): Ex code: sv_SV, language: 瑞典语
+D/zkgui   (  929): Ex code: tu_TU, language: 土耳其语
+D/zkgui   (  929): Ex code: vi_VI, language: 越南语
+D/zkgui   (  929): Ex code: xi_XI, language: 希来伯语
+E/zkgui   (  929): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   (  929): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   (  929): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   (  929): MountMonitor addMountListener pListener: 0x402737e0
+D/zkgui   (  929): init SDL 
+D/zkgui   (  929): init notify sucess 
+D/zkgui   (  929): read key config file:
+D/zkgui   (  929): {
+D/zkgui   (  929):     "keytype": "usb",
+D/zkgui   (  929):     "b": [289,305],
+D/zkgui   (  929):     "a": [290,304],
+D/zkgui   (  929):     "x": [288,308],
+D/zkgui   (  929):     "y": [291,307],
+D/zkgui   (  929):     "select": [296,314],
+D/zkgui   (  929):     "start": [297,315],
+D/zkgui   (  929):     "l1": [292,310],
+D/zkgui   (  929):     "l2": [294,312],
+D/zkgui   (  929):     "r1": [293,311],
+D/zkgui   (  929):     "r2": [295,313],
+D/zkgui   (  929): 	"threshold":51
+D/zkgui   (  929): }
+D/zkgui   (  929): keytype is:usb
+D/zkgui   (  929): akeyvalue is:0
+D/zkgui   (  929): json array size:2 
+D/zkgui   (  929): json[0] : 290
+D/zkgui   (  929): json[1] : 304
+D/zkgui   (  929): nkeyvalue is:0
+D/zkgui   (  929): json array size:2 
+D/zkgui   (  929): json[0] : 289
+D/zkgui   (  929): json[1] : 305
+D/zkgui   (  929): json array size:2 
+D/zkgui   (  929): json[0] : 288
+D/zkgui   (  929): json[1] : 308
+D/zkgui   (  929): json array size:2 
+D/zkgui   (  929): json[0] : 291
+D/zkgui   (  929): json[1] : 307
+D/zkgui   (  929): json array size:2 
+D/zkgui   (  929): json[0] : 292
+D/zkgui   (  929): json[1] : 310
+D/zkgui   (  929): json array size:2 
+D/zkgui   (  929): json[0] : 293
+D/zkgui   (  929): json[1] : 311
+D/zkgui   (  929): json array size:2 
+D/zkgui   (  929): json[0] : 294
+D/zkgui   (  929): json[1] : 312
+D/zkgui   (  929): json array size:2 
+D/zkgui   (  929): json[0] : 295
+D/zkgui   (  929): json[1] : 313
+D/zkgui   (  929): json array size:2 
+D/zkgui   (  929): json[0] : 296
+D/zkgui   (  929): json[1] : 314
+D/zkgui   (  929): json array size:2 
+D/zkgui   (  929): json[0] : 297
+D/zkgui   (  929): json[1] : 315
+D/zkgui   (  929): get adc throld :51
+D/zkgui   (  929): key value:0   290,97
+D/zkgui   (  929): key value:1   304,97
+D/zkgui   (  929): key value:2   289,98
+D/zkgui   (  929): key value:3   305,98
+D/zkgui   (  929): key value:4   288,120
+D/zkgui   (  929): key value:5   308,120
+D/zkgui   (  929): key value:6   291,121
+D/zkgui   (  929): key value:7   307,121
+D/zkgui   (  929): key value:8   292,108
+D/zkgui   (  929): key value:9   310,108
+D/zkgui   (  929): key value:10   293,114
+D/zkgui   (  929): key value:11   311,114
+D/zkgui   (  929): key value:12   294,111
+D/zkgui   (  929): key value:13   312,111
+D/zkgui   (  929): key value:14   295,116
+D/zkgui   (  929): key value:15   313,116
+D/zkgui   (  929): key value:16   296,99
+D/zkgui   (  929): key value:17   314,99
+D/zkgui   (  929): key value:18   297,115
+D/zkgui   (  929): key value:19   315,115
+D/zkgui   (  929): key value:20   105,52
+D/zkgui   (  929): key value:21   106,54
+D/zkgui   (  929): key value:22   103,56
+D/zkgui   (  929): key value:23   108,50
+D/zkgui   (  929): Open key:/dev/input/event0 
+D/zkgui   (  929): open [/dev/input/event0] [12] sucess
+D/zkgui   (  929): get mastrt fd [/dev/input/event0]
+D/zkgui   (  929): Open key:/dev/input/event1 
+D/zkgui   (  929): open [/dev/input/event1] [13] sucess
+D/zkgui   (  929): Open key:/dev/input/event6 
+D/zkgui   (  929): Open key:/dev/input/event8 
+D/zkgui   (  929): Open key:/dev/input/event67 
+D/zkgui   (  929): Open key:/dev/input/event68 
+D/zkgui   (  929): Open key:/dev/input/event69 
+D/zkgui   (  929): open [/dev/input/event69] [14] sucess
+D/zkgui   (  929): get mastrt fd [/dev/input/event69]
+D/zkgui   (  929): Open key:/dev/input/event70 
+D/zkgui   (  929): open [/dev/input/event70] [15] sucess
+D/zkgui   (  929): scan path:/mnt/extsd/download/fba 
+D/zkgui   (  929): open dir:/mnt/extsd/download/fba 
+D/zkgui   (  929): ======================================end browser file:0
+D/zkgui   (  929): scan path:/mnt/extsd/download/fc 
+D/zkgui   (  929): open dir:/mnt/extsd/download/fc 
+D/zkgui   (  929): ======================================end browser file:0
+D/zkgui   (  929): scan path:/mnt/extsd/download/gb 
+D/zkgui   (  929): open dir:/mnt/extsd/download/gb 
+D/zkgui   (  929): ======================================end browser file:0
+D/zkgui   (  929): scan path:/mnt/extsd/download/gbc 
+D/zkgui   (  929): open dir:/mnt/extsd/download/gbc 
+D/zkgui   (  929): ======================================end browser file:0
+D/zkgui   (  929): scan path:/mnt/extsd/download/gba 
+D/zkgui   (  929): open dir:/mnt/extsd/download/gba 
+D/zkgui   (  929): ======================================end browser file:0
+D/zkgui   (  929): scan path:/mnt/extsd/download/mame 
+D/zkgui   (  929): open dir:/mnt/extsd/download/mame 
+D/zkgui   (  929): ======================================end browser file:0
+D/zkgui   (  929): scan path:/mnt/extsd/download/ps 
+D/zkgui   (  929): open dir:/mnt/extsd/download/ps 
+D/zkgui   (  929): ======================================end browser file:0
+D/zkgui   (  929): scan path:/mnt/extsd/download/md 
+D/zkgui   (  929): open dir:/mnt/extsd/download/md 
+D/zkgui   (  929): ======================================end browser file:0
+D/zkgui   (  929): scan path:/mnt/extsd/download/sfc 
+D/zkgui   (  929): open dir:/mnt/extsd/download/sfc 
+D/zkgui   (  929): ======================================end browser file:0
+D/zkgui   (  929): scan path:/mnt/extsd/download/pce 
+D/zkgui   (  929): open dir:/mnt/extsd/download/pce 
+D/zkgui   (  929): ======================================end browser file:0
+D/zkgui   (  929): get event :[1228768 ]276 
+D/zkgui   (  929): update key status[2][1228768][3] 
+D/zkgui   (  929): open game ok !
+D/zkgui   (  929): _trans_event_left[51] [127]  [77]  
+D/zkgui   (  929): _trans_event_right [127]  [179]  
+D/zkgui   (  929): invald key 
+D/zkgui   (  929): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   (  929): musicplay_mainloop start 
+D/zkgui   (  929): logo boot cmd:[]++++++++++++++++++++++++++
+D/zkgui   (  929): CGifPlayer::CGifPlayer   
+D/zkgui   (  929): setPlayendCallback  
+D/zkgui   (  929): play file thread:/mnt/extsd/ui/logo.gif 
+D/zkgui   (  929): play logo ret:1 
+D/zkgui   (  929): play music:3 
+D/zkgui   (  929): registerGlobalTouchListener
+D/zkgui   (  929): registerProtocolDataUpdateListener
+D/zkgui   (  929): registerTimerListener
+D/zkgui   (  929): registerTimerListener
+D/zkgui   (  929): gifplay_mainloop start  
+D/zkgui   (  929): play times :0 
+D/zkgui   (  929): GIF size :600x158
+D/zkgui   (  929): get event :[1228768 ]52 
+D/zkgui   (  929): _trans_event_left[51] [127]  [77]  
+D/zkgui   (  929): _trans_event_right [127]  [179]  
+D/zkgui   (  929): invald key 
+D/zkgui   (  929): onUI_init MainActivity
+D/zkgui   (  929): getreadlan start............ 
+D/zkgui   (  929): langlanglanglang = 1
+D/zkgui   (  929): strToInt(line)strToInt(line) = 1
+D/zkgui   (  929): langstr langstr langstr:[2] 
+D/zkgui   (  929): main logo boot cmd:[]--------------------
+D/zkgui   (  929): 显示状态栏
+D/zkgui   (  929): showStatusBar
+D/zkgui   (  929): registerProtocolDataUpdateListener
+D/zkgui   (  929): registerGlobalTouchListener
+D/zkgui   (  929): 状态栏定时器
+D/zkgui   (  929): gif update frame  end 
+D/zkgui   (  929): [gifplayer]stop play 
+D/zkgui   (  929): Gif play end 
+D/zkgui   (  929): CGifPlayer::~~CGifPlayer   
+D/zkgui   (  929): CGifPlayer  exit 
+D/zkgui   (  929): req query file :select * from game where dwonloadid > 0; 
+D/zkgui   (  929): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   (  929): call back cmd[] 
+D/zkgui   (  929): hideStatusBar
+D/zkgui   (  929): hideStatusBar
+D/zkgui   (  929): play music:2 
+D/zkgui   (  929): [gifplayer]stop play end 
+D/zkgui   (  929): gifplay_mainloop end 
+D/zkgui   (  929): onUI_init MainlistActivity
+D/zkgui   (  929): registerProtocolDataUpdateListener
+D/zkgui   (  929): registerTimerListener
+D/zkgui   (  929): registerTimerListener
+D/zkgui   (  929): registerTimerListener
+D/zkgui   (  929): unregisterGlobalTouchListener
+D/zkgui   (  929): restart
+D/zkgui   (  929): 重启
+D/zkgui   (  929): from type:0 to all :cursel:0
+D/zkgui   (  929): to all newsel:0
+D/zkgui   (  929): req query file :select * from game where dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   (  929): get size:142  
+D/zkgui   (  929): get game file sifd:142 
+D/zkgui   (  929): curstart:0,lines:10
+D/zkgui   (  929): registerGlobalTouchListener
+D/zkgui   (  929): 历史数据查询完成++++++++++++++++++++++
+D/zkgui   (  929): CGifPlayer::CGifPlayer   
+D/zkgui   (  929): registerKeyEventUpdateListener 
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): get event :[1 ]273 
+D/zkgui   (  929): 按下   上键
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): update key status[0][1][1] 
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): 按键音乐++++++++++++++
+D/zkgui   (  929): req play beep 
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): get event :[0 ]273 
+D/zkgui   (  929): 抬起   上键
+D/zkgui   (  929): update key status[0][0][1] 
+D/zkgui   (  929): invald key 
+D/zkgui   (  929): get event :[1 ]274 
+D/zkgui   (  929): 按下   下键
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): update key status[1][1][2] 
+D/zkgui   (  929): 按键音乐++++++++++++++
+D/zkgui   (  929): req play beep 
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): .
+D/zkgui   (  929): invald key 
+D/zkgui   (  929): get event :[0 ]274 
+D/zkgui   (  929): 抬起   下键
+D/zkgui   (  929): update key status[1][0][2] 
+D/zkgui   (  929): get event :[1 ]41 
+D/zkgui   (  929): 按下   没有按键
+D/zkgui   (  929): registerProtocolDataUpdateListener
+D/zkgui   (  929): unregisterGlobalTouchListener
+D/zkgui   (  929): registerGlobalTouchListener
+D/zkgui   (  929): update key status[7][1][8] 
+D/zkgui   (  929): registerKeyEventUpdateListener 
+D/zkgui   (  929): 按键音乐++++++++++++++
+D/zkgui   (  929): req play beep 
+D/zkgui   (  929): get event :[0 ]41 
+D/zkgui   (  929): update key status[7][0][8] 
+D/zkgui   (  929): invald key 
+D/zkgui   (  929): get event :[1 ]274 
+D/zkgui   (  929): update key status[1][1][2] 
+D/zkgui   (  929): 按键音乐++++++++++++++
+D/zkgui   (  929): req play beep 
+D/zkgui   (  929): invald key 
+D/zkgui   (  929): get event :[0 ]274 
+D/zkgui   (  929): update key status[1][0][2] 
+D/zkgui   (  929): get event :[1 ]306 
+D/zkgui   (  929): update key status[5][1][6] 
+D/zkgui   (  929): 按键音乐++++++++++++++
+D/zkgui   (  929): req play beep 
+D/zkgui   (  929): registerProtocolDataUpdateListener
+D/zkgui   (  929): registerTimerListener
+D/zkgui   (  929): unregisterGlobalTouchListener
+D/zkgui   (  929): registerKeyEventUpdateListener 
+D/zkgui   (  929): req query file :select * from game where gametype = 'FC' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   (  929): get size:1  
+D/zkgui   (  929): registerKeyEventUpdateListener 
+D/zkgui   (  929): CGifPlayer::CGifPlayer   
+D/zkgui   (  929): get pathgif [/mnt/extsd/roms/fc/image/Super Mario Bros (World).gif] 
+D/zkgui   (  929): get TitleName :FC 
+D/zkgui   (  929): registerGlobalTouchListener
+D/zkgui   (  929): get event :[0 ]306 
+D/zkgui   (  929): update key status[5][0][6] 
+D/zkgui   (  929): get event :[1 ]306 
+D/zkgui   (  929): yearMonthDayCh = 19700101000021
+D/zkgui   (  929): 此时time = 19700101000021
+D/zkgui   (  929): req update file :select max(time) from game where his = 1 
+D/zkgui   (  929): 最大time = 19700101022793
+D/zkgui   (  929): req update file :select max(time) from game where his = 1 
+D/zkgui   (  929): req update file :select max(time) from game where his = 1 
+D/zkgui   (  929): req update file :UPDATE game SET his = 1 ,time = 19700101022794 WHERE ID = 102; 
+D/zkgui   (  929): getAbsPreviewPath RomType[FC]  RomName[Super Mario Bros (World).zip]
+D/zkgui   (  929): return LunchGame path:[/mnt/extsd/roms/fc/Super Mario Bros (World).zip]  rum cmd[/mnt/extsd/emus/fceux/fceux] 
+D/zkgui   (  929): lunch0000 [/mnt/extsd/emus/fceux/fceux "/mnt/extsd/roms/fc/Super Mario Bros (World).zip"]
+D/zkgui   (  929): start req exit audio
+D/zkgui   (  929): musicplay_mainloop end 
+D/zkgui   (  929): start de init audio 
+D/zkgui   (  929): 
+D/zkgui   (  929): 
+D/zkgui   (  929): 
+D/zkgui   (  929): prepare exit gmenu 
+D/zkgui   (  929): 
+D/zkgui   (  929): 
+D/zkgui   (  929): chdir  21 [/mnt/extsd/emus/fceux]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   (  981): register control: zk_button
+D/zkgui   (  981): register control: zk_cameraview
+D/zkgui   (  981): register control: zk_checkbox
+D/zkgui   (  981): register control: zk_circlebar
+D/zkgui   (  981): register control: zk_diagram
+D/zkgui   (  981): register control: zk_digitalclock
+D/zkgui   (  981): register control: zk_edittext
+D/zkgui   (  981): register control: zk_listview
+D/zkgui   (  981): register control: zk_painter
+D/zkgui   (  981): register control: zk_pointer
+D/zkgui   (  981): register control: zk_qrcode
+D/zkgui   (  981): register control: zk_radiogroup
+D/zkgui   (  981): register control: zk_seekbar
+D/zkgui   (  981): register control: zk_slidetext
+D/zkgui   (  981): register control: zk_textview
+D/zkgui   (  981): register control: zk_videoview
+D/zkgui   (  981): register control: zk_slidewindow
+D/zkgui   (  981): register control: zk_window
+D/zkgui   (  981): registerActivity name: classlistActivity OK!
+D/zkgui   (  981): registerActivity name: downloadActivity OK!
+D/zkgui   (  981): registerActivity name: gamelistsActivity OK!
+D/zkgui   (  981): registerActivity name: mainActivity OK!
+D/zkgui   (  981): registerActivity name: mainbkActivity OK!
+D/zkgui   (  981): registerActivity name: mainlistActivity OK!
+D/zkgui   (  981): registerActivity name: searchActivity OK!
+D/zkgui   (  981): registerActivity name: settingsActivity OK!
+D/zkgui   (  981): Compile date: Sep  1 2021
+E/zkgui   (  981): initEasyUICfg ok!
+D/zkgui   (  981): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   (  981): Ex code: da_DA, language: 丹麦语
+D/zkgui   (  981): Ex code: de_DE, language: 德语
+D/zkgui   (  981): Ex code: es_ES, language: 西班牙语
+D/zkgui   (  981): Ex code: fr_FR, language: 法语
+D/zkgui   (  981): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   (  981): Ex code: it_IT, language: 意大利语
+D/zkgui   (  981): Ex code: jk_JK, language: 捷克语
+D/zkgui   (  981): Ex code: mg_MG, language: 蒙古语
+D/zkgui   (  981): Ex code: nl_NL, language: 荷兰语
+D/zkgui   (  981): Ex code: nw_NW, language: 挪威语
+D/zkgui   (  981): Ex code: pl_PL, language: 波兰语
+D/zkgui   (  981): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   (  981): Ex code: ru_RU, language: 俄语
+D/zkgui   (  981): Ex code: su_SU, language: 芬兰语
+D/zkgui   (  981): Ex code: sv_SV, language: 瑞典语
+D/zkgui   (  981): Ex code: tu_TU, language: 土耳其语
+D/zkgui   (  981): Ex code: vi_VI, language: 越南语
+D/zkgui   (  981): Ex code: xi_XI, language: 希来伯语
+E/zkgui   (  981): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   (  981): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   (  981): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   (  981): MountMonitor addMountListener pListener: 0x401fb7e0
+D/zkgui   (  981): init SDL 
+D/zkgui   (  981): init notify sucess 
+D/zkgui   (  981): read key config file:
+D/zkgui   (  981): {
+D/zkgui   (  981):     "keytype": "usb",
+D/zkgui   (  981):     "b": [289,305],
+D/zkgui   (  981):     "a": [290,304],
+D/zkgui   (  981):     "x": [288,308],
+D/zkgui   (  981):     "y": [291,307],
+D/zkgui   (  981):     "select": [296,314],
+D/zkgui   (  981):     "start": [297,315],
+D/zkgui   (  981):     "l1": [292,310],
+D/zkgui   (  981):     "l2": [294,312],
+D/zkgui   (  981):     "r1": [293,311],
+D/zkgui   (  981):     "r2": [295,313],
+D/zkgui   (  981): 	"threshold":51
+D/zkgui   (  981): }
+D/zkgui   (  981): keytype is:usb
+D/zkgui   (  981): akeyvalue is:0
+D/zkgui   (  981): json array size:2 
+D/zkgui   (  981): json[0] : 290
+D/zkgui   (  981): json[1] : 304
+D/zkgui   (  981): nkeyvalue is:0
+D/zkgui   (  981): json array size:2 
+D/zkgui   (  981): json[0] : 289
+D/zkgui   (  981): json[1] : 305
+D/zkgui   (  981): json array size:2 
+D/zkgui   (  981): json[0] : 288
+D/zkgui   (  981): json[1] : 308
+D/zkgui   (  981): json array size:2 
+D/zkgui   (  981): json[0] : 291
+D/zkgui   (  981): json[1] : 307
+D/zkgui   (  981): json array size:2 
+D/zkgui   (  981): json[0] : 292
+D/zkgui   (  981): json[1] : 310
+D/zkgui   (  981): json array size:2 
+D/zkgui   (  981): json[0] : 293
+D/zkgui   (  981): json[1] : 311
+D/zkgui   (  981): json array size:2 
+D/zkgui   (  981): json[0] : 294
+D/zkgui   (  981): json[1] : 312
+D/zkgui   (  981): json array size:2 
+D/zkgui   (  981): json[0] : 295
+D/zkgui   (  981): json[1] : 313
+D/zkgui   (  981): json array size:2 
+D/zkgui   (  981): json[0] : 296
+D/zkgui   (  981): json[1] : 314
+D/zkgui   (  981): json array size:2 
+D/zkgui   (  981): json[0] : 297
+D/zkgui   (  981): json[1] : 315
+D/zkgui   (  981): get adc throld :51
+D/zkgui   (  981): key value:0   290,97
+D/zkgui   (  981): key value:1   304,97
+D/zkgui   (  981): key value:2   289,98
+D/zkgui   (  981): key value:3   305,98
+D/zkgui   (  981): key value:4   288,120
+D/zkgui   (  981): key value:5   308,120
+D/zkgui   (  981): key value:6   291,121
+D/zkgui   (  981): key value:7   307,121
+D/zkgui   (  981): key value:8   292,108
+D/zkgui   (  981): key value:9   310,108
+D/zkgui   (  981): key value:10   293,114
+D/zkgui   (  981): key value:11   311,114
+D/zkgui   (  981): key value:12   294,111
+D/zkgui   (  981): key value:13   312,111
+D/zkgui   (  981): key value:14   295,116
+D/zkgui   (  981): key value:15   313,116
+D/zkgui   (  981): key value:16   296,99
+D/zkgui   (  981): key value:17   314,99
+D/zkgui   (  981): key value:18   297,115
+D/zkgui   (  981): key value:19   315,115
+D/zkgui   (  981): key value:20   105,52
+D/zkgui   (  981): key value:21   106,54
+D/zkgui   (  981): key value:22   103,56
+D/zkgui   (  981): key value:23   108,50
+D/zkgui   (  981): Open key:/dev/input/event0 
+D/zkgui   (  981): open [/dev/input/event0] [12] sucess
+D/zkgui   (  981): get mastrt fd [/dev/input/event0]
+D/zkgui   (  981): Open key:/dev/input/event1 
+D/zkgui   (  981): open [/dev/input/event1] [13] sucess
+D/zkgui   (  981): Open key:/dev/input/event6 
+D/zkgui   (  981): Open key:/dev/input/event8 
+D/zkgui   (  981): Open key:/dev/input/event67 
+D/zkgui   (  981): Open key:/dev/input/event68 
+D/zkgui   (  981): Open key:/dev/input/event69 
+D/zkgui   (  981): open [/dev/input/event69] [14] sucess
+D/zkgui   (  981): get mastrt fd [/dev/input/event69]
+D/zkgui   (  981): Open key:/dev/input/event70 
+D/zkgui   (  981): open [/dev/input/event70] [15] sucess
+D/zkgui   (  981): scan path:/mnt/extsd/download/fba 
+D/zkgui   (  981): open dir:/mnt/extsd/download/fba 
+D/zkgui   (  981): ======================================end browser file:0
+D/zkgui   (  981): scan path:/mnt/extsd/download/fc 
+D/zkgui   (  981): open dir:/mnt/extsd/download/fc 
+D/zkgui   (  981): ======================================end browser file:0
+D/zkgui   (  981): scan path:/mnt/extsd/download/gb 
+D/zkgui   (  981): open dir:/mnt/extsd/download/gb 
+D/zkgui   (  981): ======================================end browser file:0
+D/zkgui   (  981): scan path:/mnt/extsd/download/gbc 
+D/zkgui   (  981): open dir:/mnt/extsd/download/gbc 
+D/zkgui   (  981): ======================================end browser file:0
+D/zkgui   (  981): scan path:/mnt/extsd/download/gba 
+D/zkgui   (  981): open dir:/mnt/extsd/download/gba 
+D/zkgui   (  981): ======================================end browser file:0
+D/zkgui   (  981): scan path:/mnt/extsd/download/mame 
+D/zkgui   (  981): open dir:/mnt/extsd/download/mame 
+D/zkgui   (  981): ======================================end browser file:0
+D/zkgui   (  981): scan path:/mnt/extsd/download/ps 
+D/zkgui   (  981): open dir:/mnt/extsd/download/ps 
+D/zkgui   (  981): ======================================end browser file:0
+D/zkgui   (  981): scan path:/mnt/extsd/download/md 
+D/zkgui   (  981): open dir:/mnt/extsd/download/md 
+D/zkgui   (  981): ======================================end browser file:0
+D/zkgui   (  981): scan path:/mnt/extsd/download/sfc 
+D/zkgui   (  981): open dir:/mnt/extsd/download/sfc 
+D/zkgui   (  981): ======================================end browser file:0
+D/zkgui   (  981): scan path:/mnt/extsd/download/pce 
+D/zkgui   (  981): open dir:/mnt/extsd/download/pce 
+D/zkgui   (  981): ======================================end browser file:0
+D/zkgui   (  981): open game ok !
+D/zkgui   (  981): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   (  981): musicplay_mainloop start 
+D/zkgui   (  981): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   (  981): play music:2 
+D/zkgui   (  981): registerGlobalTouchListener
+D/zkgui   (  981): registerProtocolDataUpdateListener
+D/zkgui   (  981): registerTimerListener
+D/zkgui   (  981): registerTimerListener
+D/zkgui   (  981): onUI_init MainActivity
+D/zkgui   (  981): getreadlan start............ 
+D/zkgui   (  981): langlanglanglang = 1
+D/zkgui   (  981): strToInt(line)strToInt(line) = 1
+D/zkgui   (  981): langstr langstr langstr:[2] 
+D/zkgui   (  981): main logo boot cmd:[1]--------------------
+D/zkgui   (  981): hideStatusBar
+D/zkgui   (  981): **********************
+D/zkgui   (  981): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   (  981): registerProtocolDataUpdateListener
+D/zkgui   (  981): registerGlobalTouchListener
+D/zkgui   (  981): registerProtocolDataUpdateListener
+D/zkgui   (  981): registerTimerListener
+D/zkgui   (  981): unregisterGlobalTouchListener
+D/zkgui   (  981): req query file :select * from game where gametype = 'FC' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   (  981): get size:1  
+D/zkgui   (  981): registerKeyEventUpdateListener 
+D/zkgui   (  981): CGifPlayer::CGifPlayer   
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/fc/image/Super Mario Bros (World).gif] 
+D/zkgui   (  981): get TitleName :FC 
+D/zkgui   (  981): registerGlobalTouchListener
+D/zkgui   (  981): 状态栏定时器
+D/zkgui   (  981): get event :[1 ]308 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/fc/image/Super Mario Bros (World).gif] 
+D/zkgui   (  981): update key status[4][1][5] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): registerProtocolDataUpdateListener
+D/zkgui   (  981): unregisterGlobalTouchListener
+D/zkgui   (  981): registerGlobalTouchListener
+D/zkgui   (  981): registerKeyEventUpdateListener 
+D/zkgui   (  981): get event :[0 ]308 
+D/zkgui   (  981): update key status[4][0][5] 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[1 ]274 
+D/zkgui   (  981): update key status[1][1][2] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[0 ]274 
+D/zkgui   (  981): update key status[1][0][2] 
+D/zkgui   (  981): get event :[1 ]306 
+D/zkgui   (  981): unregisterGlobalTouchListener
+D/zkgui   (  981): update key status[5][1][6] 
+D/zkgui   (  981): registerKeyEventUpdateListener 
+D/zkgui   (  981): req query file :select * from game where gametype = 'GB' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   (  981): get size:6  
+D/zkgui   (  981): registerKeyEventUpdateListener 
+D/zkgui   (  981): CGifPlayer::~~CGifPlayer   
+D/zkgui   (  981): CGifPlayer  exit 
+D/zkgui   (  981): CGifPlayer::CGifPlayer   
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/Home Alone (USA, Europe)_0.gif] 
+D/zkgui   (  981): getAbsDir RomType[GB]  RomName[ȉ]
+D/zkgui   (  981): return getAbsDir path:[/mnt/extsd/roms/gb] 
+D/zkgui   (  981): CGifPlayer  exit 
+D/zkgui   (  981): get TitleName :GB 
+D/zkgui   (  981): registerGlobalTouchListener
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): get event :[0 ]306 
+D/zkgui   (  981): update key status[5][0][6] 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[1 ]274 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif] 
+D/zkgui   (  981): play file thread:/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif 
+D/zkgui   (  981): gifplay_mainloop start  
+D/zkgui   (  981): update key status[1][1][2] 
+D/zkgui   (  981): play times :0 
+D/zkgui   (  981): GIF size :600x158
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[0 ]274 
+D/zkgui   (  981): update key status[1][0][2] 
+D/zkgui   (  981): get event :[1 ]273 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/Home Alone (USA, Europe)_0.gif] 
+D/zkgui   (  981): getAbsDir RomType[GB]  RomName[ȉ]
+D/zkgui   (  981): return getAbsDir path:[/mnt/extsd/roms/gb] 
+D/zkgui   (  981): CGifPlayer  exit 
+D/zkgui   (  981):  thread req exit 
+D/zkgui   (  981): gif update frame  end 
+D/zkgui   (  981): [gifplayer]stop play end 
+D/zkgui   (  981): gifplay_mainloop end 
+D/zkgui   (  981): update key status[0][1][1] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): get event :[0 ]273 
+D/zkgui   (  981): update key status[0][0][1] 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[1 ]274 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif] 
+D/zkgui   (  981): play file thread:/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif 
+D/zkgui   (  981): gifplay_mainloop start  
+D/zkgui   (  981): play times :0 
+D/zkgui   (  981): GIF size :600x158
+D/zkgui   (  981): update key status[1][1][2] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[0 ]274 
+D/zkgui   (  981): update key status[1][0][2] 
+D/zkgui   (  981): get event :[1 ]273 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/Home Alone (USA, Europe)_0.gif] 
+D/zkgui   (  981): getAbsDir RomType[GB]  RomName[ȉ]
+D/zkgui   (  981): return getAbsDir path:[/mnt/extsd/roms/gb] 
+D/zkgui   (  981): CGifPlayer  exit 
+D/zkgui   (  981):  thread req exit 
+D/zkgui   (  981): gif update frame  end 
+D/zkgui   (  981): [gifplayer]stop play end 
+D/zkgui   (  981): gifplay_mainloop end 
+D/zkgui   (  981): update key status[0][1][1] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): get event :[0 ]273 
+D/zkgui   (  981): update key status[0][0][1] 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[1 ]274 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif] 
+D/zkgui   (  981): play file thread:/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif 
+D/zkgui   (  981): gifplay_mainloop start  
+D/zkgui   (  981): play times :0 
+D/zkgui   (  981): GIF size :600x158
+D/zkgui   (  981): update key status[1][1][2] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[0 ]274 
+D/zkgui   (  981): update key status[1][0][2] 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[1 ]274 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/R-Type (USA, Europe).gif] 
+D/zkgui   (  981):  thread req exit 
+D/zkgui   (  981): gif update frame  end 
+D/zkgui   (  981): [gifplayer]stop play end 
+D/zkgui   (  981): gifplay_mainloop end 
+D/zkgui   (  981): update key status[1][1][2] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[0 ]274 
+D/zkgui   (  981): update key status[1][0][2] 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[1 ]274 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/R-Type II (Europe).gif] 
+D/zkgui   (  981): update key status[1][1][2] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[0 ]274 
+D/zkgui   (  981): update key status[1][0][2] 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[1 ]274 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/Super Mario Land (World).gif] 
+D/zkgui   (  981): update key status[1][1][2] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[0 ]274 
+D/zkgui   (  981): update key status[1][0][2] 
+D/zkgui   (  981): get event :[1 ]273 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/R-Type II (Europe).gif] 
+D/zkgui   (  981): update key status[0][1][1] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): get event :[0 ]273 
+D/zkgui   (  981): update key status[0][0][1] 
+D/zkgui   (  981): get event :[1 ]273 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/R-Type (USA, Europe).gif] 
+D/zkgui   (  981): update key status[0][1][1] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): get event :[0 ]273 
+D/zkgui   (  981): update key status[0][0][1] 
+D/zkgui   (  981): get event :[1 ]273 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif] 
+D/zkgui   (  981): play file thread:/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif 
+D/zkgui   (  981): gifplay_mainloop start  
+D/zkgui   (  981): play times :0 
+D/zkgui   (  981): GIF size :600x158
+D/zkgui   (  981): update key status[0][1][1] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): get event :[0 ]273 
+D/zkgui   (  981): update key status[0][0][1] 
+D/zkgui   (  981): get event :[1 ]273 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/Home Alone (USA, Europe)_0.gif] 
+D/zkgui   (  981): getAbsDir RomType[GB]  RomName[ȉ]
+D/zkgui   (  981): return getAbsDir path:[/mnt/extsd/roms/gb] 
+D/zkgui   (  981): CGifPlayer  exit 
+D/zkgui   (  981):  thread req exit 
+D/zkgui   (  981): gif update frame  end 
+D/zkgui   (  981): [gifplayer]stop play end 
+D/zkgui   (  981): gifplay_mainloop end 
+D/zkgui   (  981): update key status[0][1][1] 
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): get event :[0 ]273 
+D/zkgui   (  981): update key status[0][0][1] 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[1 ]274 
+D/zkgui   (  981): get pathgif [/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif] 
+D/zkgui   (  981): play file thread:/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif 
+D/zkgui   (  981): update key status[1][1][2] 
+D/zkgui   (  981): gifplay_mainloop start  
+D/zkgui   (  981): play times :0 
+D/zkgui   (  981): GIF size :600x158
+D/zkgui   (  981): 按键音乐++++++++++++++
+D/zkgui   (  981): req play beep 
+D/zkgui   (  981): invald key 
+D/zkgui   (  981): get event :[0 ]274 
+D/zkgui   (  981): update key status[1][0][2] 
+D/zkgui   (  981): get event :[1 ]306 
+D/zkgui   (  981): yearMonthDayCh = 19700101000157
+D/zkgui   (  981): 此时time = 19700101000157
+D/zkgui   (  981): req update file :select max(time) from game where his = 1 
+D/zkgui   (  981): 最大time = 19700101022794
+D/zkgui   (  981): req update file :select max(time) from game where his = 1 
+D/zkgui   (  981): req update file :select max(time) from game where his = 1 
+D/zkgui   (  981): req update file :UPDATE game SET his = 1 ,time = 19700101022795 WHERE ID = 104; 
+D/zkgui   (  981): getAbsPreviewPath RomType[GB]  RomName[Home Alone (USA, Europe).zip]
+D/zkgui   (  981): return LunchGame path:[/mnt/extsd/roms/gb/Home Alone (USA, Europe).zip]  rum cmd[/mnt/extsd/emus/gamebatte/gambatte_sdl] 
+D/zkgui   (  981): lunch0000 [/mnt/extsd/emus/gamebatte/gambatte_sdl "/mnt/extsd/roms/gb/Home Alone (USA, Europe).zip"]
+D/zkgui   (  981): start req exit audio
+D/zkgui   (  981): musicplay_mainloop end 
+D/zkgui   (  981): start de init audio 
+D/zkgui   (  981): 
+D/zkgui   (  981): 
+D/zkgui   (  981): 
+D/zkgui   (  981): prepare exit gmenu 
+D/zkgui   (  981): 
+D/zkgui   (  981): 
+D/zkgui   (  981): chdir  25 [/mnt/extsd/emus/gamebatte]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1035): register control: zk_button
+D/zkgui   ( 1035): register control: zk_cameraview
+D/zkgui   ( 1035): register control: zk_checkbox
+D/zkgui   ( 1035): register control: zk_circlebar
+D/zkgui   ( 1035): register control: zk_diagram
+D/zkgui   ( 1035): register control: zk_digitalclock
+D/zkgui   ( 1035): register control: zk_edittext
+D/zkgui   ( 1035): register control: zk_listview
+D/zkgui   ( 1035): register control: zk_painter
+D/zkgui   ( 1035): register control: zk_pointer
+D/zkgui   ( 1035): register control: zk_qrcode
+D/zkgui   ( 1035): register control: zk_radiogroup
+D/zkgui   ( 1035): register control: zk_seekbar
+D/zkgui   ( 1035): register control: zk_slidetext
+D/zkgui   ( 1035): register control: zk_textview
+D/zkgui   ( 1035): register control: zk_videoview
+D/zkgui   ( 1035): register control: zk_slidewindow
+D/zkgui   ( 1035): register control: zk_window
+D/zkgui   ( 1035): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1035): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1035): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1035): registerActivity name: mainActivity OK!
+D/zkgui   ( 1035): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1035): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1035): registerActivity name: searchActivity OK!
+D/zkgui   ( 1035): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1035): Compile date: Sep  1 2021
+E/zkgui   ( 1035): initEasyUICfg ok!
+D/zkgui   ( 1035): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1035): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1035): Ex code: de_DE, language: 德语
+D/zkgui   ( 1035): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1035): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1035): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1035): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1035): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1035): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1035): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1035): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1035): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1035): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1035): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1035): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1035): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1035): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1035): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1035): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1035): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1035): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1035): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1035): MountMonitor addMountListener pListener: 0x402827e0
+D/zkgui   ( 1035): init SDL 
+D/zkgui   ( 1035): init notify sucess 
+D/zkgui   ( 1035): read key config file:
+D/zkgui   ( 1035): {
+D/zkgui   ( 1035):     "keytype": "usb",
+D/zkgui   ( 1035):     "b": [289,305],
+D/zkgui   ( 1035):     "a": [290,304],
+D/zkgui   ( 1035):     "x": [288,308],
+D/zkgui   ( 1035):     "y": [291,307],
+D/zkgui   ( 1035):     "select": [296,314],
+D/zkgui   ( 1035):     "start": [297,315],
+D/zkgui   ( 1035):     "l1": [292,310],
+D/zkgui   ( 1035):     "l2": [294,312],
+D/zkgui   ( 1035):     "r1": [293,311],
+D/zkgui   ( 1035):     "r2": [295,313],
+D/zkgui   ( 1035): 	"threshold":51
+D/zkgui   ( 1035): }
+D/zkgui   ( 1035): keytype is:usb
+D/zkgui   ( 1035): akeyvalue is:0
+D/zkgui   ( 1035): json array size:2 
+D/zkgui   ( 1035): json[0] : 290
+D/zkgui   ( 1035): json[1] : 304
+D/zkgui   ( 1035): nkeyvalue is:0
+D/zkgui   ( 1035): json array size:2 
+D/zkgui   ( 1035): json[0] : 289
+D/zkgui   ( 1035): json[1] : 305
+D/zkgui   ( 1035): json array size:2 
+D/zkgui   ( 1035): json[0] : 288
+D/zkgui   ( 1035): json[1] : 308
+D/zkgui   ( 1035): json array size:2 
+D/zkgui   ( 1035): json[0] : 291
+D/zkgui   ( 1035): json[1] : 307
+D/zkgui   ( 1035): json array size:2 
+D/zkgui   ( 1035): json[0] : 292
+D/zkgui   ( 1035): json[1] : 310
+D/zkgui   ( 1035): json array size:2 
+D/zkgui   ( 1035): json[0] : 293
+D/zkgui   ( 1035): json[1] : 311
+D/zkgui   ( 1035): json array size:2 
+D/zkgui   ( 1035): json[0] : 294
+D/zkgui   ( 1035): json[1] : 312
+D/zkgui   ( 1035): json array size:2 
+D/zkgui   ( 1035): json[0] : 295
+D/zkgui   ( 1035): json[1] : 313
+D/zkgui   ( 1035): json array size:2 
+D/zkgui   ( 1035): json[0] : 296
+D/zkgui   ( 1035): json[1] : 314
+D/zkgui   ( 1035): json array size:2 
+D/zkgui   ( 1035): json[0] : 297
+D/zkgui   ( 1035): json[1] : 315
+D/zkgui   ( 1035): get adc throld :51
+D/zkgui   ( 1035): key value:0   290,97
+D/zkgui   ( 1035): key value:1   304,97
+D/zkgui   ( 1035): key value:2   289,98
+D/zkgui   ( 1035): key value:3   305,98
+D/zkgui   ( 1035): key value:4   288,120
+D/zkgui   ( 1035): key value:5   308,120
+D/zkgui   ( 1035): key value:6   291,121
+D/zkgui   ( 1035): key value:7   307,121
+D/zkgui   ( 1035): key value:8   292,108
+D/zkgui   ( 1035): key value:9   310,108
+D/zkgui   ( 1035): key value:10   293,114
+D/zkgui   ( 1035): key value:11   311,114
+D/zkgui   ( 1035): key value:12   294,111
+D/zkgui   ( 1035): key value:13   312,111
+D/zkgui   ( 1035): key value:14   295,116
+D/zkgui   ( 1035): key value:15   313,116
+D/zkgui   ( 1035): key value:16   296,99
+D/zkgui   ( 1035): key value:17   314,99
+D/zkgui   ( 1035): key value:18   297,115
+D/zkgui   ( 1035): key value:19   315,115
+D/zkgui   ( 1035): key value:20   105,52
+D/zkgui   ( 1035): key value:21   106,54
+D/zkgui   ( 1035): key value:22   103,56
+D/zkgui   ( 1035): key value:23   108,50
+D/zkgui   ( 1035): Open key:/dev/input/event0 
+D/zkgui   ( 1035): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1035): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1035): Open key:/dev/input/event1 
+D/zkgui   ( 1035): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1035): Open key:/dev/input/event6 
+D/zkgui   ( 1035): Open key:/dev/input/event8 
+D/zkgui   ( 1035): Open key:/dev/input/event67 
+D/zkgui   ( 1035): Open key:/dev/input/event68 
+D/zkgui   ( 1035): Open key:/dev/input/event69 
+D/zkgui   ( 1035): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1035): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1035): Open key:/dev/input/event70 
+D/zkgui   ( 1035): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1035): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1035): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1035): ======================================end browser file:0
+D/zkgui   ( 1035): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1035): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1035): ======================================end browser file:0
+D/zkgui   ( 1035): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1035): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1035): ======================================end browser file:0
+D/zkgui   ( 1035): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1035): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1035): ======================================end browser file:0
+D/zkgui   ( 1035): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1035): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1035): ======================================end browser file:0
+D/zkgui   ( 1035): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1035): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1035): ======================================end browser file:0
+D/zkgui   ( 1035): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1035): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1035): ======================================end browser file:0
+D/zkgui   ( 1035): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1035): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1035): ======================================end browser file:0
+D/zkgui   ( 1035): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1035): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1035): ======================================end browser file:0
+D/zkgui   ( 1035): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1035): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1035): ======================================end browser file:0
+D/zkgui   ( 1035): open game ok !
+D/zkgui   ( 1035): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1035): musicplay_mainloop start 
+D/zkgui   ( 1035): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1035): play music:2 
+D/zkgui   ( 1035): registerGlobalTouchListener
+D/zkgui   ( 1035): registerProtocolDataUpdateListener
+D/zkgui   ( 1035): registerTimerListener
+D/zkgui   ( 1035): registerTimerListener
+D/zkgui   ( 1035): onUI_init MainActivity
+D/zkgui   ( 1035): getreadlan start............ 
+D/zkgui   ( 1035): langlanglanglang = 1
+D/zkgui   ( 1035): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1035): langstr langstr langstr:[2] 
+D/zkgui   ( 1035): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1035): hideStatusBar
+D/zkgui   ( 1035): **********************
+D/zkgui   ( 1035): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1035): registerProtocolDataUpdateListener
+D/zkgui   ( 1035): registerGlobalTouchListener
+D/zkgui   ( 1035): registerProtocolDataUpdateListener
+D/zkgui   ( 1035): registerTimerListener
+D/zkgui   ( 1035): unregisterGlobalTouchListener
+D/zkgui   ( 1035): req query file :select * from game where gametype = 'GB' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1035): get size:6  
+D/zkgui   ( 1035): registerKeyEventUpdateListener 
+D/zkgui   ( 1035): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1035): get pathgif [/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif] 
+D/zkgui   ( 1035): play file thread:/mnt/extsd/roms/gb/image/Home Alone (USA, Europe).gif 
+D/zkgui   ( 1035): get TitleName :GB 
+D/zkgui   ( 1035): gifplay_mainloop start  
+D/zkgui   ( 1035): registerGlobalTouchListener
+D/zkgui   ( 1035): play times :0 
+D/zkgui   ( 1035): GIF size :600x158
+D/zkgui   ( 1035): 状态栏定时器
+D/zkgui   ( 1035): invald key 
+D/zkgui   ( 1035): get event :[1 ]274 
+D/zkgui   ( 1035): get pathgif [/mnt/extsd/roms/gb/image/R-Type (USA, Europe).gif] 
+D/zkgui   ( 1035):  thread req exit 
+D/zkgui   ( 1035): gif update frame  end 
+D/zkgui   ( 1035): [gifplayer]stop play end 
+D/zkgui   ( 1035): gifplay_mainloop end 
+D/zkgui   ( 1035): update key status[1][1][2] 
+D/zkgui   ( 1035): 按键音乐++++++++++++++
+D/zkgui   ( 1035): req play beep 
+D/zkgui   ( 1035): invald key 
+D/zkgui   ( 1035): get event :[0 ]274 
+D/zkgui   ( 1035): update key status[1][0][2] 
+D/zkgui   ( 1035): get event :[1 ]308 
+D/zkgui   ( 1035): get pathgif [/mnt/extsd/roms/gb/image/R-Type (USA, Europe).gif] 
+D/zkgui   ( 1035): update key status[4][1][5] 
+D/zkgui   ( 1035): 按键音乐++++++++++++++
+D/zkgui   ( 1035): req play beep 
+D/zkgui   ( 1035): registerProtocolDataUpdateListener
+D/zkgui   ( 1035): unregisterGlobalTouchListener
+D/zkgui   ( 1035): registerGlobalTouchListener
+D/zkgui   ( 1035): registerKeyEventUpdateListener 
+D/zkgui   ( 1035): get event :[0 ]308 
+D/zkgui   ( 1035): update key status[4][0][5] 
+D/zkgui   ( 1035): invald key 
+D/zkgui   ( 1035): get event :[1 ]274 
+D/zkgui   ( 1035): update key status[1][1][2] 
+D/zkgui   ( 1035): 按键音乐++++++++++++++
+D/zkgui   ( 1035): req play beep 
+D/zkgui   ( 1035): invald key 
+D/zkgui   ( 1035): get event :[0 ]274 
+D/zkgui   ( 1035): update key status[1][0][2] 
+D/zkgui   ( 1035): get event :[1 ]306 
+D/zkgui   ( 1035): unregisterGlobalTouchListener
+D/zkgui   ( 1035): update key status[5][1][6] 
+D/zkgui   ( 1035): registerKeyEventUpdateListener 
+D/zkgui   ( 1035): req query file :select * from game where gametype = 'GBA' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1035): get size:1  
+D/zkgui   ( 1035): registerKeyEventUpdateListener 
+D/zkgui   ( 1035): CGifPlayer::~~CGifPlayer   
+D/zkgui   ( 1035): CGifPlayer  exit 
+D/zkgui   ( 1035): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1035): get pathgif [/mnt/extsd/roms/gba/image/R-Type III - The Third Lightning (USA).gif] 
+D/zkgui   ( 1035): 按键音乐++++++++++++++
+D/zkgui   ( 1035): req play beep 
+D/zkgui   ( 1035): get TitleName :GBA 
+D/zkgui   ( 1035): registerGlobalTouchListener
+D/zkgui   ( 1035): get event :[0 ]306 
+D/zkgui   ( 1035): update key status[5][0][6] 
+D/zkgui   ( 1035): get event :[1 ]306 
+D/zkgui   ( 1035): yearMonthDayCh = 19700101000209
+D/zkgui   ( 1035): 此时time = 19700101000209
+D/zkgui   ( 1035): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1035): 最大time = 19700101022795
+D/zkgui   ( 1035): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1035): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1035): req update file :UPDATE game SET his = 1 ,time = 19700101022796 WHERE ID = 109; 
+D/zkgui   ( 1035): getAbsPreviewPath RomType[GBA]  RomName[R-Type III - The Third Lightning (USA).zip]
+D/zkgui   ( 1035): return LunchGame path:[/mnt/extsd/roms/gba/R-Type III - The Third Lightning (USA).zip]  rum cmd[/mnt/extsd/emus/gpsp/gpsp] 
+D/zkgui   ( 1035): lunch0000 [/mnt/extsd/emus/gpsp/gpsp "/mnt/extsd/roms/gba/R-Type III - The Third Lightning (USA).zip"]
+D/zkgui   ( 1035): start req exit audio
+D/zkgui   ( 1035): musicplay_mainloop end 
+D/zkgui   ( 1035): start de init audio 
+D/zkgui   ( 1035): 
+D/zkgui   ( 1035): 
+D/zkgui   ( 1035): 
+D/zkgui   ( 1035): prepare exit gmenu 
+D/zkgui   ( 1035): 
+D/zkgui   ( 1035): 
+D/zkgui   ( 1035): chdir  20 [/mnt/extsd/emus/gpsp]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1085): register control: zk_button
+D/zkgui   ( 1085): register control: zk_cameraview
+D/zkgui   ( 1085): register control: zk_checkbox
+D/zkgui   ( 1085): register control: zk_circlebar
+D/zkgui   ( 1085): register control: zk_diagram
+D/zkgui   ( 1085): register control: zk_digitalclock
+D/zkgui   ( 1085): register control: zk_edittext
+D/zkgui   ( 1085): register control: zk_listview
+D/zkgui   ( 1085): register control: zk_painter
+D/zkgui   ( 1085): register control: zk_pointer
+D/zkgui   ( 1085): register control: zk_qrcode
+D/zkgui   ( 1085): register control: zk_radiogroup
+D/zkgui   ( 1085): register control: zk_seekbar
+D/zkgui   ( 1085): register control: zk_slidetext
+D/zkgui   ( 1085): register control: zk_textview
+D/zkgui   ( 1085): register control: zk_videoview
+D/zkgui   ( 1085): register control: zk_slidewindow
+D/zkgui   ( 1085): register control: zk_window
+D/zkgui   ( 1085): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1085): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1085): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1085): registerActivity name: mainActivity OK!
+D/zkgui   ( 1085): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1085): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1085): registerActivity name: searchActivity OK!
+D/zkgui   ( 1085): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1085): Compile date: Sep  1 2021
+E/zkgui   ( 1085): initEasyUICfg ok!
+D/zkgui   ( 1085): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1085): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1085): Ex code: de_DE, language: 德语
+D/zkgui   ( 1085): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1085): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1085): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1085): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1085): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1085): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1085): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1085): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1085): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1085): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1085): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1085): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1085): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1085): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1085): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1085): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1085): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1085): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1085): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1085): MountMonitor addMountListener pListener: 0x402bf7e0
+D/zkgui   ( 1085): init SDL 
+D/zkgui   ( 1085): init notify sucess 
+D/zkgui   ( 1085): read key config file:
+D/zkgui   ( 1085): {
+D/zkgui   ( 1085):     "keytype": "usb",
+D/zkgui   ( 1085):     "b": [289,305],
+D/zkgui   ( 1085):     "a": [290,304],
+D/zkgui   ( 1085):     "x": [288,308],
+D/zkgui   ( 1085):     "y": [291,307],
+D/zkgui   ( 1085):     "select": [296,314],
+D/zkgui   ( 1085):     "start": [297,315],
+D/zkgui   ( 1085):     "l1": [292,310],
+D/zkgui   ( 1085):     "l2": [294,312],
+D/zkgui   ( 1085):     "r1": [293,311],
+D/zkgui   ( 1085):     "r2": [295,313],
+D/zkgui   ( 1085): 	"threshold":51
+D/zkgui   ( 1085): }
+D/zkgui   ( 1085): keytype is:usb
+D/zkgui   ( 1085): akeyvalue is:0
+D/zkgui   ( 1085): json array size:2 
+D/zkgui   ( 1085): json[0] : 290
+D/zkgui   ( 1085): json[1] : 304
+D/zkgui   ( 1085): nkeyvalue is:0
+D/zkgui   ( 1085): json array size:2 
+D/zkgui   ( 1085): json[0] : 289
+D/zkgui   ( 1085): json[1] : 305
+D/zkgui   ( 1085): json array size:2 
+D/zkgui   ( 1085): json[0] : 288
+D/zkgui   ( 1085): json[1] : 308
+D/zkgui   ( 1085): json array size:2 
+D/zkgui   ( 1085): json[0] : 291
+D/zkgui   ( 1085): json[1] : 307
+D/zkgui   ( 1085): json array size:2 
+D/zkgui   ( 1085): json[0] : 292
+D/zkgui   ( 1085): json[1] : 310
+D/zkgui   ( 1085): json array size:2 
+D/zkgui   ( 1085): json[0] : 293
+D/zkgui   ( 1085): json[1] : 311
+D/zkgui   ( 1085): json array size:2 
+D/zkgui   ( 1085): json[0] : 294
+D/zkgui   ( 1085): json[1] : 312
+D/zkgui   ( 1085): json array size:2 
+D/zkgui   ( 1085): json[0] : 295
+D/zkgui   ( 1085): json[1] : 313
+D/zkgui   ( 1085): json array size:2 
+D/zkgui   ( 1085): json[0] : 296
+D/zkgui   ( 1085): json[1] : 314
+D/zkgui   ( 1085): json array size:2 
+D/zkgui   ( 1085): json[0] : 297
+D/zkgui   ( 1085): json[1] : 315
+D/zkgui   ( 1085): get adc throld :51
+D/zkgui   ( 1085): key value:0   290,97
+D/zkgui   ( 1085): key value:1   304,97
+D/zkgui   ( 1085): key value:2   289,98
+D/zkgui   ( 1085): key value:3   305,98
+D/zkgui   ( 1085): key value:4   288,120
+D/zkgui   ( 1085): key value:5   308,120
+D/zkgui   ( 1085): key value:6   291,121
+D/zkgui   ( 1085): key value:7   307,121
+D/zkgui   ( 1085): key value:8   292,108
+D/zkgui   ( 1085): key value:9   310,108
+D/zkgui   ( 1085): key value:10   293,114
+D/zkgui   ( 1085): key value:11   311,114
+D/zkgui   ( 1085): key value:12   294,111
+D/zkgui   ( 1085): key value:13   312,111
+D/zkgui   ( 1085): key value:14   295,116
+D/zkgui   ( 1085): key value:15   313,116
+D/zkgui   ( 1085): key value:16   296,99
+D/zkgui   ( 1085): key value:17   314,99
+D/zkgui   ( 1085): key value:18   297,115
+D/zkgui   ( 1085): key value:19   315,115
+D/zkgui   ( 1085): key value:20   105,52
+D/zkgui   ( 1085): key value:21   106,54
+D/zkgui   ( 1085): key value:22   103,56
+D/zkgui   ( 1085): key value:23   108,50
+D/zkgui   ( 1085): Open key:/dev/input/event0 
+D/zkgui   ( 1085): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1085): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1085): Open key:/dev/input/event1 
+D/zkgui   ( 1085): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1085): Open key:/dev/input/event6 
+D/zkgui   ( 1085): Open key:/dev/input/event8 
+D/zkgui   ( 1085): Open key:/dev/input/event67 
+D/zkgui   ( 1085): Open key:/dev/input/event68 
+D/zkgui   ( 1085): Open key:/dev/input/event69 
+D/zkgui   ( 1085): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1085): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1085): Open key:/dev/input/event70 
+D/zkgui   ( 1085): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1085): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1085): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1085): ======================================end browser file:0
+D/zkgui   ( 1085): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1085): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1085): ======================================end browser file:0
+D/zkgui   ( 1085): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1085): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1085): ======================================end browser file:0
+D/zkgui   ( 1085): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1085): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1085): ======================================end browser file:0
+D/zkgui   ( 1085): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1085): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1085): ======================================end browser file:0
+D/zkgui   ( 1085): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1085): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1085): ======================================end browser file:0
+D/zkgui   ( 1085): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1085): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1085): ======================================end browser file:0
+D/zkgui   ( 1085): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1085): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1085): ======================================end browser file:0
+D/zkgui   ( 1085): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1085): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1085): ======================================end browser file:0
+D/zkgui   ( 1085): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1085): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1085): ======================================end browser file:0
+D/zkgui   ( 1085): open game ok !
+D/zkgui   ( 1085): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1085): musicplay_mainloop start 
+D/zkgui   ( 1085): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1085): play music:2 
+D/zkgui   ( 1085): registerGlobalTouchListener
+D/zkgui   ( 1085): registerProtocolDataUpdateListener
+D/zkgui   ( 1085): registerTimerListener
+D/zkgui   ( 1085): registerTimerListener
+D/zkgui   ( 1085): onUI_init MainActivity
+D/zkgui   ( 1085): getreadlan start............ 
+D/zkgui   ( 1085): langlanglanglang = 1
+D/zkgui   ( 1085): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1085): langstr langstr langstr:[2] 
+D/zkgui   ( 1085): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1085): hideStatusBar
+D/zkgui   ( 1085): **********************
+D/zkgui   ( 1085): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1085): registerProtocolDataUpdateListener
+D/zkgui   ( 1085): registerGlobalTouchListener
+D/zkgui   ( 1085): registerProtocolDataUpdateListener
+D/zkgui   ( 1085): registerTimerListener
+D/zkgui   ( 1085): unregisterGlobalTouchListener
+D/zkgui   ( 1085): req query file :select * from game where gametype = 'GBA' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1085): get size:1  
+D/zkgui   ( 1085): registerKeyEventUpdateListener 
+D/zkgui   ( 1085): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1085): get pathgif [/mnt/extsd/roms/gba/image/R-Type III - The Third Lightning (USA).gif] 
+D/zkgui   ( 1085): get TitleName :GBA 
+D/zkgui   ( 1085): registerGlobalTouchListener
+D/zkgui   ( 1085): 状态栏定时器
+D/zkgui   ( 1085): get event :[1 ]308 
+D/zkgui   ( 1085): get pathgif [/mnt/extsd/roms/gba/image/R-Type III - The Third Lightning (USA).gif] 
+D/zkgui   ( 1085): update key status[4][1][5] 
+D/zkgui   ( 1085): 按键音乐++++++++++++++
+D/zkgui   ( 1085): req play beep 
+D/zkgui   ( 1085): registerProtocolDataUpdateListener
+D/zkgui   ( 1085): unregisterGlobalTouchListener
+D/zkgui   ( 1085): registerGlobalTouchListener
+D/zkgui   ( 1085): registerKeyEventUpdateListener 
+D/zkgui   ( 1085): get event :[0 ]308 
+D/zkgui   ( 1085): update key status[4][0][5] 
+D/zkgui   ( 1085): invald key 
+D/zkgui   ( 1085): get event :[1 ]274 
+D/zkgui   ( 1085): update key status[1][1][2] 
+D/zkgui   ( 1085): 按键音乐++++++++++++++
+D/zkgui   ( 1085): req play beep 
+D/zkgui   ( 1085): invald key 
+D/zkgui   ( 1085): get event :[0 ]274 
+D/zkgui   ( 1085): update key status[1][0][2] 
+D/zkgui   ( 1085): get event :[1 ]306 
+D/zkgui   ( 1085): unregisterGlobalTouchListener
+D/zkgui   ( 1085): update key status[5][1][6] 
+D/zkgui   ( 1085): registerKeyEventUpdateListener 
+D/zkgui   ( 1085): req query file :select * from game where gametype = 'GBC' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1085): get size:1  
+D/zkgui   ( 1085): registerKeyEventUpdateListener 
+D/zkgui   ( 1085): CGifPlayer::~~CGifPlayer   
+D/zkgui   ( 1085): CGifPlayer  exit 
+D/zkgui   ( 1085): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1085): get pathgif [/mnt/extsd/roms/gbc/image/Lemmings & Oh No! More Lemmings (USA).gif] 
+D/zkgui   ( 1085): 按键音乐++++++++++++++
+D/zkgui   ( 1085): req play beep 
+D/zkgui   ( 1085): get TitleName :GBC 
+D/zkgui   ( 1085): registerGlobalTouchListener
+D/zkgui   ( 1085): get event :[0 ]306 
+D/zkgui   ( 1085): update key status[5][0][6] 
+D/zkgui   ( 1085): get event :[1 ]306 
+D/zkgui   ( 1085): yearMonthDayCh = 19700101000221
+D/zkgui   ( 1085): 此时time = 19700101000221
+D/zkgui   ( 1085): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1085): 最大time = 19700101022796
+D/zkgui   ( 1085): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1085): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1085): req update file :UPDATE game SET his = 1 ,time = 19700101022797 WHERE ID = 110; 
+D/zkgui   ( 1085): getAbsPreviewPath RomType[GBC]  RomName[Lemmings & Oh No! More Lemmings (USA).zip]
+D/zkgui   ( 1085): return LunchGame path:[/mnt/extsd/roms/gbc/Lemmings & Oh No! More Lemmings (USA).zip]  rum cmd[/mnt/extsd/emus/gamebatte/gambatte_sdl] 
+D/zkgui   ( 1085): lunch0000 [/mnt/extsd/emus/gamebatte/gambatte_sdl "/mnt/extsd/roms/gbc/Lemmings & Oh No! More Lemmings (USA).zip"]
+D/zkgui   ( 1085): start req exit audio
+D/zkgui   ( 1085): musicplay_mainloop end 
+D/zkgui   ( 1085): start de init audio 
+D/zkgui   ( 1085): 
+D/zkgui   ( 1085): 
+D/zkgui   ( 1085): 
+D/zkgui   ( 1085): prepare exit gmenu 
+D/zkgui   ( 1085): 
+D/zkgui   ( 1085): 
+D/zkgui   ( 1085): chdir  25 [/mnt/extsd/emus/gamebatte]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1134): register control: zk_button
+D/zkgui   ( 1134): register control: zk_cameraview
+D/zkgui   ( 1134): register control: zk_checkbox
+D/zkgui   ( 1134): register control: zk_circlebar
+D/zkgui   ( 1134): register control: zk_diagram
+D/zkgui   ( 1134): register control: zk_digitalclock
+D/zkgui   ( 1134): register control: zk_edittext
+D/zkgui   ( 1134): register control: zk_listview
+D/zkgui   ( 1134): register control: zk_painter
+D/zkgui   ( 1134): register control: zk_pointer
+D/zkgui   ( 1134): register control: zk_qrcode
+D/zkgui   ( 1134): register control: zk_radiogroup
+D/zkgui   ( 1134): register control: zk_seekbar
+D/zkgui   ( 1134): register control: zk_slidetext
+D/zkgui   ( 1134): register control: zk_textview
+D/zkgui   ( 1134): register control: zk_videoview
+D/zkgui   ( 1134): register control: zk_slidewindow
+D/zkgui   ( 1134): register control: zk_window
+D/zkgui   ( 1134): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1134): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1134): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1134): registerActivity name: mainActivity OK!
+D/zkgui   ( 1134): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1134): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1134): registerActivity name: searchActivity OK!
+D/zkgui   ( 1134): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1134): Compile date: Sep  1 2021
+E/zkgui   ( 1134): initEasyUICfg ok!
+D/zkgui   ( 1134): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1134): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1134): Ex code: de_DE, language: 德语
+D/zkgui   ( 1134): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1134): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1134): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1134): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1134): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1134): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1134): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1134): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1134): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1134): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1134): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1134): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1134): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1134): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1134): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1134): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1134): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1134): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1134): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1134): MountMonitor addMountListener pListener: 0x402157e0
+D/zkgui   ( 1134): init SDL 
+D/zkgui   ( 1134): init notify sucess 
+D/zkgui   ( 1134): read key config file:
+D/zkgui   ( 1134): {
+D/zkgui   ( 1134):     "keytype": "usb",
+D/zkgui   ( 1134):     "b": [289,305],
+D/zkgui   ( 1134):     "a": [290,304],
+D/zkgui   ( 1134):     "x": [288,308],
+D/zkgui   ( 1134):     "y": [291,307],
+D/zkgui   ( 1134):     "select": [296,314],
+D/zkgui   ( 1134):     "start": [297,315],
+D/zkgui   ( 1134):     "l1": [292,310],
+D/zkgui   ( 1134):     "l2": [294,312],
+D/zkgui   ( 1134):     "r1": [293,311],
+D/zkgui   ( 1134):     "r2": [295,313],
+D/zkgui   ( 1134): 	"threshold":51
+D/zkgui   ( 1134): }
+D/zkgui   ( 1134): keytype is:usb
+D/zkgui   ( 1134): akeyvalue is:0
+D/zkgui   ( 1134): json array size:2 
+D/zkgui   ( 1134): json[0] : 290
+D/zkgui   ( 1134): json[1] : 304
+D/zkgui   ( 1134): nkeyvalue is:0
+D/zkgui   ( 1134): json array size:2 
+D/zkgui   ( 1134): json[0] : 289
+D/zkgui   ( 1134): json[1] : 305
+D/zkgui   ( 1134): json array size:2 
+D/zkgui   ( 1134): json[0] : 288
+D/zkgui   ( 1134): json[1] : 308
+D/zkgui   ( 1134): json array size:2 
+D/zkgui   ( 1134): json[0] : 291
+D/zkgui   ( 1134): json[1] : 307
+D/zkgui   ( 1134): json array size:2 
+D/zkgui   ( 1134): json[0] : 292
+D/zkgui   ( 1134): json[1] : 310
+D/zkgui   ( 1134): json array size:2 
+D/zkgui   ( 1134): json[0] : 293
+D/zkgui   ( 1134): json[1] : 311
+D/zkgui   ( 1134): json array size:2 
+D/zkgui   ( 1134): json[0] : 294
+D/zkgui   ( 1134): json[1] : 312
+D/zkgui   ( 1134): json array size:2 
+D/zkgui   ( 1134): json[0] : 295
+D/zkgui   ( 1134): json[1] : 313
+D/zkgui   ( 1134): json array size:2 
+D/zkgui   ( 1134): json[0] : 296
+D/zkgui   ( 1134): json[1] : 314
+D/zkgui   ( 1134): json array size:2 
+D/zkgui   ( 1134): json[0] : 297
+D/zkgui   ( 1134): json[1] : 315
+D/zkgui   ( 1134): get adc throld :51
+D/zkgui   ( 1134): key value:0   290,97
+D/zkgui   ( 1134): key value:1   304,97
+D/zkgui   ( 1134): key value:2   289,98
+D/zkgui   ( 1134): key value:3   305,98
+D/zkgui   ( 1134): key value:4   288,120
+D/zkgui   ( 1134): key value:5   308,120
+D/zkgui   ( 1134): key value:6   291,121
+D/zkgui   ( 1134): key value:7   307,121
+D/zkgui   ( 1134): key value:8   292,108
+D/zkgui   ( 1134): key value:9   310,108
+D/zkgui   ( 1134): key value:10   293,114
+D/zkgui   ( 1134): key value:11   311,114
+D/zkgui   ( 1134): key value:12   294,111
+D/zkgui   ( 1134): key value:13   312,111
+D/zkgui   ( 1134): key value:14   295,116
+D/zkgui   ( 1134): key value:15   313,116
+D/zkgui   ( 1134): key value:16   296,99
+D/zkgui   ( 1134): key value:17   314,99
+D/zkgui   ( 1134): key value:18   297,115
+D/zkgui   ( 1134): key value:19   315,115
+D/zkgui   ( 1134): key value:20   105,52
+D/zkgui   ( 1134): key value:21   106,54
+D/zkgui   ( 1134): key value:22   103,56
+D/zkgui   ( 1134): key value:23   108,50
+D/zkgui   ( 1134): Open key:/dev/input/event0 
+D/zkgui   ( 1134): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1134): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1134): Open key:/dev/input/event1 
+D/zkgui   ( 1134): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1134): Open key:/dev/input/event6 
+D/zkgui   ( 1134): Open key:/dev/input/event8 
+D/zkgui   ( 1134): Open key:/dev/input/event67 
+D/zkgui   ( 1134): Open key:/dev/input/event68 
+D/zkgui   ( 1134): Open key:/dev/input/event69 
+D/zkgui   ( 1134): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1134): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1134): Open key:/dev/input/event70 
+D/zkgui   ( 1134): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1134): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1134): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1134): ======================================end browser file:0
+D/zkgui   ( 1134): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1134): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1134): ======================================end browser file:0
+D/zkgui   ( 1134): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1134): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1134): ======================================end browser file:0
+D/zkgui   ( 1134): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1134): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1134): ======================================end browser file:0
+D/zkgui   ( 1134): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1134): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1134): ======================================end browser file:0
+D/zkgui   ( 1134): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1134): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1134): ======================================end browser file:0
+D/zkgui   ( 1134): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1134): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1134): ======================================end browser file:0
+D/zkgui   ( 1134): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1134): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1134): ======================================end browser file:0
+D/zkgui   ( 1134): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1134): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1134): ======================================end browser file:0
+D/zkgui   ( 1134): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1134): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1134): ======================================end browser file:0
+D/zkgui   ( 1134): open game ok !
+D/zkgui   ( 1134): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1134): musicplay_mainloop start 
+D/zkgui   ( 1134): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1134): play music:2 
+D/zkgui   ( 1134): registerGlobalTouchListener
+D/zkgui   ( 1134): registerProtocolDataUpdateListener
+D/zkgui   ( 1134): registerTimerListener
+D/zkgui   ( 1134): registerTimerListener
+D/zkgui   ( 1134): onUI_init MainActivity
+D/zkgui   ( 1134): getreadlan start............ 
+D/zkgui   ( 1134): langlanglanglang = 1
+D/zkgui   ( 1134): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1134): langstr langstr langstr:[2] 
+D/zkgui   ( 1134): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1134): hideStatusBar
+D/zkgui   ( 1134): **********************
+D/zkgui   ( 1134): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1134): registerProtocolDataUpdateListener
+D/zkgui   ( 1134): registerGlobalTouchListener
+D/zkgui   ( 1134): registerProtocolDataUpdateListener
+D/zkgui   ( 1134): registerTimerListener
+D/zkgui   ( 1134): unregisterGlobalTouchListener
+D/zkgui   ( 1134): req query file :select * from game where gametype = 'GBC' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1134): get size:1  
+D/zkgui   ( 1134): registerKeyEventUpdateListener 
+D/zkgui   ( 1134): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1134): get pathgif [/mnt/extsd/roms/gbc/image/Lemmings & Oh No! More Lemmings (USA).gif] 
+D/zkgui   ( 1134): get TitleName :GBC 
+D/zkgui   ( 1134): registerGlobalTouchListener
+D/zkgui   ( 1134): 状态栏定时器
+D/zkgui   ( 1134): get event :[1 ]308 
+D/zkgui   ( 1134): get pathgif [/mnt/extsd/roms/gbc/image/Lemmings & Oh No! More Lemmings (USA).gif] 
+D/zkgui   ( 1134): update key status[4][1][5] 
+D/zkgui   ( 1134): 按键音乐++++++++++++++
+D/zkgui   ( 1134): req play beep 
+D/zkgui   ( 1134): registerProtocolDataUpdateListener
+D/zkgui   ( 1134): unregisterGlobalTouchListener
+D/zkgui   ( 1134): registerGlobalTouchListener
+D/zkgui   ( 1134): registerKeyEventUpdateListener 
+D/zkgui   ( 1134): get event :[0 ]308 
+D/zkgui   ( 1134): update key status[4][0][5] 
+D/zkgui   ( 1134): invald key 
+D/zkgui   ( 1134): get event :[1 ]274 
+D/zkgui   ( 1134): update key status[1][1][2] 
+D/zkgui   ( 1134): 按键音乐++++++++++++++
+D/zkgui   ( 1134): req play beep 
+D/zkgui   ( 1134): invald key 
+D/zkgui   ( 1134): get event :[0 ]274 
+D/zkgui   ( 1134): update key status[1][0][2] 
+D/zkgui   ( 1134): get event :[1 ]306 
+D/zkgui   ( 1134): unregisterGlobalTouchListener
+D/zkgui   ( 1134): update key status[5][1][6] 
+D/zkgui   ( 1134): registerKeyEventUpdateListener 
+D/zkgui   ( 1134): req query file :select * from game where gametype = 'MD' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1134): get size:7  
+D/zkgui   ( 1134): registerKeyEventUpdateListener 
+D/zkgui   ( 1134): CGifPlayer::~~CGifPlayer   
+D/zkgui   ( 1134): CGifPlayer  exit 
+D/zkgui   ( 1134): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1134): get pathgif [/mnt/extsd/roms/md/image/Sonic The Hedgehog (USA, Europe).gif] 
+D/zkgui   ( 1134): 按键音乐++++++++++++++
+D/zkgui   ( 1134): req play beep 
+D/zkgui   ( 1134): get TitleName :MD 
+D/zkgui   ( 1134): registerGlobalTouchListener
+D/zkgui   ( 1134): get event :[0 ]306 
+D/zkgui   ( 1134): update key status[5][0][6] 
+D/zkgui   ( 1134): invald key 
+D/zkgui   ( 1134): get event :[1 ]274 
+D/zkgui   ( 1134): get pathgif [/mnt/extsd/roms/md/image/Sonic The Hedgehog 2 (World) (Rev A) (Sonic Mega Collection).gif] 
+D/zkgui   ( 1134): update key status[1][1][2] 
+D/zkgui   ( 1134): 按键音乐++++++++++++++
+D/zkgui   ( 1134): req play beep 
+D/zkgui   ( 1134): invald key 
+D/zkgui   ( 1134): get event :[0 ]274 
+D/zkgui   ( 1134): update key status[1][0][2] 
+D/zkgui   ( 1134): invald key 
+D/zkgui   ( 1134): get event :[1 ]274 
+D/zkgui   ( 1134): get pathgif [/mnt/extsd/roms/md/image/Sonic The Hedgehog 3 (USA).gif] 
+D/zkgui   ( 1134): update key status[1][1][2] 
+D/zkgui   ( 1134): 按键音乐++++++++++++++
+D/zkgui   ( 1134): req play beep 
+D/zkgui   ( 1134): invald key 
+D/zkgui   ( 1134): get event :[0 ]274 
+D/zkgui   ( 1134): update key status[1][0][2] 
+D/zkgui   ( 1134): invald key 
+D/zkgui   ( 1134): get event :[1 ]274 
+D/zkgui   ( 1134): get pathgif [/mnt/extsd/roms/md/image/Wonder Boy (USA, Europe, Brazil) (En) (Rev 1).gif] 
+D/zkgui   ( 1134): update key status[1][1][2] 
+D/zkgui   ( 1134): 按键音乐++++++++++++++
+D/zkgui   ( 1134): req play beep 
+D/zkgui   ( 1134): invald key 
+D/zkgui   ( 1134): get event :[0 ]274 
+D/zkgui   ( 1134): update key status[1][0][2] 
+D/zkgui   ( 1134): get event :[1 ]306 
+D/zkgui   ( 1134): yearMonthDayCh = 19700101000234
+D/zkgui   ( 1134): 此时time = 19700101000234
+D/zkgui   ( 1134): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1134): 最大time = 19700101022797
+D/zkgui   ( 1134): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1134): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1134): req update file :UPDATE game SET his = 1 ,time = 19700101022798 WHERE ID = 136; 
+D/zkgui   ( 1134): getAbsPreviewPath RomType[MD]  RomName[Wonder Boy (USA, Europe, Brazil) (En) (Rev 1).sms]
+D/zkgui   ( 1134): return LunchGame path:[/mnt/extsd/roms/md/Wonder Boy (USA, Europe, Brazil) (En) (Rev 1).sms]  rum cmd[/mnt/extsd/emus/picodrive/PicoDrive] 
+D/zkgui   ( 1134): lunch0000 [/mnt/extsd/emus/picodrive/PicoDrive "/mnt/extsd/roms/md/Wonder Boy (USA, Europe, Brazil) (En) (Rev 1).sms"]
+D/zkgui   ( 1134): start req exit audio
+D/zkgui   ( 1134): musicplay_mainloop end 
+D/zkgui   ( 1134): start de init audio 
+D/zkgui   ( 1134): 
+D/zkgui   ( 1134): 
+D/zkgui   ( 1134): 
+D/zkgui   ( 1134): prepare exit gmenu 
+D/zkgui   ( 1134): 
+D/zkgui   ( 1134): 
+D/zkgui   ( 1134): chdir  25 [/mnt/extsd/emus/picodrive]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1183): register control: zk_button
+D/zkgui   ( 1183): register control: zk_cameraview
+D/zkgui   ( 1183): register control: zk_checkbox
+D/zkgui   ( 1183): register control: zk_circlebar
+D/zkgui   ( 1183): register control: zk_diagram
+D/zkgui   ( 1183): register control: zk_digitalclock
+D/zkgui   ( 1183): register control: zk_edittext
+D/zkgui   ( 1183): register control: zk_listview
+D/zkgui   ( 1183): register control: zk_painter
+D/zkgui   ( 1183): register control: zk_pointer
+D/zkgui   ( 1183): register control: zk_qrcode
+D/zkgui   ( 1183): register control: zk_radiogroup
+D/zkgui   ( 1183): register control: zk_seekbar
+D/zkgui   ( 1183): register control: zk_slidetext
+D/zkgui   ( 1183): register control: zk_textview
+D/zkgui   ( 1183): register control: zk_videoview
+D/zkgui   ( 1183): register control: zk_slidewindow
+D/zkgui   ( 1183): register control: zk_window
+D/zkgui   ( 1183): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1183): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1183): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1183): registerActivity name: mainActivity OK!
+D/zkgui   ( 1183): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1183): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1183): registerActivity name: searchActivity OK!
+D/zkgui   ( 1183): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1183): Compile date: Sep  1 2021
+E/zkgui   ( 1183): initEasyUICfg ok!
+D/zkgui   ( 1183): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1183): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1183): Ex code: de_DE, language: 德语
+D/zkgui   ( 1183): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1183): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1183): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1183): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1183): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1183): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1183): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1183): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1183): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1183): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1183): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1183): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1183): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1183): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1183): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1183): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1183): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1183): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1183): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1183): MountMonitor addMountListener pListener: 0x4024b7e0
+D/zkgui   ( 1183): init SDL 
+D/zkgui   ( 1183): init notify sucess 
+D/zkgui   ( 1183): read key config file:
+D/zkgui   ( 1183): {
+D/zkgui   ( 1183):     "keytype": "usb",
+D/zkgui   ( 1183):     "b": [289,305],
+D/zkgui   ( 1183):     "a": [290,304],
+D/zkgui   ( 1183):     "x": [288,308],
+D/zkgui   ( 1183):     "y": [291,307],
+D/zkgui   ( 1183):     "select": [296,314],
+D/zkgui   ( 1183):     "start": [297,315],
+D/zkgui   ( 1183):     "l1": [292,310],
+D/zkgui   ( 1183):     "l2": [294,312],
+D/zkgui   ( 1183):     "r1": [293,311],
+D/zkgui   ( 1183):     "r2": [295,313],
+D/zkgui   ( 1183): 	"threshold":51
+D/zkgui   ( 1183): }
+D/zkgui   ( 1183): keytype is:usb
+D/zkgui   ( 1183): akeyvalue is:0
+D/zkgui   ( 1183): json array size:2 
+D/zkgui   ( 1183): json[0] : 290
+D/zkgui   ( 1183): json[1] : 304
+D/zkgui   ( 1183): nkeyvalue is:0
+D/zkgui   ( 1183): json array size:2 
+D/zkgui   ( 1183): json[0] : 289
+D/zkgui   ( 1183): json[1] : 305
+D/zkgui   ( 1183): json array size:2 
+D/zkgui   ( 1183): json[0] : 288
+D/zkgui   ( 1183): json[1] : 308
+D/zkgui   ( 1183): json array size:2 
+D/zkgui   ( 1183): json[0] : 291
+D/zkgui   ( 1183): json[1] : 307
+D/zkgui   ( 1183): json array size:2 
+D/zkgui   ( 1183): json[0] : 292
+D/zkgui   ( 1183): json[1] : 310
+D/zkgui   ( 1183): json array size:2 
+D/zkgui   ( 1183): json[0] : 293
+D/zkgui   ( 1183): json[1] : 311
+D/zkgui   ( 1183): json array size:2 
+D/zkgui   ( 1183): json[0] : 294
+D/zkgui   ( 1183): json[1] : 312
+D/zkgui   ( 1183): json array size:2 
+D/zkgui   ( 1183): json[0] : 295
+D/zkgui   ( 1183): json[1] : 313
+D/zkgui   ( 1183): json array size:2 
+D/zkgui   ( 1183): json[0] : 296
+D/zkgui   ( 1183): json[1] : 314
+D/zkgui   ( 1183): json array size:2 
+D/zkgui   ( 1183): json[0] : 297
+D/zkgui   ( 1183): json[1] : 315
+D/zkgui   ( 1183): get adc throld :51
+D/zkgui   ( 1183): key value:0   290,97
+D/zkgui   ( 1183): key value:1   304,97
+D/zkgui   ( 1183): key value:2   289,98
+D/zkgui   ( 1183): key value:3   305,98
+D/zkgui   ( 1183): key value:4   288,120
+D/zkgui   ( 1183): key value:5   308,120
+D/zkgui   ( 1183): key value:6   291,121
+D/zkgui   ( 1183): key value:7   307,121
+D/zkgui   ( 1183): key value:8   292,108
+D/zkgui   ( 1183): key value:9   310,108
+D/zkgui   ( 1183): key value:10   293,114
+D/zkgui   ( 1183): key value:11   311,114
+D/zkgui   ( 1183): key value:12   294,111
+D/zkgui   ( 1183): key value:13   312,111
+D/zkgui   ( 1183): key value:14   295,116
+D/zkgui   ( 1183): key value:15   313,116
+D/zkgui   ( 1183): key value:16   296,99
+D/zkgui   ( 1183): key value:17   314,99
+D/zkgui   ( 1183): key value:18   297,115
+D/zkgui   ( 1183): key value:19   315,115
+D/zkgui   ( 1183): key value:20   105,52
+D/zkgui   ( 1183): key value:21   106,54
+D/zkgui   ( 1183): key value:22   103,56
+D/zkgui   ( 1183): key value:23   108,50
+D/zkgui   ( 1183): Open key:/dev/input/event0 
+D/zkgui   ( 1183): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1183): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1183): Open key:/dev/input/event1 
+D/zkgui   ( 1183): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1183): Open key:/dev/input/event6 
+D/zkgui   ( 1183): Open key:/dev/input/event8 
+D/zkgui   ( 1183): Open key:/dev/input/event67 
+D/zkgui   ( 1183): Open key:/dev/input/event68 
+D/zkgui   ( 1183): Open key:/dev/input/event69 
+D/zkgui   ( 1183): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1183): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1183): Open key:/dev/input/event70 
+D/zkgui   ( 1183): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1183): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1183): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1183): ======================================end browser file:0
+D/zkgui   ( 1183): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1183): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1183): ======================================end browser file:0
+D/zkgui   ( 1183): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1183): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1183): ======================================end browser file:0
+D/zkgui   ( 1183): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1183): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1183): ======================================end browser file:0
+D/zkgui   ( 1183): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1183): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1183): ======================================end browser file:0
+D/zkgui   ( 1183): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1183): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1183): ======================================end browser file:0
+D/zkgui   ( 1183): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1183): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1183): ======================================end browser file:0
+D/zkgui   ( 1183): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1183): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1183): ======================================end browser file:0
+D/zkgui   ( 1183): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1183): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1183): ======================================end browser file:0
+D/zkgui   ( 1183): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1183): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1183): ======================================end browser file:0
+D/zkgui   ( 1183): open game ok !
+D/zkgui   ( 1183): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1183): musicplay_mainloop start 
+D/zkgui   ( 1183): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1183): play music:2 
+D/zkgui   ( 1183): registerGlobalTouchListener
+D/zkgui   ( 1183): registerProtocolDataUpdateListener
+D/zkgui   ( 1183): registerTimerListener
+D/zkgui   ( 1183): registerTimerListener
+D/zkgui   ( 1183): onUI_init MainActivity
+D/zkgui   ( 1183): getreadlan start............ 
+D/zkgui   ( 1183): langlanglanglang = 1
+D/zkgui   ( 1183): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1183): langstr langstr langstr:[2] 
+D/zkgui   ( 1183): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1183): hideStatusBar
+D/zkgui   ( 1183): **********************
+D/zkgui   ( 1183): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1183): registerProtocolDataUpdateListener
+D/zkgui   ( 1183): registerGlobalTouchListener
+D/zkgui   ( 1183): registerProtocolDataUpdateListener
+D/zkgui   ( 1183): registerTimerListener
+D/zkgui   ( 1183): unregisterGlobalTouchListener
+D/zkgui   ( 1183): req query file :select * from game where gametype = 'MD' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1183): get size:7  
+D/zkgui   ( 1183): registerKeyEventUpdateListener 
+D/zkgui   ( 1183): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1183): get pathgif [/mnt/extsd/roms/md/image/Wonder Boy (USA, Europe, Brazil) (En) (Rev 1).gif] 
+D/zkgui   ( 1183): get TitleName :MD 
+D/zkgui   ( 1183): registerGlobalTouchListener
+D/zkgui   ( 1183): 状态栏定时器
+D/zkgui   ( 1183): get event :[1 ]308 
+D/zkgui   ( 1183): get pathgif [/mnt/extsd/roms/md/image/Wonder Boy (USA, Europe, Brazil) (En) (Rev 1).gif] 
+D/zkgui   ( 1183): update key status[4][1][5] 
+D/zkgui   ( 1183): 按键音乐++++++++++++++
+D/zkgui   ( 1183): req play beep 
+D/zkgui   ( 1183): registerProtocolDataUpdateListener
+D/zkgui   ( 1183): unregisterGlobalTouchListener
+D/zkgui   ( 1183): registerGlobalTouchListener
+D/zkgui   ( 1183): registerKeyEventUpdateListener 
+D/zkgui   ( 1183): get event :[0 ]308 
+D/zkgui   ( 1183): update key status[4][0][5] 
+D/zkgui   ( 1183): invald key 
+D/zkgui   ( 1183): get event :[1 ]274 
+D/zkgui   ( 1183): update key status[1][1][2] 
+D/zkgui   ( 1183): 按键音乐++++++++++++++
+D/zkgui   ( 1183): req play beep 
+D/zkgui   ( 1183): invald key 
+D/zkgui   ( 1183): get event :[0 ]274 
+D/zkgui   ( 1183): update key status[1][0][2] 
+D/zkgui   ( 1183): get event :[1 ]306 
+D/zkgui   ( 1183): unregisterGlobalTouchListener
+D/zkgui   ( 1183): update key status[5][1][6] 
+D/zkgui   ( 1183): registerKeyEventUpdateListener 
+D/zkgui   ( 1183): req query file :select * from game where gametype = 'SFC' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1183): get size:3  
+D/zkgui   ( 1183): registerKeyEventUpdateListener 
+D/zkgui   ( 1183): CGifPlayer::~~CGifPlayer   
+D/zkgui   ( 1183): CGifPlayer  exit 
+D/zkgui   ( 1183): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1183): get pathgif [/mnt/extsd/roms/sfc/image/BOB.gif] 
+D/zkgui   ( 1183): 按键音乐++++++++++++++
+D/zkgui   ( 1183): req play beep 
+D/zkgui   ( 1183): get TitleName :SFC 
+D/zkgui   ( 1183): registerGlobalTouchListener
+D/zkgui   ( 1183): get event :[0 ]306 
+D/zkgui   ( 1183): update key status[5][0][6] 
+D/zkgui   ( 1183): invald key 
+D/zkgui   ( 1183): get event :[1 ]274 
+D/zkgui   ( 1183): get pathgif [/mnt/extsd/roms/sfc/image/Space Funky BOB (Japan).gif] 
+D/zkgui   ( 1183): update key status[1][1][2] 
+D/zkgui   ( 1183): 按键音乐++++++++++++++
+D/zkgui   ( 1183): req play beep 
+D/zkgui   ( 1183): invald key 
+D/zkgui   ( 1183): get event :[0 ]274 
+D/zkgui   ( 1183): update key status[1][0][2] 
+D/zkgui   ( 1183): get event :[1 ]306 
+D/zkgui   ( 1183): yearMonthDayCh = 19700101000338
+D/zkgui   ( 1183): 此时time = 19700101000338
+D/zkgui   ( 1183): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1183): 最大time = 19700101022798
+D/zkgui   ( 1183): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1183): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1183): req update file :UPDATE game SET his = 1 ,time = 19700101022799 WHERE ID = 141; 
+D/zkgui   ( 1183): getAbsPreviewPath RomType[SFC]  RomName[Space Funky BOB (Japan).sfc]
+D/zkgui   ( 1183): return LunchGame path:[/mnt/extsd/roms/sfc/Space Funky BOB (Japan).sfc]  rum cmd[/mnt/extsd/emus/snes9x4d/snes9x4d.dge] 
+D/zkgui   ( 1183): lunch0000 [/mnt/extsd/emus/snes9x4d/snes9x4d.dge "/mnt/extsd/roms/sfc/Space Funky BOB (Japan).sfc"]
+D/zkgui   ( 1183): start req exit audio
+D/zkgui   ( 1183): musicplay_mainloop end 
+D/zkgui   ( 1183): start de init audio 
+D/zkgui   ( 1183): 
+D/zkgui   ( 1183): 
+D/zkgui   ( 1183): 
+D/zkgui   ( 1183): prepare exit gmenu 
+D/zkgui   ( 1183): 
+D/zkgui   ( 1183): 
+D/zkgui   ( 1183): chdir  24 [/mnt/extsd/emus/snes9x4d]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1234): register control: zk_button
+D/zkgui   ( 1234): register control: zk_cameraview
+D/zkgui   ( 1234): register control: zk_checkbox
+D/zkgui   ( 1234): register control: zk_circlebar
+D/zkgui   ( 1234): register control: zk_diagram
+D/zkgui   ( 1234): register control: zk_digitalclock
+D/zkgui   ( 1234): register control: zk_edittext
+D/zkgui   ( 1234): register control: zk_listview
+D/zkgui   ( 1234): register control: zk_painter
+D/zkgui   ( 1234): register control: zk_pointer
+D/zkgui   ( 1234): register control: zk_qrcode
+D/zkgui   ( 1234): register control: zk_radiogroup
+D/zkgui   ( 1234): register control: zk_seekbar
+D/zkgui   ( 1234): register control: zk_slidetext
+D/zkgui   ( 1234): register control: zk_textview
+D/zkgui   ( 1234): register control: zk_videoview
+D/zkgui   ( 1234): register control: zk_slidewindow
+D/zkgui   ( 1234): register control: zk_window
+D/zkgui   ( 1234): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1234): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1234): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1234): registerActivity name: mainActivity OK!
+D/zkgui   ( 1234): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1234): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1234): registerActivity name: searchActivity OK!
+D/zkgui   ( 1234): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1234): Compile date: Sep  1 2021
+E/zkgui   ( 1234): initEasyUICfg ok!
+D/zkgui   ( 1234): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1234): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1234): Ex code: de_DE, language: 德语
+D/zkgui   ( 1234): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1234): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1234): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1234): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1234): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1234): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1234): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1234): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1234): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1234): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1234): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1234): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1234): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1234): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1234): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1234): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1234): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1234): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1234): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1234): MountMonitor addMountListener pListener: 0x402d47e0
+D/zkgui   ( 1234): init SDL 
+D/zkgui   ( 1234): init notify sucess 
+D/zkgui   ( 1234): read key config file:
+D/zkgui   ( 1234): {
+D/zkgui   ( 1234):     "keytype": "usb",
+D/zkgui   ( 1234):     "b": [289,305],
+D/zkgui   ( 1234):     "a": [290,304],
+D/zkgui   ( 1234):     "x": [288,308],
+D/zkgui   ( 1234):     "y": [291,307],
+D/zkgui   ( 1234):     "select": [296,314],
+D/zkgui   ( 1234):     "start": [297,315],
+D/zkgui   ( 1234):     "l1": [292,310],
+D/zkgui   ( 1234):     "l2": [294,312],
+D/zkgui   ( 1234):     "r1": [293,311],
+D/zkgui   ( 1234):     "r2": [295,313],
+D/zkgui   ( 1234): 	"threshold":51
+D/zkgui   ( 1234): }
+D/zkgui   ( 1234): keytype is:usb
+D/zkgui   ( 1234): akeyvalue is:0
+D/zkgui   ( 1234): json array size:2 
+D/zkgui   ( 1234): json[0] : 290
+D/zkgui   ( 1234): json[1] : 304
+D/zkgui   ( 1234): nkeyvalue is:0
+D/zkgui   ( 1234): json array size:2 
+D/zkgui   ( 1234): json[0] : 289
+D/zkgui   ( 1234): json[1] : 305
+D/zkgui   ( 1234): json array size:2 
+D/zkgui   ( 1234): json[0] : 288
+D/zkgui   ( 1234): json[1] : 308
+D/zkgui   ( 1234): json array size:2 
+D/zkgui   ( 1234): json[0] : 291
+D/zkgui   ( 1234): json[1] : 307
+D/zkgui   ( 1234): json array size:2 
+D/zkgui   ( 1234): json[0] : 292
+D/zkgui   ( 1234): json[1] : 310
+D/zkgui   ( 1234): json array size:2 
+D/zkgui   ( 1234): json[0] : 293
+D/zkgui   ( 1234): json[1] : 311
+D/zkgui   ( 1234): json array size:2 
+D/zkgui   ( 1234): json[0] : 294
+D/zkgui   ( 1234): json[1] : 312
+D/zkgui   ( 1234): json array size:2 
+D/zkgui   ( 1234): json[0] : 295
+D/zkgui   ( 1234): json[1] : 313
+D/zkgui   ( 1234): json array size:2 
+D/zkgui   ( 1234): json[0] : 296
+D/zkgui   ( 1234): json[1] : 314
+D/zkgui   ( 1234): json array size:2 
+D/zkgui   ( 1234): json[0] : 297
+D/zkgui   ( 1234): json[1] : 315
+D/zkgui   ( 1234): get adc throld :51
+D/zkgui   ( 1234): key value:0   290,97
+D/zkgui   ( 1234): key value:1   304,97
+D/zkgui   ( 1234): key value:2   289,98
+D/zkgui   ( 1234): key value:3   305,98
+D/zkgui   ( 1234): key value:4   288,120
+D/zkgui   ( 1234): key value:5   308,120
+D/zkgui   ( 1234): key value:6   291,121
+D/zkgui   ( 1234): key value:7   307,121
+D/zkgui   ( 1234): key value:8   292,108
+D/zkgui   ( 1234): key value:9   310,108
+D/zkgui   ( 1234): key value:10   293,114
+D/zkgui   ( 1234): key value:11   311,114
+D/zkgui   ( 1234): key value:12   294,111
+D/zkgui   ( 1234): key value:13   312,111
+D/zkgui   ( 1234): key value:14   295,116
+D/zkgui   ( 1234): key value:15   313,116
+D/zkgui   ( 1234): key value:16   296,99
+D/zkgui   ( 1234): key value:17   314,99
+D/zkgui   ( 1234): key value:18   297,115
+D/zkgui   ( 1234): key value:19   315,115
+D/zkgui   ( 1234): key value:20   105,52
+D/zkgui   ( 1234): key value:21   106,54
+D/zkgui   ( 1234): key value:22   103,56
+D/zkgui   ( 1234): key value:23   108,50
+D/zkgui   ( 1234): Open key:/dev/input/event0 
+D/zkgui   ( 1234): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1234): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1234): Open key:/dev/input/event1 
+D/zkgui   ( 1234): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1234): Open key:/dev/input/event6 
+D/zkgui   ( 1234): Open key:/dev/input/event8 
+D/zkgui   ( 1234): Open key:/dev/input/event67 
+D/zkgui   ( 1234): Open key:/dev/input/event68 
+D/zkgui   ( 1234): Open key:/dev/input/event69 
+D/zkgui   ( 1234): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1234): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1234): Open key:/dev/input/event70 
+D/zkgui   ( 1234): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1234): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1234): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1234): ======================================end browser file:0
+D/zkgui   ( 1234): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1234): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1234): ======================================end browser file:0
+D/zkgui   ( 1234): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1234): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1234): ======================================end browser file:0
+D/zkgui   ( 1234): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1234): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1234): ======================================end browser file:0
+D/zkgui   ( 1234): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1234): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1234): ======================================end browser file:0
+D/zkgui   ( 1234): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1234): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1234): ======================================end browser file:0
+D/zkgui   ( 1234): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1234): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1234): ======================================end browser file:0
+D/zkgui   ( 1234): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1234): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1234): ======================================end browser file:0
+D/zkgui   ( 1234): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1234): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1234): ======================================end browser file:0
+D/zkgui   ( 1234): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1234): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1234): ======================================end browser file:0
+D/zkgui   ( 1234): open game ok !
+D/zkgui   ( 1234): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1234): musicplay_mainloop start 
+D/zkgui   ( 1234): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1234): play music:2 
+D/zkgui   ( 1234): registerGlobalTouchListener
+D/zkgui   ( 1234): registerProtocolDataUpdateListener
+D/zkgui   ( 1234): registerTimerListener
+D/zkgui   ( 1234): registerTimerListener
+D/zkgui   ( 1234): onUI_init MainActivity
+D/zkgui   ( 1234): getreadlan start............ 
+D/zkgui   ( 1234): langlanglanglang = 1
+D/zkgui   ( 1234): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1234): langstr langstr langstr:[2] 
+D/zkgui   ( 1234): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1234): hideStatusBar
+D/zkgui   ( 1234): **********************
+D/zkgui   ( 1234): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1234): registerProtocolDataUpdateListener
+D/zkgui   ( 1234): registerGlobalTouchListener
+D/zkgui   ( 1234): registerProtocolDataUpdateListener
+D/zkgui   ( 1234): registerTimerListener
+D/zkgui   ( 1234): unregisterGlobalTouchListener
+D/zkgui   ( 1234): req query file :select * from game where gametype = 'SFC' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1234): get size:3  
+D/zkgui   ( 1234): registerKeyEventUpdateListener 
+D/zkgui   ( 1234): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1234): get pathgif [/mnt/extsd/roms/sfc/image/Space Funky BOB (Japan).gif] 
+D/zkgui   ( 1234): get TitleName :SFC 
+D/zkgui   ( 1234): registerGlobalTouchListener
+D/zkgui   ( 1234): 状态栏定时器
+D/zkgui   ( 1234): get event :[1 ]308 
+D/zkgui   ( 1234): get pathgif [/mnt/extsd/roms/sfc/image/Space Funky BOB (Japan).gif] 
+D/zkgui   ( 1234): update key status[4][1][5] 
+D/zkgui   ( 1234): 按键音乐++++++++++++++
+D/zkgui   ( 1234): req play beep 
+D/zkgui   ( 1234): registerProtocolDataUpdateListener
+D/zkgui   ( 1234): unregisterGlobalTouchListener
+D/zkgui   ( 1234): registerGlobalTouchListener
+D/zkgui   ( 1234): registerKeyEventUpdateListener 
+D/zkgui   ( 1234): get event :[0 ]308 
+D/zkgui   ( 1234): update key status[4][0][5] 
+D/zkgui   ( 1234): invald key 
+D/zkgui   ( 1234): get event :[1 ]274 
+D/zkgui   ( 1234): update key status[1][1][2] 
+D/zkgui   ( 1234): 按键音乐++++++++++++++
+D/zkgui   ( 1234): req play beep 
+D/zkgui   ( 1234): invald key 
+D/zkgui   ( 1234): get event :[0 ]274 
+D/zkgui   ( 1234): update key status[1][0][2] 
+D/zkgui   ( 1234): get event :[1 ]306 
+D/zkgui   ( 1234): unregisterGlobalTouchListener
+D/zkgui   ( 1234): update key status[5][1][6] 
+D/zkgui   ( 1234): registerKeyEventUpdateListener 
+D/zkgui   ( 1234): req query file :select * from game where gametype = 'PS1' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1234): get size:1  
+D/zkgui   ( 1234): registerKeyEventUpdateListener 
+D/zkgui   ( 1234): CGifPlayer::~~CGifPlayer   
+D/zkgui   ( 1234): CGifPlayer  exit 
+D/zkgui   ( 1234): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1234): get pathgif [/mnt/extsd/roms/ps/image/Tomb Raider (USA).gif] 
+D/zkgui   ( 1234): 按键音乐++++++++++++++
+D/zkgui   ( 1234): req play beep 
+D/zkgui   ( 1234): get TitleName :PS1 
+D/zkgui   ( 1234): registerGlobalTouchListener
+D/zkgui   ( 1234): get event :[0 ]306 
+D/zkgui   ( 1234): update key status[5][0][6] 
+D/zkgui   ( 1234): get event :[1 ]308 
+D/zkgui   ( 1234): get pathgif [/mnt/extsd/roms/ps/image/Tomb Raider (USA).gif] 
+D/zkgui   ( 1234): unregisterGlobalTouchListener
+D/zkgui   ( 1234): registerGlobalTouchListener
+D/zkgui   ( 1234): registerKeyEventUpdateListener 
+D/zkgui   ( 1234): update key status[4][1][5] 
+D/zkgui   ( 1234): 按键音乐++++++++++++++
+D/zkgui   ( 1234): req play beep 
+D/zkgui   ( 1234): get event :[0 ]308 
+D/zkgui   ( 1234): update key status[4][0][5] 
+D/zkgui   ( 1234): get event :[1 ]306 
+D/zkgui   ( 1234): unregisterGlobalTouchListener
+D/zkgui   ( 1234): update key status[5][1][6] 
+D/zkgui   ( 1234): registerKeyEventUpdateListener 
+D/zkgui   ( 1234): req query file :select * from game where gametype = 'PS1' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1234): get size:1  
+D/zkgui   ( 1234): registerKeyEventUpdateListener 
+D/zkgui   ( 1234): CGifPlayer::~~CGifPlayer   
+D/zkgui   ( 1234): CGifPlayer  exit 
+D/zkgui   ( 1234): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1234): get pathgif [/mnt/extsd/roms/ps/image/Tomb Raider (USA).gif] 
+D/zkgui   ( 1234): 按键音乐++++++++++++++
+D/zkgui   ( 1234): req play beep 
+D/zkgui   ( 1234): get TitleName :PS1 
+D/zkgui   ( 1234): registerGlobalTouchListener
+D/zkgui   ( 1234): get event :[0 ]306 
+D/zkgui   ( 1234): update key status[5][0][6] 
+D/zkgui   ( 1234): get event :[1 ]306 
+D/zkgui   ( 1234): yearMonthDayCh = 19700101000351
+D/zkgui   ( 1234): 此时time = 19700101000351
+D/zkgui   ( 1234): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1234): 最大time = 19700101022799
+D/zkgui   ( 1234): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1234): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1234): req update file :UPDATE game SET his = 1 ,time = 19700101022800 WHERE ID = 132; 
+D/zkgui   ( 1234): getAbsPreviewPath RomType[PS1]  RomName[Tomb Raider (USA).bin]
+D/zkgui   ( 1234): return LunchGame path:[/mnt/extsd/roms/ps/Tomb Raider (USA).bin]  rum cmd[/mnt/extsd/emus/pcsx4all/pcsx -cdfile] 
+D/zkgui   ( 1234): lunch0000 [/mnt/extsd/emus/pcsx4all/pcsx -cdfile "/mnt/extsd/roms/ps/Tomb Raider (USA).bin"]
+D/zkgui   ( 1234): start req exit audio
+D/zkgui   ( 1234): musicplay_mainloop end 
+D/zkgui   ( 1234): start de init audio 
+D/zkgui   ( 1234): 
+D/zkgui   ( 1234): 
+D/zkgui   ( 1234): 
+D/zkgui   ( 1234): prepare exit gmenu 
+D/zkgui   ( 1234): 
+D/zkgui   ( 1234): 
+D/zkgui   ( 1234): chdir  24 [/mnt/extsd/emus/pcsx4all]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1287): register control: zk_button
+D/zkgui   ( 1287): register control: zk_cameraview
+D/zkgui   ( 1287): register control: zk_checkbox
+D/zkgui   ( 1287): register control: zk_circlebar
+D/zkgui   ( 1287): register control: zk_diagram
+D/zkgui   ( 1287): register control: zk_digitalclock
+D/zkgui   ( 1287): register control: zk_edittext
+D/zkgui   ( 1287): register control: zk_listview
+D/zkgui   ( 1287): register control: zk_painter
+D/zkgui   ( 1287): register control: zk_pointer
+D/zkgui   ( 1287): register control: zk_qrcode
+D/zkgui   ( 1287): register control: zk_radiogroup
+D/zkgui   ( 1287): register control: zk_seekbar
+D/zkgui   ( 1287): register control: zk_slidetext
+D/zkgui   ( 1287): register control: zk_textview
+D/zkgui   ( 1287): register control: zk_videoview
+D/zkgui   ( 1287): register control: zk_slidewindow
+D/zkgui   ( 1287): register control: zk_window
+D/zkgui   ( 1287): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1287): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1287): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1287): registerActivity name: mainActivity OK!
+D/zkgui   ( 1287): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1287): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1287): registerActivity name: searchActivity OK!
+D/zkgui   ( 1287): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1287): Compile date: Sep  1 2021
+E/zkgui   ( 1287): initEasyUICfg ok!
+D/zkgui   ( 1287): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1287): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1287): Ex code: de_DE, language: 德语
+D/zkgui   ( 1287): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1287): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1287): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1287): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1287): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1287): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1287): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1287): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1287): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1287): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1287): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1287): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1287): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1287): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1287): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1287): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1287): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1287): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1287): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1287): MountMonitor addMountListener pListener: 0x402aa7e0
+D/zkgui   ( 1287): init SDL 
+D/zkgui   ( 1287): init notify sucess 
+D/zkgui   ( 1287): read key config file:
+D/zkgui   ( 1287): {
+D/zkgui   ( 1287):     "keytype": "usb",
+D/zkgui   ( 1287):     "b": [289,305],
+D/zkgui   ( 1287):     "a": [290,304],
+D/zkgui   ( 1287):     "x": [288,308],
+D/zkgui   ( 1287):     "y": [291,307],
+D/zkgui   ( 1287):     "select": [296,314],
+D/zkgui   ( 1287):     "start": [297,315],
+D/zkgui   ( 1287):     "l1": [292,310],
+D/zkgui   ( 1287):     "l2": [294,312],
+D/zkgui   ( 1287):     "r1": [293,311],
+D/zkgui   ( 1287):     "r2": [295,313],
+D/zkgui   ( 1287): 	"threshold":51
+D/zkgui   ( 1287): }
+D/zkgui   ( 1287): keytype is:usb
+D/zkgui   ( 1287): akeyvalue is:0
+D/zkgui   ( 1287): json array size:2 
+D/zkgui   ( 1287): json[0] : 290
+D/zkgui   ( 1287): json[1] : 304
+D/zkgui   ( 1287): nkeyvalue is:0
+D/zkgui   ( 1287): json array size:2 
+D/zkgui   ( 1287): json[0] : 289
+D/zkgui   ( 1287): json[1] : 305
+D/zkgui   ( 1287): json array size:2 
+D/zkgui   ( 1287): json[0] : 288
+D/zkgui   ( 1287): json[1] : 308
+D/zkgui   ( 1287): json array size:2 
+D/zkgui   ( 1287): json[0] : 291
+D/zkgui   ( 1287): json[1] : 307
+D/zkgui   ( 1287): json array size:2 
+D/zkgui   ( 1287): json[0] : 292
+D/zkgui   ( 1287): json[1] : 310
+D/zkgui   ( 1287): json array size:2 
+D/zkgui   ( 1287): json[0] : 293
+D/zkgui   ( 1287): json[1] : 311
+D/zkgui   ( 1287): json array size:2 
+D/zkgui   ( 1287): json[0] : 294
+D/zkgui   ( 1287): json[1] : 312
+D/zkgui   ( 1287): json array size:2 
+D/zkgui   ( 1287): json[0] : 295
+D/zkgui   ( 1287): json[1] : 313
+D/zkgui   ( 1287): json array size:2 
+D/zkgui   ( 1287): json[0] : 296
+D/zkgui   ( 1287): json[1] : 314
+D/zkgui   ( 1287): json array size:2 
+D/zkgui   ( 1287): json[0] : 297
+D/zkgui   ( 1287): json[1] : 315
+D/zkgui   ( 1287): get adc throld :51
+D/zkgui   ( 1287): key value:0   290,97
+D/zkgui   ( 1287): key value:1   304,97
+D/zkgui   ( 1287): key value:2   289,98
+D/zkgui   ( 1287): key value:3   305,98
+D/zkgui   ( 1287): key value:4   288,120
+D/zkgui   ( 1287): key value:5   308,120
+D/zkgui   ( 1287): key value:6   291,121
+D/zkgui   ( 1287): key value:7   307,121
+D/zkgui   ( 1287): key value:8   292,108
+D/zkgui   ( 1287): key value:9   310,108
+D/zkgui   ( 1287): key value:10   293,114
+D/zkgui   ( 1287): key value:11   311,114
+D/zkgui   ( 1287): key value:12   294,111
+D/zkgui   ( 1287): key value:13   312,111
+D/zkgui   ( 1287): key value:14   295,116
+D/zkgui   ( 1287): key value:15   313,116
+D/zkgui   ( 1287): key value:16   296,99
+D/zkgui   ( 1287): key value:17   314,99
+D/zkgui   ( 1287): key value:18   297,115
+D/zkgui   ( 1287): key value:19   315,115
+D/zkgui   ( 1287): key value:20   105,52
+D/zkgui   ( 1287): key value:21   106,54
+D/zkgui   ( 1287): key value:22   103,56
+D/zkgui   ( 1287): key value:23   108,50
+D/zkgui   ( 1287): Open key:/dev/input/event0 
+D/zkgui   ( 1287): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1287): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1287): Open key:/dev/input/event1 
+D/zkgui   ( 1287): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1287): Open key:/dev/input/event6 
+D/zkgui   ( 1287): Open key:/dev/input/event8 
+D/zkgui   ( 1287): Open key:/dev/input/event67 
+D/zkgui   ( 1287): Open key:/dev/input/event68 
+D/zkgui   ( 1287): Open key:/dev/input/event69 
+D/zkgui   ( 1287): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1287): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1287): Open key:/dev/input/event70 
+D/zkgui   ( 1287): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1287): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1287): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1287): ======================================end browser file:0
+D/zkgui   ( 1287): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1287): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1287): ======================================end browser file:0
+D/zkgui   ( 1287): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1287): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1287): ======================================end browser file:0
+D/zkgui   ( 1287): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1287): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1287): ======================================end browser file:0
+D/zkgui   ( 1287): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1287): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1287): ======================================end browser file:0
+D/zkgui   ( 1287): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1287): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1287): ======================================end browser file:0
+D/zkgui   ( 1287): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1287): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1287): ======================================end browser file:0
+D/zkgui   ( 1287): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1287): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1287): ======================================end browser file:0
+D/zkgui   ( 1287): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1287): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1287): ======================================end browser file:0
+D/zkgui   ( 1287): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1287): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1287): ======================================end browser file:0
+D/zkgui   ( 1287): open game ok !
+D/zkgui   ( 1287): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1287): musicplay_mainloop start 
+D/zkgui   ( 1287): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1287): play music:2 
+D/zkgui   ( 1287): registerGlobalTouchListener
+D/zkgui   ( 1287): registerProtocolDataUpdateListener
+D/zkgui   ( 1287): registerTimerListener
+D/zkgui   ( 1287): registerTimerListener
+D/zkgui   ( 1287): onUI_init MainActivity
+D/zkgui   ( 1287): getreadlan start............ 
+D/zkgui   ( 1287): langlanglanglang = 1
+D/zkgui   ( 1287): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1287): langstr langstr langstr:[2] 
+D/zkgui   ( 1287): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1287): hideStatusBar
+D/zkgui   ( 1287): **********************
+D/zkgui   ( 1287): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1287): registerProtocolDataUpdateListener
+D/zkgui   ( 1287): registerGlobalTouchListener
+D/zkgui   ( 1287): registerProtocolDataUpdateListener
+D/zkgui   ( 1287): registerTimerListener
+D/zkgui   ( 1287): unregisterGlobalTouchListener
+D/zkgui   ( 1287): req query file :select * from game where gametype = 'PS1' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1287): get size:1  
+D/zkgui   ( 1287): registerKeyEventUpdateListener 
+D/zkgui   ( 1287): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1287): get pathgif [/mnt/extsd/roms/ps/image/Tomb Raider (USA).gif] 
+D/zkgui   ( 1287): get TitleName :PS1 
+D/zkgui   ( 1287): registerGlobalTouchListener
+D/zkgui   ( 1287): 状态栏定时器
+D/zkgui   ( 1287): get event :[1 ]308 
+D/zkgui   ( 1287): get pathgif [/mnt/extsd/roms/ps/image/Tomb Raider (USA).gif] 
+D/zkgui   ( 1287): update key status[4][1][5] 
+D/zkgui   ( 1287): 按键音乐++++++++++++++
+D/zkgui   ( 1287): req play beep 
+D/zkgui   ( 1287): registerProtocolDataUpdateListener
+D/zkgui   ( 1287): unregisterGlobalTouchListener
+D/zkgui   ( 1287): registerGlobalTouchListener
+D/zkgui   ( 1287): registerKeyEventUpdateListener 
+D/zkgui   ( 1287): get event :[0 ]308 
+D/zkgui   ( 1287): update key status[4][0][5] 
+D/zkgui   ( 1287): invald key 
+D/zkgui   ( 1287): get event :[1 ]274 
+D/zkgui   ( 1287): update key status[1][1][2] 
+D/zkgui   ( 1287): 按键音乐++++++++++++++
+D/zkgui   ( 1287): req play beep 
+D/zkgui   ( 1287): invald key 
+D/zkgui   ( 1287): get event :[0 ]274 
+D/zkgui   ( 1287): update key status[1][0][2] 
+D/zkgui   ( 1287): get event :[1 ]306 
+D/zkgui   ( 1287): unregisterGlobalTouchListener
+D/zkgui   ( 1287): update key status[5][1][6] 
+D/zkgui   ( 1287): registerKeyEventUpdateListener 
+D/zkgui   ( 1287): req query file :select * from game where gametype = 'MAME' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1287): get size:20  
+D/zkgui   ( 1287): registerKeyEventUpdateListener 
+D/zkgui   ( 1287): CGifPlayer::~~CGifPlayer   
+D/zkgui   ( 1287): CGifPlayer  exit 
+D/zkgui   ( 1287): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1287): get pathgif [/mnt/extsd/roms/mame/image/cpuinfo.gif] 
+D/zkgui   ( 1287): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1287): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1287): CGifPlayer  exit 
+D/zkgui   ( 1287): get TitleName :MAME 
+D/zkgui   ( 1287): registerGlobalTouchListener
+D/zkgui   ( 1287): 按键音乐++++++++++++++
+D/zkgui   ( 1287): req play beep 
+D/zkgui   ( 1287): get event :[0 ]306 
+D/zkgui   ( 1287): update key status[5][0][6] 
+D/zkgui   ( 1287): get event :[1 ]308 
+D/zkgui   ( 1287): unregisterGlobalTouchListener
+D/zkgui   ( 1287): get pathgif [/mnt/extsd/roms/mame/image/cpuinfo.gif] 
+D/zkgui   ( 1287): registerGlobalTouchListener
+D/zkgui   ( 1287): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1287): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1287): CGifPlayer  exit 
+D/zkgui   ( 1287): update key status[4][1][5] 
+D/zkgui   ( 1287): registerKeyEventUpdateListener 
+D/zkgui   ( 1287): 按键音乐++++++++++++++
+D/zkgui   ( 1287): req play beep 
+D/zkgui   ( 1287): get event :[0 ]308 
+D/zkgui   ( 1287): update key status[4][0][5] 
+D/zkgui   ( 1287): invald key 
+D/zkgui   ( 1287): get event :[1 ]274 
+D/zkgui   ( 1287): update key status[1][1][2] 
+D/zkgui   ( 1287): 按键音乐++++++++++++++
+D/zkgui   ( 1287): req play beep 
+D/zkgui   ( 1287): invald key 
+D/zkgui   ( 1287): get event :[0 ]274 
+D/zkgui   ( 1287): update key status[1][0][2] 
+D/zkgui   ( 1287): get event :[1 ]306 
+D/zkgui   ( 1287): unregisterGlobalTouchListener
+D/zkgui   ( 1287): update key status[5][1][6] 
+D/zkgui   ( 1287): registerKeyEventUpdateListener 
+D/zkgui   ( 1287): req query file :select * from game where gametype = 'PCE' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1287): get size:1  
+D/zkgui   ( 1287): registerKeyEventUpdateListener 
+D/zkgui   ( 1287): CGifPlayer::~~CGifPlayer   
+D/zkgui   ( 1287): CGifPlayer  exit 
+D/zkgui   ( 1287): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1287): get pathgif [/mnt/extsd/roms/pce/image/Street Fighter II - Champion Edition (Japan).gif] 
+D/zkgui   ( 1287): 按键音乐++++++++++++++
+D/zkgui   ( 1287): req play beep 
+D/zkgui   ( 1287): get TitleName :PCE 
+D/zkgui   ( 1287): registerGlobalTouchListener
+D/zkgui   ( 1287): get event :[0 ]306 
+D/zkgui   ( 1287): update key status[5][0][6] 
+D/zkgui   ( 1287): get event :[1 ]306 
+D/zkgui   ( 1287): yearMonthDayCh = 19700101000403
+D/zkgui   ( 1287): 此时time = 19700101000403
+D/zkgui   ( 1287): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1287): 最大time = 19700101022800
+D/zkgui   ( 1287): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1287): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1287): req update file :UPDATE game SET his = 1 ,time = 19700101022801 WHERE ID = 131; 
+D/zkgui   ( 1287): getAbsPreviewPath RomType[PCE]  RomName[Street Fighter II - Champion Edition (Japan).pce]
+D/zkgui   ( 1287): return LunchGame path:[/mnt/extsd/roms/pce/Street Fighter II - Champion Edition (Japan).pce]  rum cmd[/mnt/extsd/emus/temper/temper] 
+D/zkgui   ( 1287): lunch0000 [/mnt/extsd/emus/temper/temper "/mnt/extsd/roms/pce/Street Fighter II - Champion Edition (Japan).pce"]
+D/zkgui   ( 1287): start req exit audio
+D/zkgui   ( 1287): musicplay_mainloop end 
+D/zkgui   ( 1287): start de init audio 
+D/zkgui   ( 1287): 
+D/zkgui   ( 1287): 
+D/zkgui   ( 1287): 
+D/zkgui   ( 1287): prepare exit gmenu 
+D/zkgui   ( 1287): 
+D/zkgui   ( 1287): 
+D/zkgui   ( 1287): chdir  22 [/mnt/extsd/emus/temper]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1336): register control: zk_button
+D/zkgui   ( 1336): register control: zk_cameraview
+D/zkgui   ( 1336): register control: zk_checkbox
+D/zkgui   ( 1336): register control: zk_circlebar
+D/zkgui   ( 1336): register control: zk_diagram
+D/zkgui   ( 1336): register control: zk_digitalclock
+D/zkgui   ( 1336): register control: zk_edittext
+D/zkgui   ( 1336): register control: zk_listview
+D/zkgui   ( 1336): register control: zk_painter
+D/zkgui   ( 1336): register control: zk_pointer
+D/zkgui   ( 1336): register control: zk_qrcode
+D/zkgui   ( 1336): register control: zk_radiogroup
+D/zkgui   ( 1336): register control: zk_seekbar
+D/zkgui   ( 1336): register control: zk_slidetext
+D/zkgui   ( 1336): register control: zk_textview
+D/zkgui   ( 1336): register control: zk_videoview
+D/zkgui   ( 1336): register control: zk_slidewindow
+D/zkgui   ( 1336): register control: zk_window
+D/zkgui   ( 1336): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1336): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1336): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1336): registerActivity name: mainActivity OK!
+D/zkgui   ( 1336): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1336): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1336): registerActivity name: searchActivity OK!
+D/zkgui   ( 1336): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1336): Compile date: Sep  1 2021
+E/zkgui   ( 1336): initEasyUICfg ok!
+D/zkgui   ( 1336): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1336): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1336): Ex code: de_DE, language: 德语
+D/zkgui   ( 1336): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1336): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1336): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1336): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1336): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1336): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1336): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1336): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1336): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1336): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1336): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1336): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1336): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1336): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1336): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1336): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1336): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1336): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1336): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1336): MountMonitor addMountListener pListener: 0x402977e0
+D/zkgui   ( 1336): init SDL 
+D/zkgui   ( 1336): init notify sucess 
+D/zkgui   ( 1336): read key config file:
+D/zkgui   ( 1336): {
+D/zkgui   ( 1336):     "keytype": "usb",
+D/zkgui   ( 1336):     "b": [289,305],
+D/zkgui   ( 1336):     "a": [290,304],
+D/zkgui   ( 1336):     "x": [288,308],
+D/zkgui   ( 1336):     "y": [291,307],
+D/zkgui   ( 1336):     "select": [296,314],
+D/zkgui   ( 1336):     "start": [297,315],
+D/zkgui   ( 1336):     "l1": [292,310],
+D/zkgui   ( 1336):     "l2": [294,312],
+D/zkgui   ( 1336):     "r1": [293,311],
+D/zkgui   ( 1336):     "r2": [295,313],
+D/zkgui   ( 1336): 	"threshold":51
+D/zkgui   ( 1336): }
+D/zkgui   ( 1336): keytype is:usb
+D/zkgui   ( 1336): akeyvalue is:0
+D/zkgui   ( 1336): json array size:2 
+D/zkgui   ( 1336): json[0] : 290
+D/zkgui   ( 1336): json[1] : 304
+D/zkgui   ( 1336): nkeyvalue is:0
+D/zkgui   ( 1336): json array size:2 
+D/zkgui   ( 1336): json[0] : 289
+D/zkgui   ( 1336): json[1] : 305
+D/zkgui   ( 1336): json array size:2 
+D/zkgui   ( 1336): json[0] : 288
+D/zkgui   ( 1336): json[1] : 308
+D/zkgui   ( 1336): json array size:2 
+D/zkgui   ( 1336): json[0] : 291
+D/zkgui   ( 1336): json[1] : 307
+D/zkgui   ( 1336): json array size:2 
+D/zkgui   ( 1336): json[0] : 292
+D/zkgui   ( 1336): json[1] : 310
+D/zkgui   ( 1336): json array size:2 
+D/zkgui   ( 1336): json[0] : 293
+D/zkgui   ( 1336): json[1] : 311
+D/zkgui   ( 1336): json array size:2 
+D/zkgui   ( 1336): json[0] : 294
+D/zkgui   ( 1336): json[1] : 312
+D/zkgui   ( 1336): json array size:2 
+D/zkgui   ( 1336): json[0] : 295
+D/zkgui   ( 1336): json[1] : 313
+D/zkgui   ( 1336): json array size:2 
+D/zkgui   ( 1336): json[0] : 296
+D/zkgui   ( 1336): json[1] : 314
+D/zkgui   ( 1336): json array size:2 
+D/zkgui   ( 1336): json[0] : 297
+D/zkgui   ( 1336): json[1] : 315
+D/zkgui   ( 1336): get adc throld :51
+D/zkgui   ( 1336): key value:0   290,97
+D/zkgui   ( 1336): key value:1   304,97
+D/zkgui   ( 1336): key value:2   289,98
+D/zkgui   ( 1336): key value:3   305,98
+D/zkgui   ( 1336): key value:4   288,120
+D/zkgui   ( 1336): key value:5   308,120
+D/zkgui   ( 1336): key value:6   291,121
+D/zkgui   ( 1336): key value:7   307,121
+D/zkgui   ( 1336): key value:8   292,108
+D/zkgui   ( 1336): key value:9   310,108
+D/zkgui   ( 1336): key value:10   293,114
+D/zkgui   ( 1336): key value:11   311,114
+D/zkgui   ( 1336): key value:12   294,111
+D/zkgui   ( 1336): key value:13   312,111
+D/zkgui   ( 1336): key value:14   295,116
+D/zkgui   ( 1336): key value:15   313,116
+D/zkgui   ( 1336): key value:16   296,99
+D/zkgui   ( 1336): key value:17   314,99
+D/zkgui   ( 1336): key value:18   297,115
+D/zkgui   ( 1336): key value:19   315,115
+D/zkgui   ( 1336): key value:20   105,52
+D/zkgui   ( 1336): key value:21   106,54
+D/zkgui   ( 1336): key value:22   103,56
+D/zkgui   ( 1336): key value:23   108,50
+D/zkgui   ( 1336): Open key:/dev/input/event0 
+D/zkgui   ( 1336): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1336): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1336): Open key:/dev/input/event1 
+D/zkgui   ( 1336): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1336): Open key:/dev/input/event6 
+D/zkgui   ( 1336): Open key:/dev/input/event8 
+D/zkgui   ( 1336): Open key:/dev/input/event67 
+D/zkgui   ( 1336): Open key:/dev/input/event68 
+D/zkgui   ( 1336): Open key:/dev/input/event69 
+D/zkgui   ( 1336): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1336): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1336): Open key:/dev/input/event70 
+D/zkgui   ( 1336): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1336): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1336): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1336): ======================================end browser file:0
+D/zkgui   ( 1336): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1336): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1336): ======================================end browser file:0
+D/zkgui   ( 1336): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1336): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1336): ======================================end browser file:0
+D/zkgui   ( 1336): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1336): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1336): ======================================end browser file:0
+D/zkgui   ( 1336): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1336): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1336): ======================================end browser file:0
+D/zkgui   ( 1336): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1336): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1336): ======================================end browser file:0
+D/zkgui   ( 1336): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1336): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1336): ======================================end browser file:0
+D/zkgui   ( 1336): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1336): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1336): ======================================end browser file:0
+D/zkgui   ( 1336): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1336): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1336): ======================================end browser file:0
+D/zkgui   ( 1336): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1336): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1336): ======================================end browser file:0
+D/zkgui   ( 1336): open game ok !
+D/zkgui   ( 1336): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1336): musicplay_mainloop start 
+D/zkgui   ( 1336): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1336): play music:2 
+D/zkgui   ( 1336): registerGlobalTouchListener
+D/zkgui   ( 1336): registerProtocolDataUpdateListener
+D/zkgui   ( 1336): registerTimerListener
+D/zkgui   ( 1336): registerTimerListener
+D/zkgui   ( 1336): onUI_init MainActivity
+D/zkgui   ( 1336): getreadlan start............ 
+D/zkgui   ( 1336): langlanglanglang = 1
+D/zkgui   ( 1336): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1336): langstr langstr langstr:[2] 
+D/zkgui   ( 1336): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1336): hideStatusBar
+D/zkgui   ( 1336): **********************
+D/zkgui   ( 1336): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1336): registerProtocolDataUpdateListener
+D/zkgui   ( 1336): registerGlobalTouchListener
+D/zkgui   ( 1336): registerProtocolDataUpdateListener
+D/zkgui   ( 1336): registerTimerListener
+D/zkgui   ( 1336): unregisterGlobalTouchListener
+D/zkgui   ( 1336): req query file :select * from game where gametype = 'PCE' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1336): get size:1  
+D/zkgui   ( 1336): registerKeyEventUpdateListener 
+D/zkgui   ( 1336): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1336): get pathgif [/mnt/extsd/roms/pce/image/Street Fighter II - Champion Edition (Japan).gif] 
+D/zkgui   ( 1336): get TitleName :PCE 
+D/zkgui   ( 1336): registerGlobalTouchListener
+D/zkgui   ( 1336): 状态栏定时器
+D/zkgui   ( 1336): get event :[1 ]308 
+D/zkgui   ( 1336): get pathgif [/mnt/extsd/roms/pce/image/Street Fighter II - Champion Edition (Japan).gif] 
+D/zkgui   ( 1336): update key status[4][1][5] 
+D/zkgui   ( 1336): 按键音乐++++++++++++++
+D/zkgui   ( 1336): req play beep 
+D/zkgui   ( 1336): registerProtocolDataUpdateListener
+D/zkgui   ( 1336): unregisterGlobalTouchListener
+D/zkgui   ( 1336): registerGlobalTouchListener
+D/zkgui   ( 1336): registerKeyEventUpdateListener 
+D/zkgui   ( 1336): get event :[0 ]308 
+D/zkgui   ( 1336): update key status[4][0][5] 
+D/zkgui   ( 1336): get event :[1 ]273 
+D/zkgui   ( 1336): update key status[0][1][1] 
+D/zkgui   ( 1336): 按键音乐++++++++++++++
+D/zkgui   ( 1336): req play beep 
+D/zkgui   ( 1336): get event :[0 ]273 
+D/zkgui   ( 1336): update key status[0][0][1] 
+D/zkgui   ( 1336): get event :[1 ]306 
+D/zkgui   ( 1336): unregisterGlobalTouchListener
+D/zkgui   ( 1336): update key status[5][1][6] 
+D/zkgui   ( 1336): registerKeyEventUpdateListener 
+D/zkgui   ( 1336): req query file :select * from game where gametype = 'MAME' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1336): get size:20  
+D/zkgui   ( 1336): registerKeyEventUpdateListener 
+D/zkgui   ( 1336): CGifPlayer::~~CGifPlayer   
+D/zkgui   ( 1336): CGifPlayer  exit 
+D/zkgui   ( 1336): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1336): get pathgif [/mnt/extsd/roms/mame/image/cpuinfo.gif] 
+D/zkgui   ( 1336): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1336): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1336): CGifPlayer  exit 
+D/zkgui   ( 1336): get TitleName :MAME 
+D/zkgui   ( 1336): registerGlobalTouchListener
+D/zkgui   ( 1336): 按键音乐++++++++++++++
+D/zkgui   ( 1336): req play beep 
+D/zkgui   ( 1336): get event :[0 ]306 
+D/zkgui   ( 1336): update key status[5][0][6] 
+D/zkgui   ( 1336): invald key 
+D/zkgui   ( 1336): get event :[1 ]274 
+D/zkgui   ( 1336): get pathgif [/mnt/extsd/roms/mame/image/df.gif] 
+D/zkgui   ( 1336): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1336): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1336): CGifPlayer  exit 
+D/zkgui   ( 1336): update key status[1][1][2] 
+D/zkgui   ( 1336): 按键音乐++++++++++++++
+D/zkgui   ( 1336): req play beep 
+D/zkgui   ( 1336): invald key 
+D/zkgui   ( 1336): get event :[0 ]274 
+D/zkgui   ( 1336): update key status[1][0][2] 
+D/zkgui   ( 1336): get event :[1 ]273 
+D/zkgui   ( 1336): get pathgif [/mnt/extsd/roms/mame/image/cpuinfo.gif] 
+D/zkgui   ( 1336): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1336): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1336): CGifPlayer  exit 
+D/zkgui   ( 1336): update key status[0][1][1] 
+D/zkgui   ( 1336): 按键音乐++++++++++++++
+D/zkgui   ( 1336): req play beep 
+D/zkgui   ( 1336): get event :[0 ]273 
+D/zkgui   ( 1336): update key status[0][0][1] 
+D/zkgui   ( 1336): get event :[1 ]273 
+D/zkgui   ( 1336): get pathgif [/mnt/extsd/roms/mame/image/WIP.gif] 
+D/zkgui   ( 1336): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1336): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1336): CGifPlayer  exit 
+D/zkgui   ( 1336): update key status[0][1][1] 
+D/zkgui   ( 1336): 按键音乐++++++++++++++
+D/zkgui   ( 1336): req play beep 
+D/zkgui   ( 1336): get event :[0 ]273 
+D/zkgui   ( 1336): update key status[0][0][1] 
+D/zkgui   ( 1336): get event :[1 ]273 
+D/zkgui   ( 1336): get pathgif [/mnt/extsd/roms/mame/image/touch.gif] 
+D/zkgui   ( 1336): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1336): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1336): CGifPlayer  exit 
+D/zkgui   ( 1336): update key status[0][1][1] 
+D/zkgui   ( 1336): 按键音乐++++++++++++++
+D/zkgui   ( 1336): req play beep 
+D/zkgui   ( 1336): get event :[0 ]273 
+D/zkgui   ( 1336): update key status[0][0][1] 
+D/zkgui   ( 1336): get event :[1 ]306 
+D/zkgui   ( 1336): yearMonthDayCh = 19700101000416
+D/zkgui   ( 1336): 此时time = 19700101000416
+D/zkgui   ( 1336): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1336): 最大time = 19700101022801
+D/zkgui   ( 1336): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1336): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1336): req update file :UPDATE game SET his = 1 ,time = 19700101022802 WHERE ID = 129; 
+D/zkgui   ( 1336): getAbsPreviewPath RomType[MAME]  RomName[touch.sh]
+D/zkgui   ( 1336): return LunchGame path:[/mnt/extsd/roms/mame/touch.sh]  rum cmd[/mnt/extsd/emus/mame/fbneo] 
+D/zkgui   ( 1336): lunch0000 [/mnt/extsd/emus/mame/fbneo "/mnt/extsd/roms/mame/touch.sh"]
+D/zkgui   ( 1336): start req exit audio
+D/zkgui   ( 1336): musicplay_mainloop end 
+D/zkgui   ( 1336): start de init audio 
+D/zkgui   ( 1336): 
+D/zkgui   ( 1336): 
+D/zkgui   ( 1336): 
+D/zkgui   ( 1336): prepare exit gmenu 
+D/zkgui   ( 1336): 
+D/zkgui   ( 1336): 
+D/zkgui   ( 1336): chdir  20 [/mnt/extsd/emus/mame]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1382): register control: zk_button
+D/zkgui   ( 1382): register control: zk_cameraview
+D/zkgui   ( 1382): register control: zk_checkbox
+D/zkgui   ( 1382): register control: zk_circlebar
+D/zkgui   ( 1382): register control: zk_diagram
+D/zkgui   ( 1382): register control: zk_digitalclock
+D/zkgui   ( 1382): register control: zk_edittext
+D/zkgui   ( 1382): register control: zk_listview
+D/zkgui   ( 1382): register control: zk_painter
+D/zkgui   ( 1382): register control: zk_pointer
+D/zkgui   ( 1382): register control: zk_qrcode
+D/zkgui   ( 1382): register control: zk_radiogroup
+D/zkgui   ( 1382): register control: zk_seekbar
+D/zkgui   ( 1382): register control: zk_slidetext
+D/zkgui   ( 1382): register control: zk_textview
+D/zkgui   ( 1382): register control: zk_videoview
+D/zkgui   ( 1382): register control: zk_slidewindow
+D/zkgui   ( 1382): register control: zk_window
+D/zkgui   ( 1382): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1382): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1382): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1382): registerActivity name: mainActivity OK!
+D/zkgui   ( 1382): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1382): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1382): registerActivity name: searchActivity OK!
+D/zkgui   ( 1382): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1382): Compile date: Sep  1 2021
+E/zkgui   ( 1382): initEasyUICfg ok!
+D/zkgui   ( 1382): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1382): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1382): Ex code: de_DE, language: 德语
+D/zkgui   ( 1382): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1382): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1382): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1382): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1382): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1382): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1382): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1382): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1382): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1382): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1382): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1382): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1382): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1382): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1382): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1382): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1382): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1382): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1382): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1382): MountMonitor addMountListener pListener: 0x4029e7e0
+D/zkgui   ( 1382): init SDL 
+D/zkgui   ( 1382): init notify sucess 
+D/zkgui   ( 1382): read key config file:
+D/zkgui   ( 1382): {
+D/zkgui   ( 1382):     "keytype": "usb",
+D/zkgui   ( 1382):     "b": [289,305],
+D/zkgui   ( 1382):     "a": [290,304],
+D/zkgui   ( 1382):     "x": [288,308],
+D/zkgui   ( 1382):     "y": [291,307],
+D/zkgui   ( 1382):     "select": [296,314],
+D/zkgui   ( 1382):     "start": [297,315],
+D/zkgui   ( 1382):     "l1": [292,310],
+D/zkgui   ( 1382):     "l2": [294,312],
+D/zkgui   ( 1382):     "r1": [293,311],
+D/zkgui   ( 1382):     "r2": [295,313],
+D/zkgui   ( 1382): 	"threshold":51
+D/zkgui   ( 1382): }
+D/zkgui   ( 1382): keytype is:usb
+D/zkgui   ( 1382): akeyvalue is:0
+D/zkgui   ( 1382): json array size:2 
+D/zkgui   ( 1382): json[0] : 290
+D/zkgui   ( 1382): json[1] : 304
+D/zkgui   ( 1382): nkeyvalue is:0
+D/zkgui   ( 1382): json array size:2 
+D/zkgui   ( 1382): json[0] : 289
+D/zkgui   ( 1382): json[1] : 305
+D/zkgui   ( 1382): json array size:2 
+D/zkgui   ( 1382): json[0] : 288
+D/zkgui   ( 1382): json[1] : 308
+D/zkgui   ( 1382): json array size:2 
+D/zkgui   ( 1382): json[0] : 291
+D/zkgui   ( 1382): json[1] : 307
+D/zkgui   ( 1382): json array size:2 
+D/zkgui   ( 1382): json[0] : 292
+D/zkgui   ( 1382): json[1] : 310
+D/zkgui   ( 1382): json array size:2 
+D/zkgui   ( 1382): json[0] : 293
+D/zkgui   ( 1382): json[1] : 311
+D/zkgui   ( 1382): json array size:2 
+D/zkgui   ( 1382): json[0] : 294
+D/zkgui   ( 1382): json[1] : 312
+D/zkgui   ( 1382): json array size:2 
+D/zkgui   ( 1382): json[0] : 295
+D/zkgui   ( 1382): json[1] : 313
+D/zkgui   ( 1382): json array size:2 
+D/zkgui   ( 1382): json[0] : 296
+D/zkgui   ( 1382): json[1] : 314
+D/zkgui   ( 1382): json array size:2 
+D/zkgui   ( 1382): json[0] : 297
+D/zkgui   ( 1382): json[1] : 315
+D/zkgui   ( 1382): get adc throld :51
+D/zkgui   ( 1382): key value:0   290,97
+D/zkgui   ( 1382): key value:1   304,97
+D/zkgui   ( 1382): key value:2   289,98
+D/zkgui   ( 1382): key value:3   305,98
+D/zkgui   ( 1382): key value:4   288,120
+D/zkgui   ( 1382): key value:5   308,120
+D/zkgui   ( 1382): key value:6   291,121
+D/zkgui   ( 1382): key value:7   307,121
+D/zkgui   ( 1382): key value:8   292,108
+D/zkgui   ( 1382): key value:9   310,108
+D/zkgui   ( 1382): key value:10   293,114
+D/zkgui   ( 1382): key value:11   311,114
+D/zkgui   ( 1382): key value:12   294,111
+D/zkgui   ( 1382): key value:13   312,111
+D/zkgui   ( 1382): key value:14   295,116
+D/zkgui   ( 1382): key value:15   313,116
+D/zkgui   ( 1382): key value:16   296,99
+D/zkgui   ( 1382): key value:17   314,99
+D/zkgui   ( 1382): key value:18   297,115
+D/zkgui   ( 1382): key value:19   315,115
+D/zkgui   ( 1382): key value:20   105,52
+D/zkgui   ( 1382): key value:21   106,54
+D/zkgui   ( 1382): key value:22   103,56
+D/zkgui   ( 1382): key value:23   108,50
+D/zkgui   ( 1382): Open key:/dev/input/event0 
+D/zkgui   ( 1382): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1382): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1382): Open key:/dev/input/event1 
+D/zkgui   ( 1382): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1382): Open key:/dev/input/event6 
+D/zkgui   ( 1382): Open key:/dev/input/event8 
+D/zkgui   ( 1382): Open key:/dev/input/event67 
+D/zkgui   ( 1382): Open key:/dev/input/event68 
+D/zkgui   ( 1382): Open key:/dev/input/event69 
+D/zkgui   ( 1382): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1382): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1382): Open key:/dev/input/event70 
+D/zkgui   ( 1382): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1382): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1382): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1382): ======================================end browser file:0
+D/zkgui   ( 1382): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1382): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1382): ======================================end browser file:0
+D/zkgui   ( 1382): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1382): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1382): ======================================end browser file:0
+D/zkgui   ( 1382): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1382): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1382): ======================================end browser file:0
+D/zkgui   ( 1382): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1382): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1382): ======================================end browser file:0
+D/zkgui   ( 1382): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1382): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1382): ======================================end browser file:0
+D/zkgui   ( 1382): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1382): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1382): ======================================end browser file:0
+D/zkgui   ( 1382): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1382): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1382): ======================================end browser file:0
+D/zkgui   ( 1382): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1382): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1382): ======================================end browser file:0
+D/zkgui   ( 1382): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1382): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1382): ======================================end browser file:0
+D/zkgui   ( 1382): open game ok !
+D/zkgui   ( 1382): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1382): musicplay_mainloop start 
+D/zkgui   ( 1382): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1382): play music:2 
+D/zkgui   ( 1382): registerGlobalTouchListener
+D/zkgui   ( 1382): registerProtocolDataUpdateListener
+D/zkgui   ( 1382): registerTimerListener
+D/zkgui   ( 1382): registerTimerListener
+D/zkgui   ( 1382): get event :[1 ]273 
+D/zkgui   ( 1382): update key status[0][1][1] 
+D/zkgui   ( 1382): get event :[0 ]273 
+D/zkgui   ( 1382): update key status[0][0][1] 
+D/zkgui   ( 1382): onUI_init MainActivity
+D/zkgui   ( 1382): getreadlan start............ 
+D/zkgui   ( 1382): langlanglanglang = 1
+D/zkgui   ( 1382): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1382): langstr langstr langstr:[2] 
+D/zkgui   ( 1382): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1382): hideStatusBar
+D/zkgui   ( 1382): **********************
+D/zkgui   ( 1382): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1382): registerProtocolDataUpdateListener
+D/zkgui   ( 1382): registerGlobalTouchListener
+D/zkgui   ( 1382): registerProtocolDataUpdateListener
+D/zkgui   ( 1382): registerTimerListener
+D/zkgui   ( 1382): unregisterGlobalTouchListener
+D/zkgui   ( 1382): req query file :select * from game where gametype = 'MAME' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1382): get size:20  
+D/zkgui   ( 1382): registerKeyEventUpdateListener 
+D/zkgui   ( 1382): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1382): get pathgif [/mnt/extsd/roms/mame/image/touch.gif] 
+D/zkgui   ( 1382): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1382): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1382): CGifPlayer  exit 
+D/zkgui   ( 1382): get TitleName :MAME 
+D/zkgui   ( 1382): registerGlobalTouchListener
+D/zkgui   ( 1382): 状态栏定时器
+D/zkgui   ( 1382): get event :[1 ]273 
+D/zkgui   ( 1382): get pathgif [/mnt/extsd/roms/mame/image/ps.gif] 
+D/zkgui   ( 1382): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1382): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1382): CGifPlayer  exit 
+D/zkgui   ( 1382): update key status[0][1][1] 
+D/zkgui   ( 1382): 按键音乐++++++++++++++
+D/zkgui   ( 1382): req play beep 
+D/zkgui   ( 1382): get event :[0 ]273 
+D/zkgui   ( 1382): update key status[0][0][1] 
+D/zkgui   ( 1382): get event :[1 ]306 
+D/zkgui   ( 1382): yearMonthDayCh = 19700101000419
+D/zkgui   ( 1382): 此时time = 19700101000419
+D/zkgui   ( 1382): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1382): 最大time = 19700101022802
+D/zkgui   ( 1382): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1382): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1382): req update file :UPDATE game SET his = 1 ,time = 19700101022803 WHERE ID = 128; 
+D/zkgui   ( 1382): getAbsPreviewPath RomType[MAME]  RomName[ps.sh]
+D/zkgui   ( 1382): return LunchGame path:[/mnt/extsd/roms/mame/ps.sh]  rum cmd[/mnt/extsd/emus/mame/fbneo] 
+D/zkgui   ( 1382): lunch0000 [/mnt/extsd/emus/mame/fbneo "/mnt/extsd/roms/mame/ps.sh"]
+D/zkgui   ( 1382): start req exit audio
+D/zkgui   ( 1382): musicplay_mainloop end 
+D/zkgui   ( 1382): start de init audio 
+D/zkgui   ( 1382): 
+D/zkgui   ( 1382): 
+D/zkgui   ( 1382): 
+D/zkgui   ( 1382): prepare exit gmenu 
+D/zkgui   ( 1382): 
+D/zkgui   ( 1382): 
+D/zkgui   ( 1382): chdir  20 [/mnt/extsd/emus/mame]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1428): register control: zk_button
+D/zkgui   ( 1428): register control: zk_cameraview
+D/zkgui   ( 1428): register control: zk_checkbox
+D/zkgui   ( 1428): register control: zk_circlebar
+D/zkgui   ( 1428): register control: zk_diagram
+D/zkgui   ( 1428): register control: zk_digitalclock
+D/zkgui   ( 1428): register control: zk_edittext
+D/zkgui   ( 1428): register control: zk_listview
+D/zkgui   ( 1428): register control: zk_painter
+D/zkgui   ( 1428): register control: zk_pointer
+D/zkgui   ( 1428): register control: zk_qrcode
+D/zkgui   ( 1428): register control: zk_radiogroup
+D/zkgui   ( 1428): register control: zk_seekbar
+D/zkgui   ( 1428): register control: zk_slidetext
+D/zkgui   ( 1428): register control: zk_textview
+D/zkgui   ( 1428): register control: zk_videoview
+D/zkgui   ( 1428): register control: zk_slidewindow
+D/zkgui   ( 1428): register control: zk_window
+D/zkgui   ( 1428): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1428): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1428): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1428): registerActivity name: mainActivity OK!
+D/zkgui   ( 1428): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1428): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1428): registerActivity name: searchActivity OK!
+D/zkgui   ( 1428): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1428): Compile date: Sep  1 2021
+E/zkgui   ( 1428): initEasyUICfg ok!
+D/zkgui   ( 1428): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1428): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1428): Ex code: de_DE, language: 德语
+D/zkgui   ( 1428): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1428): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1428): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1428): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1428): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1428): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1428): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1428): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1428): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1428): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1428): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1428): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1428): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1428): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1428): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1428): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1428): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1428): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1428): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1428): MountMonitor addMountListener pListener: 0x402bf7e0
+D/zkgui   ( 1428): init SDL 
+D/zkgui   ( 1428): init notify sucess 
+D/zkgui   ( 1428): read key config file:
+D/zkgui   ( 1428): {
+D/zkgui   ( 1428):     "keytype": "usb",
+D/zkgui   ( 1428):     "b": [289,305],
+D/zkgui   ( 1428):     "a": [290,304],
+D/zkgui   ( 1428):     "x": [288,308],
+D/zkgui   ( 1428):     "y": [291,307],
+D/zkgui   ( 1428):     "select": [296,314],
+D/zkgui   ( 1428):     "start": [297,315],
+D/zkgui   ( 1428):     "l1": [292,310],
+D/zkgui   ( 1428):     "l2": [294,312],
+D/zkgui   ( 1428):     "r1": [293,311],
+D/zkgui   ( 1428):     "r2": [295,313],
+D/zkgui   ( 1428): 	"threshold":51
+D/zkgui   ( 1428): }
+D/zkgui   ( 1428): keytype is:usb
+D/zkgui   ( 1428): akeyvalue is:0
+D/zkgui   ( 1428): json array size:2 
+D/zkgui   ( 1428): json[0] : 290
+D/zkgui   ( 1428): json[1] : 304
+D/zkgui   ( 1428): nkeyvalue is:0
+D/zkgui   ( 1428): json array size:2 
+D/zkgui   ( 1428): json[0] : 289
+D/zkgui   ( 1428): json[1] : 305
+D/zkgui   ( 1428): json array size:2 
+D/zkgui   ( 1428): json[0] : 288
+D/zkgui   ( 1428): json[1] : 308
+D/zkgui   ( 1428): json array size:2 
+D/zkgui   ( 1428): json[0] : 291
+D/zkgui   ( 1428): json[1] : 307
+D/zkgui   ( 1428): json array size:2 
+D/zkgui   ( 1428): json[0] : 292
+D/zkgui   ( 1428): json[1] : 310
+D/zkgui   ( 1428): json array size:2 
+D/zkgui   ( 1428): json[0] : 293
+D/zkgui   ( 1428): json[1] : 311
+D/zkgui   ( 1428): json array size:2 
+D/zkgui   ( 1428): json[0] : 294
+D/zkgui   ( 1428): json[1] : 312
+D/zkgui   ( 1428): json array size:2 
+D/zkgui   ( 1428): json[0] : 295
+D/zkgui   ( 1428): json[1] : 313
+D/zkgui   ( 1428): json array size:2 
+D/zkgui   ( 1428): json[0] : 296
+D/zkgui   ( 1428): json[1] : 314
+D/zkgui   ( 1428): json array size:2 
+D/zkgui   ( 1428): json[0] : 297
+D/zkgui   ( 1428): json[1] : 315
+D/zkgui   ( 1428): get adc throld :51
+D/zkgui   ( 1428): key value:0   290,97
+D/zkgui   ( 1428): key value:1   304,97
+D/zkgui   ( 1428): key value:2   289,98
+D/zkgui   ( 1428): key value:3   305,98
+D/zkgui   ( 1428): key value:4   288,120
+D/zkgui   ( 1428): key value:5   308,120
+D/zkgui   ( 1428): key value:6   291,121
+D/zkgui   ( 1428): key value:7   307,121
+D/zkgui   ( 1428): key value:8   292,108
+D/zkgui   ( 1428): key value:9   310,108
+D/zkgui   ( 1428): key value:10   293,114
+D/zkgui   ( 1428): key value:11   311,114
+D/zkgui   ( 1428): key value:12   294,111
+D/zkgui   ( 1428): key value:13   312,111
+D/zkgui   ( 1428): key value:14   295,116
+D/zkgui   ( 1428): key value:15   313,116
+D/zkgui   ( 1428): key value:16   296,99
+D/zkgui   ( 1428): key value:17   314,99
+D/zkgui   ( 1428): key value:18   297,115
+D/zkgui   ( 1428): key value:19   315,115
+D/zkgui   ( 1428): key value:20   105,52
+D/zkgui   ( 1428): key value:21   106,54
+D/zkgui   ( 1428): key value:22   103,56
+D/zkgui   ( 1428): key value:23   108,50
+D/zkgui   ( 1428): Open key:/dev/input/event0 
+D/zkgui   ( 1428): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1428): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1428): Open key:/dev/input/event1 
+D/zkgui   ( 1428): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1428): Open key:/dev/input/event6 
+D/zkgui   ( 1428): Open key:/dev/input/event8 
+D/zkgui   ( 1428): Open key:/dev/input/event67 
+D/zkgui   ( 1428): Open key:/dev/input/event68 
+D/zkgui   ( 1428): Open key:/dev/input/event69 
+D/zkgui   ( 1428): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1428): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1428): Open key:/dev/input/event70 
+D/zkgui   ( 1428): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1428): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1428): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1428): ======================================end browser file:0
+D/zkgui   ( 1428): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1428): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1428): ======================================end browser file:0
+D/zkgui   ( 1428): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1428): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1428): ======================================end browser file:0
+D/zkgui   ( 1428): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1428): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1428): ======================================end browser file:0
+D/zkgui   ( 1428): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1428): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1428): ======================================end browser file:0
+D/zkgui   ( 1428): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1428): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1428): ======================================end browser file:0
+D/zkgui   ( 1428): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1428): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1428): ======================================end browser file:0
+D/zkgui   ( 1428): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1428): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1428): ======================================end browser file:0
+D/zkgui   ( 1428): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1428): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1428): ======================================end browser file:0
+D/zkgui   ( 1428): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1428): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1428): ======================================end browser file:0
+D/zkgui   ( 1428): open game ok !
+D/zkgui   ( 1428): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1428): musicplay_mainloop start 
+D/zkgui   ( 1428): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1428): play music:2 
+D/zkgui   ( 1428): registerGlobalTouchListener
+D/zkgui   ( 1428): registerProtocolDataUpdateListener
+D/zkgui   ( 1428): registerTimerListener
+D/zkgui   ( 1428): registerTimerListener
+D/zkgui   ( 1428): onUI_init MainActivity
+D/zkgui   ( 1428): getreadlan start............ 
+D/zkgui   ( 1428): langlanglanglang = 1
+D/zkgui   ( 1428): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1428): langstr langstr langstr:[2] 
+D/zkgui   ( 1428): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1428): hideStatusBar
+D/zkgui   ( 1428): **********************
+D/zkgui   ( 1428): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1428): registerProtocolDataUpdateListener
+D/zkgui   ( 1428): registerGlobalTouchListener
+D/zkgui   ( 1428): registerProtocolDataUpdateListener
+D/zkgui   ( 1428): registerTimerListener
+D/zkgui   ( 1428): unregisterGlobalTouchListener
+D/zkgui   ( 1428): req query file :select * from game where gametype = 'MAME' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1428): get size:20  
+D/zkgui   ( 1428): registerKeyEventUpdateListener 
+D/zkgui   ( 1428): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1428): get pathgif [/mnt/extsd/roms/mame/image/ps.gif] 
+D/zkgui   ( 1428): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1428): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1428): CGifPlayer  exit 
+D/zkgui   ( 1428): get TitleName :MAME 
+D/zkgui   ( 1428): registerGlobalTouchListener
+D/zkgui   ( 1428): 状态栏定时器
+D/zkgui   ( 1428): get event :[1 ]273 
+D/zkgui   ( 1428): get pathgif [/mnt/extsd/roms/mame/image/mount.gif] 
+D/zkgui   ( 1428): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1428): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1428): CGifPlayer  exit 
+D/zkgui   ( 1428): update key status[0][1][1] 
+D/zkgui   ( 1428): 按键音乐++++++++++++++
+D/zkgui   ( 1428): req play beep 
+D/zkgui   ( 1428): get event :[0 ]273 
+D/zkgui   ( 1428): update key status[0][0][1] 
+D/zkgui   ( 1428): get event :[1 ]306 
+D/zkgui   ( 1428): yearMonthDayCh = 19700101000425
+D/zkgui   ( 1428): 此时time = 19700101000425
+D/zkgui   ( 1428): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1428): 最大time = 19700101022803
+D/zkgui   ( 1428): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1428): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1428): req update file :UPDATE game SET his = 1 ,time = 19700101022804 WHERE ID = 127; 
+D/zkgui   ( 1428): getAbsPreviewPath RomType[MAME]  RomName[mount.sh]
+D/zkgui   ( 1428): return LunchGame path:[/mnt/extsd/roms/mame/mount.sh]  rum cmd[/mnt/extsd/emus/mame/fbneo] 
+D/zkgui   ( 1428): lunch0000 [/mnt/extsd/emus/mame/fbneo "/mnt/extsd/roms/mame/mount.sh"]
+D/zkgui   ( 1428): start req exit audio
+D/zkgui   ( 1428): musicplay_mainloop end 
+D/zkgui   ( 1428): start de init audio 
+D/zkgui   ( 1428): 
+D/zkgui   ( 1428): 
+D/zkgui   ( 1428): 
+D/zkgui   ( 1428): prepare exit gmenu 
+D/zkgui   ( 1428): 
+D/zkgui   ( 1428): 
+D/zkgui   ( 1428): chdir  20 [/mnt/extsd/emus/mame]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1474): register control: zk_button
+D/zkgui   ( 1474): register control: zk_cameraview
+D/zkgui   ( 1474): register control: zk_checkbox
+D/zkgui   ( 1474): register control: zk_circlebar
+D/zkgui   ( 1474): register control: zk_diagram
+D/zkgui   ( 1474): register control: zk_digitalclock
+D/zkgui   ( 1474): register control: zk_edittext
+D/zkgui   ( 1474): register control: zk_listview
+D/zkgui   ( 1474): register control: zk_painter
+D/zkgui   ( 1474): register control: zk_pointer
+D/zkgui   ( 1474): register control: zk_qrcode
+D/zkgui   ( 1474): register control: zk_radiogroup
+D/zkgui   ( 1474): register control: zk_seekbar
+D/zkgui   ( 1474): register control: zk_slidetext
+D/zkgui   ( 1474): register control: zk_textview
+D/zkgui   ( 1474): register control: zk_videoview
+D/zkgui   ( 1474): register control: zk_slidewindow
+D/zkgui   ( 1474): register control: zk_window
+D/zkgui   ( 1474): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1474): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1474): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1474): registerActivity name: mainActivity OK!
+D/zkgui   ( 1474): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1474): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1474): registerActivity name: searchActivity OK!
+D/zkgui   ( 1474): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1474): Compile date: Sep  1 2021
+E/zkgui   ( 1474): initEasyUICfg ok!
+D/zkgui   ( 1474): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1474): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1474): Ex code: de_DE, language: 德语
+D/zkgui   ( 1474): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1474): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1474): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1474): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1474): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1474): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1474): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1474): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1474): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1474): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1474): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1474): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1474): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1474): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1474): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1474): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1474): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1474): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1474): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1474): MountMonitor addMountListener pListener: 0x402f37e0
+D/zkgui   ( 1474): init SDL 
+D/zkgui   ( 1474): init notify sucess 
+D/zkgui   ( 1474): read key config file:
+D/zkgui   ( 1474): {
+D/zkgui   ( 1474):     "keytype": "usb",
+D/zkgui   ( 1474):     "b": [289,305],
+D/zkgui   ( 1474):     "a": [290,304],
+D/zkgui   ( 1474):     "x": [288,308],
+D/zkgui   ( 1474):     "y": [291,307],
+D/zkgui   ( 1474):     "select": [296,314],
+D/zkgui   ( 1474):     "start": [297,315],
+D/zkgui   ( 1474):     "l1": [292,310],
+D/zkgui   ( 1474):     "l2": [294,312],
+D/zkgui   ( 1474):     "r1": [293,311],
+D/zkgui   ( 1474):     "r2": [295,313],
+D/zkgui   ( 1474): 	"threshold":51
+D/zkgui   ( 1474): }
+D/zkgui   ( 1474): keytype is:usb
+D/zkgui   ( 1474): akeyvalue is:0
+D/zkgui   ( 1474): json array size:2 
+D/zkgui   ( 1474): json[0] : 290
+D/zkgui   ( 1474): json[1] : 304
+D/zkgui   ( 1474): nkeyvalue is:0
+D/zkgui   ( 1474): json array size:2 
+D/zkgui   ( 1474): json[0] : 289
+D/zkgui   ( 1474): json[1] : 305
+D/zkgui   ( 1474): json array size:2 
+D/zkgui   ( 1474): json[0] : 288
+D/zkgui   ( 1474): json[1] : 308
+D/zkgui   ( 1474): json array size:2 
+D/zkgui   ( 1474): json[0] : 291
+D/zkgui   ( 1474): json[1] : 307
+D/zkgui   ( 1474): json array size:2 
+D/zkgui   ( 1474): json[0] : 292
+D/zkgui   ( 1474): json[1] : 310
+D/zkgui   ( 1474): json array size:2 
+D/zkgui   ( 1474): json[0] : 293
+D/zkgui   ( 1474): json[1] : 311
+D/zkgui   ( 1474): json array size:2 
+D/zkgui   ( 1474): json[0] : 294
+D/zkgui   ( 1474): json[1] : 312
+D/zkgui   ( 1474): json array size:2 
+D/zkgui   ( 1474): json[0] : 295
+D/zkgui   ( 1474): json[1] : 313
+D/zkgui   ( 1474): json array size:2 
+D/zkgui   ( 1474): json[0] : 296
+D/zkgui   ( 1474): json[1] : 314
+D/zkgui   ( 1474): json array size:2 
+D/zkgui   ( 1474): json[0] : 297
+D/zkgui   ( 1474): json[1] : 315
+D/zkgui   ( 1474): get adc throld :51
+D/zkgui   ( 1474): key value:0   290,97
+D/zkgui   ( 1474): key value:1   304,97
+D/zkgui   ( 1474): key value:2   289,98
+D/zkgui   ( 1474): key value:3   305,98
+D/zkgui   ( 1474): key value:4   288,120
+D/zkgui   ( 1474): key value:5   308,120
+D/zkgui   ( 1474): key value:6   291,121
+D/zkgui   ( 1474): key value:7   307,121
+D/zkgui   ( 1474): key value:8   292,108
+D/zkgui   ( 1474): key value:9   310,108
+D/zkgui   ( 1474): key value:10   293,114
+D/zkgui   ( 1474): key value:11   311,114
+D/zkgui   ( 1474): key value:12   294,111
+D/zkgui   ( 1474): key value:13   312,111
+D/zkgui   ( 1474): key value:14   295,116
+D/zkgui   ( 1474): key value:15   313,116
+D/zkgui   ( 1474): key value:16   296,99
+D/zkgui   ( 1474): key value:17   314,99
+D/zkgui   ( 1474): key value:18   297,115
+D/zkgui   ( 1474): key value:19   315,115
+D/zkgui   ( 1474): key value:20   105,52
+D/zkgui   ( 1474): key value:21   106,54
+D/zkgui   ( 1474): key value:22   103,56
+D/zkgui   ( 1474): key value:23   108,50
+D/zkgui   ( 1474): Open key:/dev/input/event0 
+D/zkgui   ( 1474): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1474): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1474): Open key:/dev/input/event1 
+D/zkgui   ( 1474): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1474): Open key:/dev/input/event6 
+D/zkgui   ( 1474): Open key:/dev/input/event8 
+D/zkgui   ( 1474): Open key:/dev/input/event67 
+D/zkgui   ( 1474): Open key:/dev/input/event68 
+D/zkgui   ( 1474): Open key:/dev/input/event69 
+D/zkgui   ( 1474): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1474): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1474): Open key:/dev/input/event70 
+D/zkgui   ( 1474): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1474): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1474): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1474): ======================================end browser file:0
+D/zkgui   ( 1474): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1474): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1474): ======================================end browser file:0
+D/zkgui   ( 1474): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1474): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1474): ======================================end browser file:0
+D/zkgui   ( 1474): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1474): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1474): ======================================end browser file:0
+D/zkgui   ( 1474): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1474): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1474): ======================================end browser file:0
+D/zkgui   ( 1474): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1474): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1474): ======================================end browser file:0
+D/zkgui   ( 1474): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1474): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1474): ======================================end browser file:0
+D/zkgui   ( 1474): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1474): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1474): ======================================end browser file:0
+D/zkgui   ( 1474): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1474): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1474): ======================================end browser file:0
+D/zkgui   ( 1474): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1474): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1474): ======================================end browser file:0
+D/zkgui   ( 1474): open game ok !
+D/zkgui   ( 1474): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1474): musicplay_mainloop start 
+D/zkgui   ( 1474): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1474): play music:2 
+D/zkgui   ( 1474): registerGlobalTouchListener
+D/zkgui   ( 1474): registerProtocolDataUpdateListener
+D/zkgui   ( 1474): registerTimerListener
+D/zkgui   ( 1474): registerTimerListener
+D/zkgui   ( 1474): onUI_init MainActivity
+D/zkgui   ( 1474): getreadlan start............ 
+D/zkgui   ( 1474): langlanglanglang = 1
+D/zkgui   ( 1474): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1474): langstr langstr langstr:[2] 
+D/zkgui   ( 1474): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1474): hideStatusBar
+D/zkgui   ( 1474): **********************
+D/zkgui   ( 1474): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1474): registerProtocolDataUpdateListener
+D/zkgui   ( 1474): registerGlobalTouchListener
+D/zkgui   ( 1474): registerProtocolDataUpdateListener
+D/zkgui   ( 1474): registerTimerListener
+D/zkgui   ( 1474): unregisterGlobalTouchListener
+D/zkgui   ( 1474): req query file :select * from game where gametype = 'MAME' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1474): get size:20  
+D/zkgui   ( 1474): registerKeyEventUpdateListener 
+D/zkgui   ( 1474): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1474): get pathgif [/mnt/extsd/roms/mame/image/mount.gif] 
+D/zkgui   ( 1474): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1474): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1474): CGifPlayer  exit 
+D/zkgui   ( 1474): get TitleName :MAME 
+D/zkgui   ( 1474): registerGlobalTouchListener
+D/zkgui   ( 1474): 状态栏定时器
+D/zkgui   ( 1474): get event :[1 ]273 
+D/zkgui   ( 1474): get pathgif [/mnt/extsd/roms/mame/image/meminfo.gif] 
+D/zkgui   ( 1474): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1474): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1474): CGifPlayer  exit 
+D/zkgui   ( 1474): update key status[0][1][1] 
+D/zkgui   ( 1474): 按键音乐++++++++++++++
+D/zkgui   ( 1474): req play beep 
+D/zkgui   ( 1474): get event :[0 ]273 
+D/zkgui   ( 1474): update key status[0][0][1] 
+D/zkgui   ( 1474): get event :[1 ]306 
+D/zkgui   ( 1474): yearMonthDayCh = 19700101000429
+D/zkgui   ( 1474): 此时time = 19700101000429
+D/zkgui   ( 1474): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1474): 最大time = 19700101022804
+D/zkgui   ( 1474): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1474): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1474): req update file :UPDATE game SET his = 1 ,time = 19700101022805 WHERE ID = 126; 
+D/zkgui   ( 1474): getAbsPreviewPath RomType[MAME]  RomName[meminfo.sh]
+D/zkgui   ( 1474): return LunchGame path:[/mnt/extsd/roms/mame/meminfo.sh]  rum cmd[/mnt/extsd/emus/mame/fbneo] 
+D/zkgui   ( 1474): lunch0000 [/mnt/extsd/emus/mame/fbneo "/mnt/extsd/roms/mame/meminfo.sh"]
+D/zkgui   ( 1474): start req exit audio
+D/zkgui   ( 1474): musicplay_mainloop end 
+D/zkgui   ( 1474): start de init audio 
+D/zkgui   ( 1474): 
+D/zkgui   ( 1474): 
+D/zkgui   ( 1474): 
+D/zkgui   ( 1474): prepare exit gmenu 
+D/zkgui   ( 1474): 
+D/zkgui   ( 1474): 
+D/zkgui   ( 1474): chdir  20 [/mnt/extsd/emus/mame]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1520): register control: zk_button
+D/zkgui   ( 1520): register control: zk_cameraview
+D/zkgui   ( 1520): register control: zk_checkbox
+D/zkgui   ( 1520): register control: zk_circlebar
+D/zkgui   ( 1520): register control: zk_diagram
+D/zkgui   ( 1520): register control: zk_digitalclock
+D/zkgui   ( 1520): register control: zk_edittext
+D/zkgui   ( 1520): register control: zk_listview
+D/zkgui   ( 1520): register control: zk_painter
+D/zkgui   ( 1520): register control: zk_pointer
+D/zkgui   ( 1520): register control: zk_qrcode
+D/zkgui   ( 1520): register control: zk_radiogroup
+D/zkgui   ( 1520): register control: zk_seekbar
+D/zkgui   ( 1520): register control: zk_slidetext
+D/zkgui   ( 1520): register control: zk_textview
+D/zkgui   ( 1520): register control: zk_videoview
+D/zkgui   ( 1520): register control: zk_slidewindow
+D/zkgui   ( 1520): register control: zk_window
+D/zkgui   ( 1520): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1520): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1520): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1520): registerActivity name: mainActivity OK!
+D/zkgui   ( 1520): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1520): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1520): registerActivity name: searchActivity OK!
+D/zkgui   ( 1520): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1520): Compile date: Sep  1 2021
+E/zkgui   ( 1520): initEasyUICfg ok!
+D/zkgui   ( 1520): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1520): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1520): Ex code: de_DE, language: 德语
+D/zkgui   ( 1520): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1520): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1520): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1520): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1520): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1520): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1520): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1520): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1520): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1520): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1520): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1520): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1520): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1520): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1520): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1520): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1520): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1520): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1520): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1520): MountMonitor addMountListener pListener: 0x402d97e0
+D/zkgui   ( 1520): init SDL 
+D/zkgui   ( 1520): init notify sucess 
+D/zkgui   ( 1520): read key config file:
+D/zkgui   ( 1520): {
+D/zkgui   ( 1520):     "keytype": "usb",
+D/zkgui   ( 1520):     "b": [289,305],
+D/zkgui   ( 1520):     "a": [290,304],
+D/zkgui   ( 1520):     "x": [288,308],
+D/zkgui   ( 1520):     "y": [291,307],
+D/zkgui   ( 1520):     "select": [296,314],
+D/zkgui   ( 1520):     "start": [297,315],
+D/zkgui   ( 1520):     "l1": [292,310],
+D/zkgui   ( 1520):     "l2": [294,312],
+D/zkgui   ( 1520):     "r1": [293,311],
+D/zkgui   ( 1520):     "r2": [295,313],
+D/zkgui   ( 1520): 	"threshold":51
+D/zkgui   ( 1520): }
+D/zkgui   ( 1520): keytype is:usb
+D/zkgui   ( 1520): akeyvalue is:0
+D/zkgui   ( 1520): json array size:2 
+D/zkgui   ( 1520): json[0] : 290
+D/zkgui   ( 1520): json[1] : 304
+D/zkgui   ( 1520): nkeyvalue is:0
+D/zkgui   ( 1520): json array size:2 
+D/zkgui   ( 1520): json[0] : 289
+D/zkgui   ( 1520): json[1] : 305
+D/zkgui   ( 1520): json array size:2 
+D/zkgui   ( 1520): json[0] : 288
+D/zkgui   ( 1520): json[1] : 308
+D/zkgui   ( 1520): json array size:2 
+D/zkgui   ( 1520): json[0] : 291
+D/zkgui   ( 1520): json[1] : 307
+D/zkgui   ( 1520): json array size:2 
+D/zkgui   ( 1520): json[0] : 292
+D/zkgui   ( 1520): json[1] : 310
+D/zkgui   ( 1520): json array size:2 
+D/zkgui   ( 1520): json[0] : 293
+D/zkgui   ( 1520): json[1] : 311
+D/zkgui   ( 1520): json array size:2 
+D/zkgui   ( 1520): json[0] : 294
+D/zkgui   ( 1520): json[1] : 312
+D/zkgui   ( 1520): json array size:2 
+D/zkgui   ( 1520): json[0] : 295
+D/zkgui   ( 1520): json[1] : 313
+D/zkgui   ( 1520): json array size:2 
+D/zkgui   ( 1520): json[0] : 296
+D/zkgui   ( 1520): json[1] : 314
+D/zkgui   ( 1520): json array size:2 
+D/zkgui   ( 1520): json[0] : 297
+D/zkgui   ( 1520): json[1] : 315
+D/zkgui   ( 1520): get adc throld :51
+D/zkgui   ( 1520): key value:0   290,97
+D/zkgui   ( 1520): key value:1   304,97
+D/zkgui   ( 1520): key value:2   289,98
+D/zkgui   ( 1520): key value:3   305,98
+D/zkgui   ( 1520): key value:4   288,120
+D/zkgui   ( 1520): key value:5   308,120
+D/zkgui   ( 1520): key value:6   291,121
+D/zkgui   ( 1520): key value:7   307,121
+D/zkgui   ( 1520): key value:8   292,108
+D/zkgui   ( 1520): key value:9   310,108
+D/zkgui   ( 1520): key value:10   293,114
+D/zkgui   ( 1520): key value:11   311,114
+D/zkgui   ( 1520): key value:12   294,111
+D/zkgui   ( 1520): key value:13   312,111
+D/zkgui   ( 1520): key value:14   295,116
+D/zkgui   ( 1520): key value:15   313,116
+D/zkgui   ( 1520): key value:16   296,99
+D/zkgui   ( 1520): key value:17   314,99
+D/zkgui   ( 1520): key value:18   297,115
+D/zkgui   ( 1520): key value:19   315,115
+D/zkgui   ( 1520): key value:20   105,52
+D/zkgui   ( 1520): key value:21   106,54
+D/zkgui   ( 1520): key value:22   103,56
+D/zkgui   ( 1520): key value:23   108,50
+D/zkgui   ( 1520): Open key:/dev/input/event0 
+D/zkgui   ( 1520): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1520): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1520): Open key:/dev/input/event1 
+D/zkgui   ( 1520): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1520): Open key:/dev/input/event6 
+D/zkgui   ( 1520): Open key:/dev/input/event8 
+D/zkgui   ( 1520): Open key:/dev/input/event67 
+D/zkgui   ( 1520): Open key:/dev/input/event68 
+D/zkgui   ( 1520): Open key:/dev/input/event69 
+D/zkgui   ( 1520): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1520): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1520): Open key:/dev/input/event70 
+D/zkgui   ( 1520): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1520): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1520): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1520): ======================================end browser file:0
+D/zkgui   ( 1520): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1520): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1520): ======================================end browser file:0
+D/zkgui   ( 1520): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1520): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1520): ======================================end browser file:0
+D/zkgui   ( 1520): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1520): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1520): ======================================end browser file:0
+D/zkgui   ( 1520): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1520): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1520): ======================================end browser file:0
+D/zkgui   ( 1520): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1520): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1520): ======================================end browser file:0
+D/zkgui   ( 1520): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1520): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1520): ======================================end browser file:0
+D/zkgui   ( 1520): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1520): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1520): ======================================end browser file:0
+D/zkgui   ( 1520): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1520): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1520): ======================================end browser file:0
+D/zkgui   ( 1520): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1520): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1520): ======================================end browser file:0
+D/zkgui   ( 1520): open game ok !
+D/zkgui   ( 1520): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1520): musicplay_mainloop start 
+D/zkgui   ( 1520): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1520): play music:2 
+D/zkgui   ( 1520): registerGlobalTouchListener
+D/zkgui   ( 1520): registerProtocolDataUpdateListener
+D/zkgui   ( 1520): registerTimerListener
+D/zkgui   ( 1520): registerTimerListener
+D/zkgui   ( 1520): onUI_init MainActivity
+D/zkgui   ( 1520): getreadlan start............ 
+D/zkgui   ( 1520): langlanglanglang = 1
+D/zkgui   ( 1520): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1520): langstr langstr langstr:[2] 
+D/zkgui   ( 1520): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1520): hideStatusBar
+D/zkgui   ( 1520): **********************
+D/zkgui   ( 1520): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1520): registerProtocolDataUpdateListener
+D/zkgui   ( 1520): registerGlobalTouchListener
+D/zkgui   ( 1520): registerProtocolDataUpdateListener
+D/zkgui   ( 1520): registerTimerListener
+D/zkgui   ( 1520): unregisterGlobalTouchListener
+D/zkgui   ( 1520): req query file :select * from game where gametype = 'MAME' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1520): get size:20  
+D/zkgui   ( 1520): registerKeyEventUpdateListener 
+D/zkgui   ( 1520): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1520): get pathgif [/mnt/extsd/roms/mame/image/meminfo.gif] 
+D/zkgui   ( 1520): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1520): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1520): CGifPlayer  exit 
+D/zkgui   ( 1520): get TitleName :MAME 
+D/zkgui   ( 1520): registerGlobalTouchListener
+D/zkgui   ( 1520): 状态栏定时器
+D/zkgui   ( 1520): get event :[1 ]273 
+D/zkgui   ( 1520): get pathgif [/mnt/extsd/roms/mame/image/ls.gif] 
+D/zkgui   ( 1520): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1520): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1520): CGifPlayer  exit 
+D/zkgui   ( 1520): update key status[0][1][1] 
+D/zkgui   ( 1520): 按键音乐++++++++++++++
+D/zkgui   ( 1520): req play beep 
+D/zkgui   ( 1520): get event :[0 ]273 
+D/zkgui   ( 1520): update key status[0][0][1] 
+D/zkgui   ( 1520): get event :[1 ]306 
+D/zkgui   ( 1520): yearMonthDayCh = 19700101000435
+D/zkgui   ( 1520): 此时time = 19700101000435
+D/zkgui   ( 1520): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1520): 最大time = 19700101022805
+D/zkgui   ( 1520): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1520): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1520): req update file :UPDATE game SET his = 1 ,time = 19700101022806 WHERE ID = 125; 
+D/zkgui   ( 1520): getAbsPreviewPath RomType[MAME]  RomName[ls.sh]
+D/zkgui   ( 1520): return LunchGame path:[/mnt/extsd/roms/mame/ls.sh]  rum cmd[/mnt/extsd/emus/mame/fbneo] 
+D/zkgui   ( 1520): lunch0000 [/mnt/extsd/emus/mame/fbneo "/mnt/extsd/roms/mame/ls.sh"]
+D/zkgui   ( 1520): start req exit audio
+D/zkgui   ( 1520): musicplay_mainloop end 
+D/zkgui   ( 1520): start de init audio 
+D/zkgui   ( 1520): 
+D/zkgui   ( 1520): 
+D/zkgui   ( 1520): 
+D/zkgui   ( 1520): prepare exit gmenu 
+D/zkgui   ( 1520): 
+D/zkgui   ( 1520): 
+D/zkgui   ( 1520): chdir  20 [/mnt/extsd/emus/mame]
+V/SocketListener(  796): going to zap 11 for vold
+D/zkgui   ( 1566): register control: zk_button
+D/zkgui   ( 1566): register control: zk_cameraview
+D/zkgui   ( 1566): register control: zk_checkbox
+D/zkgui   ( 1566): register control: zk_circlebar
+D/zkgui   ( 1566): register control: zk_diagram
+D/zkgui   ( 1566): register control: zk_digitalclock
+D/zkgui   ( 1566): register control: zk_edittext
+D/zkgui   ( 1566): register control: zk_listview
+D/zkgui   ( 1566): register control: zk_painter
+D/zkgui   ( 1566): register control: zk_pointer
+D/zkgui   ( 1566): register control: zk_qrcode
+D/zkgui   ( 1566): register control: zk_radiogroup
+D/zkgui   ( 1566): register control: zk_seekbar
+D/zkgui   ( 1566): register control: zk_slidetext
+D/zkgui   ( 1566): register control: zk_textview
+D/zkgui   ( 1566): register control: zk_videoview
+D/zkgui   ( 1566): register control: zk_slidewindow
+D/zkgui   ( 1566): register control: zk_window
+D/zkgui   ( 1566): registerActivity name: classlistActivity OK!
+D/zkgui   ( 1566): registerActivity name: downloadActivity OK!
+D/zkgui   ( 1566): registerActivity name: gamelistsActivity OK!
+D/zkgui   ( 1566): registerActivity name: mainActivity OK!
+D/zkgui   ( 1566): registerActivity name: mainbkActivity OK!
+D/zkgui   ( 1566): registerActivity name: mainlistActivity OK!
+D/zkgui   ( 1566): registerActivity name: searchActivity OK!
+D/zkgui   ( 1566): registerActivity name: settingsActivity OK!
+D/zkgui   ( 1566): Compile date: Sep  1 2021
+E/zkgui   ( 1566): initEasyUICfg ok!
+D/zkgui   ( 1566): Ex code: al_AL, language: 阿拉伯语
+D/zkgui   ( 1566): Ex code: da_DA, language: 丹麦语
+D/zkgui   ( 1566): Ex code: de_DE, language: 德语
+D/zkgui   ( 1566): Ex code: es_ES, language: 西班牙语
+D/zkgui   ( 1566): Ex code: fr_FR, language: 法语
+D/zkgui   ( 1566): Ex code: id_ID, language: 印度尼西亚语
+D/zkgui   ( 1566): Ex code: it_IT, language: 意大利语
+D/zkgui   ( 1566): Ex code: jk_JK, language: 捷克语
+D/zkgui   ( 1566): Ex code: mg_MG, language: 蒙古语
+D/zkgui   ( 1566): Ex code: nl_NL, language: 荷兰语
+D/zkgui   ( 1566): Ex code: nw_NW, language: 挪威语
+D/zkgui   ( 1566): Ex code: pl_PL, language: 波兰语
+D/zkgui   ( 1566): Ex code: po_PO, language: 葡萄牙语
+D/zkgui   ( 1566): Ex code: ru_RU, language: 俄语
+D/zkgui   ( 1566): Ex code: su_SU, language: 芬兰语
+D/zkgui   ( 1566): Ex code: sv_SV, language: 瑞典语
+D/zkgui   ( 1566): Ex code: tu_TU, language: 土耳其语
+D/zkgui   ( 1566): Ex code: vi_VI, language: 越南语
+D/zkgui   ( 1566): Ex code: xi_XI, language: 希来伯语
+E/zkgui   ( 1566): 1.initLib error: libzkhardware.so: cannot open shared object file: No such file or directory
+E/zkgui   ( 1566): 2.initLib error: libinternalapp.so: cannot open shared object file: No such file or directory
+D/zkgui   ( 1566): mConnectFD = 10 .
+V/SocketListener(  796): vold got 11 from accept
+D/zkgui   ( 1566): MountMonitor addMountListener pListener: 0x402077e0
+D/zkgui   ( 1566): init SDL 
+D/zkgui   ( 1566): init notify sucess 
+D/zkgui   ( 1566): read key config file:
+D/zkgui   ( 1566): {
+D/zkgui   ( 1566):     "keytype": "usb",
+D/zkgui   ( 1566):     "b": [289,305],
+D/zkgui   ( 1566):     "a": [290,304],
+D/zkgui   ( 1566):     "x": [288,308],
+D/zkgui   ( 1566):     "y": [291,307],
+D/zkgui   ( 1566):     "select": [296,314],
+D/zkgui   ( 1566):     "start": [297,315],
+D/zkgui   ( 1566):     "l1": [292,310],
+D/zkgui   ( 1566):     "l2": [294,312],
+D/zkgui   ( 1566):     "r1": [293,311],
+D/zkgui   ( 1566):     "r2": [295,313],
+D/zkgui   ( 1566): 	"threshold":51
+D/zkgui   ( 1566): }
+D/zkgui   ( 1566): keytype is:usb
+D/zkgui   ( 1566): akeyvalue is:0
+D/zkgui   ( 1566): json array size:2 
+D/zkgui   ( 1566): json[0] : 290
+D/zkgui   ( 1566): json[1] : 304
+D/zkgui   ( 1566): nkeyvalue is:0
+D/zkgui   ( 1566): json array size:2 
+D/zkgui   ( 1566): json[0] : 289
+D/zkgui   ( 1566): json[1] : 305
+D/zkgui   ( 1566): json array size:2 
+D/zkgui   ( 1566): json[0] : 288
+D/zkgui   ( 1566): json[1] : 308
+D/zkgui   ( 1566): json array size:2 
+D/zkgui   ( 1566): json[0] : 291
+D/zkgui   ( 1566): json[1] : 307
+D/zkgui   ( 1566): json array size:2 
+D/zkgui   ( 1566): json[0] : 292
+D/zkgui   ( 1566): json[1] : 310
+D/zkgui   ( 1566): json array size:2 
+D/zkgui   ( 1566): json[0] : 293
+D/zkgui   ( 1566): json[1] : 311
+D/zkgui   ( 1566): json array size:2 
+D/zkgui   ( 1566): json[0] : 294
+D/zkgui   ( 1566): json[1] : 312
+D/zkgui   ( 1566): json array size:2 
+D/zkgui   ( 1566): json[0] : 295
+D/zkgui   ( 1566): json[1] : 313
+D/zkgui   ( 1566): json array size:2 
+D/zkgui   ( 1566): json[0] : 296
+D/zkgui   ( 1566): json[1] : 314
+D/zkgui   ( 1566): json array size:2 
+D/zkgui   ( 1566): json[0] : 297
+D/zkgui   ( 1566): json[1] : 315
+D/zkgui   ( 1566): get adc throld :51
+D/zkgui   ( 1566): key value:0   290,97
+D/zkgui   ( 1566): key value:1   304,97
+D/zkgui   ( 1566): key value:2   289,98
+D/zkgui   ( 1566): key value:3   305,98
+D/zkgui   ( 1566): key value:4   288,120
+D/zkgui   ( 1566): key value:5   308,120
+D/zkgui   ( 1566): key value:6   291,121
+D/zkgui   ( 1566): key value:7   307,121
+D/zkgui   ( 1566): key value:8   292,108
+D/zkgui   ( 1566): key value:9   310,108
+D/zkgui   ( 1566): key value:10   293,114
+D/zkgui   ( 1566): key value:11   311,114
+D/zkgui   ( 1566): key value:12   294,111
+D/zkgui   ( 1566): key value:13   312,111
+D/zkgui   ( 1566): key value:14   295,116
+D/zkgui   ( 1566): key value:15   313,116
+D/zkgui   ( 1566): key value:16   296,99
+D/zkgui   ( 1566): key value:17   314,99
+D/zkgui   ( 1566): key value:18   297,115
+D/zkgui   ( 1566): key value:19   315,115
+D/zkgui   ( 1566): key value:20   105,52
+D/zkgui   ( 1566): key value:21   106,54
+D/zkgui   ( 1566): key value:22   103,56
+D/zkgui   ( 1566): key value:23   108,50
+D/zkgui   ( 1566): Open key:/dev/input/event0 
+D/zkgui   ( 1566): open [/dev/input/event0] [12] sucess
+D/zkgui   ( 1566): get mastrt fd [/dev/input/event0]
+D/zkgui   ( 1566): Open key:/dev/input/event1 
+D/zkgui   ( 1566): open [/dev/input/event1] [13] sucess
+D/zkgui   ( 1566): Open key:/dev/input/event6 
+D/zkgui   ( 1566): Open key:/dev/input/event8 
+D/zkgui   ( 1566): Open key:/dev/input/event67 
+D/zkgui   ( 1566): Open key:/dev/input/event68 
+D/zkgui   ( 1566): Open key:/dev/input/event69 
+D/zkgui   ( 1566): open [/dev/input/event69] [14] sucess
+D/zkgui   ( 1566): get mastrt fd [/dev/input/event69]
+D/zkgui   ( 1566): Open key:/dev/input/event70 
+D/zkgui   ( 1566): open [/dev/input/event70] [15] sucess
+D/zkgui   ( 1566): scan path:/mnt/extsd/download/fba 
+D/zkgui   ( 1566): open dir:/mnt/extsd/download/fba 
+D/zkgui   ( 1566): ======================================end browser file:0
+D/zkgui   ( 1566): scan path:/mnt/extsd/download/fc 
+D/zkgui   ( 1566): open dir:/mnt/extsd/download/fc 
+D/zkgui   ( 1566): ======================================end browser file:0
+D/zkgui   ( 1566): scan path:/mnt/extsd/download/gb 
+D/zkgui   ( 1566): open dir:/mnt/extsd/download/gb 
+D/zkgui   ( 1566): ======================================end browser file:0
+D/zkgui   ( 1566): scan path:/mnt/extsd/download/gbc 
+D/zkgui   ( 1566): open dir:/mnt/extsd/download/gbc 
+D/zkgui   ( 1566): ======================================end browser file:0
+D/zkgui   ( 1566): scan path:/mnt/extsd/download/gba 
+D/zkgui   ( 1566): open dir:/mnt/extsd/download/gba 
+D/zkgui   ( 1566): ======================================end browser file:0
+D/zkgui   ( 1566): scan path:/mnt/extsd/download/mame 
+D/zkgui   ( 1566): open dir:/mnt/extsd/download/mame 
+D/zkgui   ( 1566): ======================================end browser file:0
+D/zkgui   ( 1566): scan path:/mnt/extsd/download/ps 
+D/zkgui   ( 1566): open dir:/mnt/extsd/download/ps 
+D/zkgui   ( 1566): ======================================end browser file:0
+D/zkgui   ( 1566): scan path:/mnt/extsd/download/md 
+D/zkgui   ( 1566): open dir:/mnt/extsd/download/md 
+D/zkgui   ( 1566): ======================================end browser file:0
+D/zkgui   ( 1566): scan path:/mnt/extsd/download/sfc 
+D/zkgui   ( 1566): open dir:/mnt/extsd/download/sfc 
+D/zkgui   ( 1566): ======================================end browser file:0
+D/zkgui   ( 1566): scan path:/mnt/extsd/download/pce 
+D/zkgui   ( 1566): open dir:/mnt/extsd/download/pce 
+D/zkgui   ( 1566): ======================================end browser file:0
+D/zkgui   ( 1566): open game ok !
+D/zkgui   ( 1566): open audio file:/mnt/extsd/ui/mute.wav 
+D/zkgui   ( 1566): musicplay_mainloop start 
+D/zkgui   ( 1566): logo boot cmd:[1]++++++++++++++++++++++++++
+D/zkgui   ( 1566): play music:2 
+D/zkgui   ( 1566): registerGlobalTouchListener
+D/zkgui   ( 1566): registerProtocolDataUpdateListener
+D/zkgui   ( 1566): registerTimerListener
+D/zkgui   ( 1566): registerTimerListener
+D/zkgui   ( 1566): onUI_init MainActivity
+D/zkgui   ( 1566): getreadlan start............ 
+D/zkgui   ( 1566): langlanglanglang = 1
+D/zkgui   ( 1566): strToInt(line)strToInt(line) = 1
+D/zkgui   ( 1566): langstr langstr langstr:[2] 
+D/zkgui   ( 1566): main logo boot cmd:[1]--------------------
+D/zkgui   ( 1566): hideStatusBar
+D/zkgui   ( 1566): **********************
+D/zkgui   ( 1566): req query file :select * from game where dwonloadid > 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1566): registerProtocolDataUpdateListener
+D/zkgui   ( 1566): registerGlobalTouchListener
+D/zkgui   ( 1566): registerProtocolDataUpdateListener
+D/zkgui   ( 1566): registerTimerListener
+D/zkgui   ( 1566): unregisterGlobalTouchListener
+D/zkgui   ( 1566): req query file :select * from game where gametype = 'MAME' and dwonloadid = 0 ORDER BY sortid ASC; 
+D/zkgui   ( 1566): get size:20  
+D/zkgui   ( 1566): registerKeyEventUpdateListener 
+D/zkgui   ( 1566): CGifPlayer::CGifPlayer   
+D/zkgui   ( 1566): get pathgif [/mnt/extsd/roms/mame/image/ls.gif] 
+D/zkgui   ( 1566): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1566): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1566): CGifPlayer  exit 
+D/zkgui   ( 1566): get TitleName :MAME 
+D/zkgui   ( 1566): registerGlobalTouchListener
+D/zkgui   ( 1566): 状态栏定时器
+D/zkgui   ( 1566): get event :[1 ]273 
+D/zkgui   ( 1566): get pathgif [/mnt/extsd/roms/mame/image/logcat.gif] 
+D/zkgui   ( 1566): getAbsDir RomType[MAME]  RomName[ȉ]
+D/zkgui   ( 1566): return getAbsDir path:[/mnt/extsd/roms/mame] 
+D/zkgui   ( 1566): CGifPlayer  exit 
+D/zkgui   ( 1566): update key status[0][1][1] 
+D/zkgui   ( 1566): 按键音乐++++++++++++++
+D/zkgui   ( 1566): req play beep 
+D/zkgui   ( 1566): get event :[0 ]273 
+D/zkgui   ( 1566): update key status[0][0][1] 
+D/zkgui   ( 1566): get event :[1 ]306 
+D/zkgui   ( 1566): yearMonthDayCh = 19700101000459
+D/zkgui   ( 1566): 此时time = 19700101000459
+D/zkgui   ( 1566): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1566): 最大time = 19700101022806
+D/zkgui   ( 1566): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1566): req update file :select max(time) from game where his = 1 
+D/zkgui   ( 1566): req update file :UPDATE game SET his = 1 ,time = 19700101022807 WHERE ID = 124; 
+D/zkgui   ( 1566): getAbsPreviewPath RomType[MAME]  RomName[logcat.sh]
+D/zkgui   ( 1566): return LunchGame path:[/mnt/extsd/roms/mame/logcat.sh]  rum cmd[/mnt/extsd/emus/mame/fbneo] 
+D/zkgui   ( 1566): lunch0000 [/mnt/extsd/emus/mame/fbneo "/mnt/extsd/roms/mame/logcat.sh"]
+D/zkgui   ( 1566): start req exit audio
+D/zkgui   ( 1566): musicplay_mainloop end 
+D/zkgui   ( 1566): start de init audio 
+D/zkgui   ( 1566): 
+D/zkgui   ( 1566): 
+D/zkgui   ( 1566): 
+D/zkgui   ( 1566): prepare exit gmenu 
+D/zkgui   ( 1566): 
+D/zkgui   ( 1566): 
+D/zkgui   ( 1566): chdir  20 [/mnt/extsd/emus/mame]

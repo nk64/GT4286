@@ -1,0 +1,64 @@
+    1 0         1932 S    /sbin/init
+    2 0            0 SW   [kthreadd]
+    3 0            0 SW   [ksoftirqd/0]
+    4 0            0 SW   [kworker/0:0]
+    5 0            0 SW<  [kworker/0:0H]
+    6 0            0 SW   [kworker/u4:0]
+    7 0            0 SW   [rcu_preempt]
+    8 0            0 SW   [rcu_sched]
+    9 0            0 SW   [rcu_bh]
+   10 0            0 SW   [migration/0]
+   11 0            0 SW<  [lru-add-drain]
+   12 0            0 SW   [watchdog/0]
+   13 0            0 SW   [cpuhp/0]
+   14 0            0 SW   [cpuhp/1]
+   15 0            0 SW   [watchdog/1]
+   16 0            0 SW   [migration/1]
+   17 0            0 SW   [ksoftirqd/1]
+   18 0            0 SW   [kworker/1:0]
+   19 0            0 SW<  [kworker/1:0H]
+   20 0            0 SW   [kworker/u4:1]
+  177 0            0 SW   [oom_reaper]
+  178 0            0 SW<  [writeback]
+  180 0            0 SW   [kcompactd0]
+  181 0            0 SW<  [crypto]
+  182 0            0 SW<  [bioset]
+  184 0            0 SW<  [kblockd]
+  218 0            0 SW<  [watchdogd]
+  299 0            0 SW   [kworker/0:1]
+  308 0            0 SW   [kswapd0]
+  309 0            0 SW<  [vmstat]
+  417 0            0 SW   [kworker/u4:2]
+  420 0            0 SW<  [bioset]
+  425 0            0 SW<  [bioset]
+  430 0            0 SW<  [bioset]
+  435 0            0 SW<  [bioset]
+  440 0            0 SW<  [bioset]
+  445 0            0 SW<  [bioset]
+  450 0            0 SW<  [bioset]
+  537 0            0 SW   [kworker/0:2]
+  545 0            0 SW<  [kworker/1:1H]
+  546 0            0 SW   [kworker/1:1]
+  547 0            0 SW<  [kworker/0:1H]
+  549 0            0 SW<  [bioset]
+  550 0            0 SW   [mmcqd/0]
+  554 0         2060 S    /sbin/ueventd
+  795 0            0 SWN  [jffs2_gcd_mtd6]
+  796 0        22204 S    /bin/vold
+  797 1036     31328 S    /bin/logd
+  799 0        20000 S    /bin/daemon
+  800 0         1836 S    /bin/sh
+  801 0        18256 S    /bin/adbd
+  888 0            0 DW   [disp0_P0_MAIN]
+  891 0            0 DW   [ehci_monitor]
+  904 0            0 SW   [kworker/1:2]
+  905 0            0 SW<  [EventGroupWorkQ]
+  906 0            0 SW<  [EventGroupWorkQ]
+  907 0            0 SW<  [EventGroupWorkQ]
+  908 0            0 SW<  [EventGroupWorkQ]
+  909 0            0 DW   [HDMITx_Task]
+ 1374 0         1836 S    {gmenu2x} /bin/sh /mnt/extsd/bin/gmenu2x
+ 1382 0         1836 S    /bin/sh -c /mnt/extsd/emus/mame/fbneo "/mnt/extsd/ro
+ 1409 0         1836 S    {fbneo} /bin/sh /mnt/extsd/emus/mame/fbneo /mnt/exts
+ 1413 0         1836 S    {ps.sh} /bin/sh /mnt/extsd/roms/mame/ps.sh
+ 1415 0         2312 R    /bin/ps -aux
