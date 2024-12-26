@@ -18,6 +18,8 @@ Please check the SHA-256 hash of the file first and if it is not ```24B4026764C6
 
 5. a [list](./dats/built-in%20roms.txt) of the built-in games.
 
+6. some details and pictures of the [hardware](./Hardware.md)
+
 ## In the future I hope to show how to:
 
 1. Use a program to refresh the /game.db sqlite db.
@@ -77,4 +79,3 @@ Note:
 * you can check then check the output of this script eg ```/emus/mame/fbneo.log```
 * the current working directory is the emulator's folder eg ```/emu/mame```
 * the path to the SDcard is ```/mnt/extsd/```
-
