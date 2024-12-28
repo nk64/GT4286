@@ -22,6 +22,8 @@ Please check the SHA-256 hash of the file first and if it is not ```24B4026764C6
 
 7. some details of the [emulators](./Emulators.md)
 
+8. some info about the [generations](./Generations.md) of SD Cards
+
 ## In the future I hope to show how to:
 
 1. Use a program to refresh the /game.db sqlite db.
