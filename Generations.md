@@ -8,12 +8,12 @@ Here are the some of the known generations of SD Card:
     - /game.db contains 1619 builtin games
     - /roms contains a total of 1619 files
 
-- 2023-06-01: 1612 Games (7 roms files removed, no change to menu and emulators)
+- 2023-06-01: 1612 Games (7 roms files removed)
     - /ui/gamelist.txt contains 1619 lines
     - /game.db contains 1612 builtin games
     - /roms contains a total of **1612** files
 
-- 2024-05-26: 157 Games (Updated Menu and Emulators)
+- 2024-05-26: 157 Games (Updated Menu)
     - /ui/gamelist.txt contains 157 lines
     - /game.db contains 157 builtin games
     - /roms contains a total of 157 files
