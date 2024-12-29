@@ -18,7 +18,12 @@ namespace GT4286Util
 
         public SqliteConnection GetOpenConnection()
         {
-            var sqliteCSB = new SqliteConnectionStringBuilder() { DataSource = _retroArcadeGameDbPath };
+            var sqliteCSB = new SqliteConnectionStringBuilder()
+            {
+                 DataSource = _retroArcadeGameDbPath,
+                 Pooling = false 
+            };
+
             var con = new  SqliteConnection(sqliteCSB.ConnectionString);
             con.Open();
             return con;
@@ -50,7 +55,8 @@ namespace GT4286Util
         {
             if (backupGameDb)
             {
-                File.Copy(_retroArcadeGameDbPath, _retroArcadeGameDbPath + $".{DateTime.Now:yyyyMMddHHmmss}.bak");
+                string backupFileName = _retroArcadeGameDbPath + $".{DateTime.Now:yyyyMMddHHmmss}.bak";
+                _fileSystem.File.Copy(_retroArcadeGameDbPath, backupFileName);
             }
 
             using (var con = GetOpenConnection())
