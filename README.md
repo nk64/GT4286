@@ -32,6 +32,7 @@ Please check the SHA-256 hash of the file first and if it is not ```24B4026764C6
     - identify the generation of an SD Card
     - refresh the game database from built-in and downloaded roms (you can add roms to the builtin /rom folder if you like)
 
+12. a list of [known Issues](./Known%20Issues.md) with the console out of the box
 
 
 ## In the future I hope to show how to:
@@ -43,25 +44,6 @@ Please check the SHA-256 hash of the file first and if it is not ```24B4026764C6
     * getting the FBNeo emulator to dump its dat files
     * process list
     * debugging information
-
-
-## Some issues with the stock console:
-
-* MAME is shown as a separate emulator but it is just a copy of the FBNeo (aka FBA) emulator. (let's repurpose it).
-
-* If you add roms to the appropriate emulator sub dir in /downloads, duplicate
-  entries for some games might appear after saving a game and rebooting the console. 
-  This is because while most emulators save their game state in the emulator folder,
-  some emulators eg GB, GBC, MD save their state in the rom folder and the next time
-  the console is rebooted it will rescan the download folder and add a non working
-  entry to the list. You will end up with a non working entry for every save state
-  slot you use. (we can fix this).
-
-* FBNeo emulator (and it's clone MAME) have a misconfiguration which means that the Player 1 L and R buttons have no effect, which impacts many fighting games. (fixable by patching emulator and adding a keyremap files).
-
-* FBNeo games are listed as their cryptic rom .zip file name which is ugly by comparison to the other emulators which can have nice human readable names. (See page 10 in the [manual](https://media.jaycar.com.au/product/resources/GT4286_manualMain_130153.pdf) for an example of this). (let's do something about this).
-
-* Most emulators are fully stretched to fill the screen. It would be nice to be able to control the scaling especially for Gameboy games. (no luck so far).
 
 
 ## Exploring the OS
