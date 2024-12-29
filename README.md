@@ -8,8 +8,8 @@ Please backup your SD card before going any further.
 
 1. [dat](./dats/) files for the FBNeo emulator.
 
-2. a [screenshot](./img/fbneo-hexedit-fix-p1-r-and-l-buttons.png) of a couple of bytes to patch to enable the P1 R and P1 L buttons to work in the FBNeo emulator. 
-This screenshot show the changes to be made to /emus/fbneo/fbneo.
+2. a [screenshot](./img/fbneo-hexedit-fix-p1-r-and-l-buttons.png) of a couple of bytes to patch to enable the P1-R and P1-L buttons to work in the FBNeo emulator. 
+This screenshot show the changes to be made to ```/emus/fbneo/fbneo```.
 Please check the SHA-256 hash of the file first and if it is not ```24B4026764C6B8F218D56222A534EDB3D21210A2C8FCDEE8A5F96505D6B85E9F``` then please don't perform this edit.
 
 3. a [remap](./sdcard_tweaks/keyremap) file for the (patched) FBNeo emulator that orders the 6 buttons (of each player) correctly for Street Fighter 2 (maybe more).
@@ -24,23 +24,25 @@ Please check the SHA-256 hash of the file first and if it is not ```24B4026764C6
 
 8. some info about the [generations](./Generations.md) of SD Cards
 
+9. [hardware mods](./Hardware%20Modifications.md) that people have done
+
+10. [UI mods](./UI%20Modifications.md) (Background music, Font, Menu text etc)
+
+11. [GT4286Uitl](https://github.com/nk64/GT4286/releases) which can currently:
+    - identify the generation of an SD Card
+    - refresh the game database from built-in and downloaded roms (you can add roms to the builtin /rom folder if you like)
+
+
+
 ## In the future I hope to show how to:
 
-1. Use a program to refresh the /game.db sqlite db.
+1. Fix the issue of FBNeo arcade games being listed as their cryptic (upto) 8 character rom names and give them human readable names..
 
-2. delete the built in roms and images and place your own in the /roms sub folders and then rebuild the game.db index doing away with using the /download folder (see issues below for why).
-
-3. Fix the issue of FBNeo arcade games being listed as their cryptic (upto) 8 character rom names and give them human readable names..
-
-3. replace the mame emulator (because it is an exact dupe of the fbneo emulator) with a script that can run other scripts to extract information from the running system such as:
+2. replace the mame emulator (because it is an exact dupe of the fbneo emulator) with a script that can run other scripts to extract information from the running system such as:
     * directory listing to see what programs and files are available in the Linux OS
     * getting the FBNeo emulator to dump its dat files
     * process list
     * debugging information
-
-4. improving some of the menu wordings by editing:
-    * /tr/en_US.json
-    * /menu/2/menubg*.png
 
 
 ## Some issues with the stock console:
