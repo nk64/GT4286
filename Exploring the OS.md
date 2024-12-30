@@ -1,18 +1,13 @@
+## Exploring the OS (the hard way)
 
-## Exploring the OS (fundamentals)
-
-The key to exploring the running OS of the system (if you care) is to replace one of the emulator binaries eg ```/emus/mame/fbneo``` (because it is a duplicate emulator) with a bash style (actually [mksh](https://www.mirbsd.org/mksh.htm)) shell script.
+The key to exploring the running OS of the system (if you care) is to replace one of the emulator binaries eg ```/emus/mame/fbneo``` with a bash style (actually [mksh](https://www.mirbsd.org/mksh.htm)) shell script and then loading up any rom in that emulator which will cause the script to be run instead.
 
 ```
 #!/bin/sh
 logfile="$0.log"; log () { echo $1 >> $logfile && /bin/sync; }
-
 log "Current Working Directory: $PWD"
-filename=$1
-log "Rom: $filename"
+log "Rom: $1"
 ```
-
-and then loading up any rom in that emulator which will cause the script to be run instead.
 
 Note:
 * line endings must be Linux style ```LF``` not Windows Style ```CRLF```
@@ -22,7 +17,7 @@ Note:
 * the path to the SDcard is ```/mnt/extsd/```
 
 
-## Exploring the OS like a boss
+## Exploring the OS like a Boss
 1. Replace your MAME emulator binary (```/emus/mame/fbneo```) with the shell script found [here](./sdcard_tweaks/emus/mame)
 2. Copy the premade shell scripts from [here](./sdcard_tweaks/roms/MAME/) to your ```/roms/MAME/``` directry.
 3. Make sure you have this directory too: ```/roms/MAME/output```
