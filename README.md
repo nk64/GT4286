@@ -32,36 +32,12 @@ Please backup your SD card before going any further.
 
 12. a list of [known Issues](./Known%20Issues.md) with the console out of the box
 
-
-## In the future I hope to show how to:
-
-1. Fix the issue of FBNeo arcade games being listed as their cryptic (upto) 8 character rom names and give them human readable names..
-
-2. replace the mame emulator (because it is an exact dupe of the fbneo emulator) with a script that can run other scripts to extract information from the running system such as:
+13. instructions for [exploring the OS](./Exploring%20the%20OS.md) by replacing the mame emulator (because it is an exact dupe of the fbneo emulator) with a script that can run other scripts to extract information from the running system such as:
     * directory listing to see what programs and files are available in the Linux OS
     * getting the FBNeo emulator to dump its dat files
     * process list
     * debugging information
 
+## In the future I hope to show how to:
 
-## Exploring the OS
-
-The key to exploring the running OS of the system (if you care) is to replace one of the emulator binaries eg ```/emus/mame/fbneo``` (because it is a duplicate emulator) with a bash style (actually [mksh](https://www.mirbsd.org/mksh.htm)) shell script.
-
-```
-#!/bin/sh
-logfile="$0.log"; log () { echo $1 >> $logfile && /bin/sync; }
-
-log "Current Working Directory: $PWD"
-filename=$1
-log "Rom: $filename"
-```
-
-and then loading up any rom in that emulator which will cause the script to be run instead.
-
-Note:
-* line endings must be Linux style ```LF``` not Windows Style ```CRLF```
-* call ```/bin/sync``` liberally otherwise file output might not be flushed to the SD Card before you turn it off
-* you can check then check the output of this script eg ```/emus/mame/fbneo.log```
-* the current working directory is the emulator's folder eg ```/emu/mame```
-* the path to the SDcard is ```/mnt/extsd/```
+1. Fix the issue of FBNeo arcade games being listed as their cryptic (upto) 8 character rom names and give them human readable names.
