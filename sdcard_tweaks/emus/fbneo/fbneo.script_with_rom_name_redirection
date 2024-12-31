@@ -1,0 +1,50 @@
+#!/bin/sh
+logfile="${0}.log"; log () { echo "${1}" >> "${logfile}" && /bin/sync; }
+wrapped_exe="${0}.bin"
+wrapped_exe_logfile="${wrapped_exe}.log"
+script_dir=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd)
+script_parent_dir=$(dirname "${script_dir}")
+
+log_exe=false
+
+get_file_extension()
+(
+    case ${1} in
+      (.*.*) ext=${1##*.};;
+      (.*)   ext="";;
+      (*.*)  ext=${1##*.};;
+      (*)    ext="";;
+    esac
+    echo "${ext}"
+)
+
+log "---------------------------------------------------"
+log "Arg0: ${0}"
+log "ArgCount: ${#}"
+log "ArgAll: ${*}"
+log "Current Working Directory: ${PWD}"
+log "Wrapped Exe: ${wrapped_exe}"
+log "Script Directory: ${script_dir}"
+log "Script Parent Directory: ${script_parent_dir}"
+
+if [ ${#} = 1 ] && [ "$(get_file_extension "${1}")" = "redir" ];
+then
+    filename=${1}
+    romdir="${filename%/*}"
+    log "RomDir: ${romdir}"
+    log "Reading Redirection File: ${filename}"
+    redirfilename=$(cat "${filename}")
+    log "Redirect to: ${redirfilename}"
+    redirectedfilename="${romdir}/redir/${redirfilename}"
+    log "Redirected Rom: '${filename}' -> '${redirectedfilename}'"
+    set -- "${redirectedfilename}"
+fi
+
+if [ "${log_exe}" = true ];
+then
+    log "Executing wrapped exe with logging: ${wrapped_exe}"
+    ${wrapped_exe} "${@}" > "${wrapped_exe_logfile}" 2>&1 && /bin/sync
+else
+    log "Executing wrapped exe without logging: ${wrapped_exe}"
+    ${wrapped_exe} "${@}"
+fi

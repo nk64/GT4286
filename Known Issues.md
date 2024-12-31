@@ -12,8 +12,8 @@ If you add roms to the appropriate emulator sub dir in /downloads, duplicate ent
 This is because while most emulators save their game state in the emulator folder, some emulators eg GB, GBC, MD save their state in the rom folder and the next time the console is rebooted it will rescan the download folder and add a non working entry to the list. You will end up with a non working entry for every save state slot you use.
 
 
-## FBNeo/MAME P1-L and P1R buttons don't work
-FBNeo emulator (and it's clone MAME) have a misconfiguration which means that the P1-L and P1-R buttons have no effect, which impacts many fighting games.  
+## FBNeo/MAME ```P1-L``` and ```P1-R``` buttons don't work
+FBNeo emulator (and it's clone MAME) have a misconfiguration which means that the ```P1-L``` and ```P1-R``` buttons have no effect, which impacts many fighting games.  
 (this is fixable by patching emulator and adding a keyremap files)
 
 

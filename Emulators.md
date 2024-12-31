@@ -60,7 +60,7 @@ Usage is restricted by the license at https://raw.githubusercontent.com/finalbur
 ```
 
 ### Notes:
-* This emulator has a bug in it's mapping causing the P1 R and P1 L buttons not to respond. This can be fixed with a 6 byte [patch](./img/fbneo-hexedit-fix-p1-r-and-l-buttons.png).
+* This emulator has a bug in it's mapping causing the ```P1-R``` and ```P1-L``` buttons not to respond. This can be fixed with a 6 byte [patch](./Emulator%20Patches.md).
 * A keyremap can be found [here](./sdcard_tweaks/keyremap/) which makes (at least) Street Fighter II work
 * the -dat command line options works and generates [dat files](./dats/fbneo%20dat%20files/)
 * the -menu command line option doesn't do anything.
