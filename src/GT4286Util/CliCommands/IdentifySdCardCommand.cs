@@ -12,24 +12,43 @@ namespace GT4286Util.CliCommands
         public class Settings: CommandSettings
         {
             [Description("The Path to the Root of the SD Card (or backup folder)")]
-            [CommandArgument(0, "<pathtosdcard>")]
+            [CommandArgument(0, "<path-to-card>")]
             public required string PathToSdCardRoot { get; set; }
 
             [CommandOption("--verbose")]
             public bool Verbose { get; set; }
         }
 
+        private readonly IAnsiConsole _console;
         private readonly ILogger _logger;
         private readonly IFileSystem _fileSystem;
 
-        public IdentifySdCardCommand(ILogger<IdentifySdCardCommand> logger, IFileSystem fileSystem)
+        public IdentifySdCardCommand(
+            IAnsiConsole console,
+            ILogger<IdentifySdCardCommand> logger,
+            IFileSystem fileSystem
+        )
         {
+            _console = console ?? throw new ArgumentNullException(nameof(console));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _fileSystem = fileSystem ?? throw new ArgumentNullException(nameof(fileSystem));
+            _logger.LogDebug(message: "{Command} initialized", nameof(IdentifySdCardCommand));
         }
 
-        public override Task<int> ExecuteAsync(CommandContext context, Settings settings)
+        public override ValidationResult Validate(CommandContext context, Settings settings)
         {
+            if (_fileSystem.Directory.Exists(settings.PathToSdCardRoot) == false)
+            {
+                return ValidationResult.Error($"Path not found: {settings.PathToSdCardRoot}");
+            }
+
+            return base.Validate(context, settings);
+        }
+
+        public override async Task<int> ExecuteAsync(CommandContext context, Settings settings)
+        {
+            _logger.LogDebug("Starting {CommandClass}.ExecuteAsync", nameof(IdentifySdCardCommand));
+            
             AnsiConsole.WriteLine("Identifying SD Card...");
 
             AnsiConsole.WriteLine();
@@ -46,14 +65,14 @@ namespace GT4286Util.CliCommands
 
             AnsiConsole.WriteLine($"Checking /game.db");
             string gameDbPath = _fileSystem.Path.Combine(settings.PathToSdCardRoot, "game.db");
-            int gameDbBuiltinCount = 0;
+            int gameDbBuiltInCount = 0;
             if (_fileSystem.File.Exists(gameDbPath))
             {
                 var gameDbManager = new GameDbManager(_fileSystem, gameDbPath);
 
-                var builtinGames = gameDbManager.GetBuiltinGames();
-                gameDbBuiltinCount = builtinGames.Count;
-                //AnsiConsole.WriteLine($"/game.db contains {gameDbBuiltinCount} builtin games");
+                var builtInGames = gameDbManager.GetBuiltinGames();
+                gameDbBuiltInCount = builtInGames.Count;
+                //AnsiConsole.WriteLine($"/game.db contains {gameDbBuiltInCount} built-in games");
             }
 
             AnsiConsole.WriteLine($"Checking /roms");
@@ -117,7 +136,7 @@ namespace GT4286Util.CliCommands
                 Title = "unknown",
                 Notes = "unknown",
                 GameListCount = gameListCount,
-                GameDbBuiltinCount = gameDbBuiltinCount,
+                GameDbBuiltinCount = gameDbBuiltInCount,
                 KeyFileHashes = keyFileHashDict,
                 RomDirFileCounts = romdirFileCountsDict,
                 TotalRomCount = totalRomCount
@@ -133,27 +152,19 @@ namespace GT4286Util.CliCommands
                 if (settings.Verbose)
                 {
                     AnsiConsole.WriteLine();
-                    AnsiConsole.MarkupLineInterpolated($"{SerializationHelper.SerializeToJsonString(matchedGenerationInfo)}");
+                    AnsiConsole.MarkupLineInterpolated($"{SerializationHelper.SerializeToJsonString(matchedGenerationInfo, SerializationHelper.JsonSerializerContext.GenerationInfo)}");
                 }
             }
             else
             {
                 AnsiConsole.MarkupLine("[red]Unknown SD Card Generation. If this is a stock SD Card, please join the discussions at https://github.com/nk64/GT4286/discussions and post these details[/]");
                 AnsiConsole.WriteLine();
-                AnsiConsole.MarkupLineInterpolated($"{SerializationHelper.SerializeToJsonString(generationInfo)}");
+                AnsiConsole.MarkupLineInterpolated($"{SerializationHelper.SerializeToJsonString(generationInfo, SerializationHelper.JsonSerializerContext.GenerationInfo)}");
             }
 
-            return Task.FromResult(0);
-        }
+            _logger.LogDebug("Completed {CommandClass}.ExecuteAsync", nameof(IdentifySdCardCommand));
 
-        public override ValidationResult Validate(CommandContext context, Settings settings)
-        {
-            if (_fileSystem.Directory.Exists(settings.PathToSdCardRoot) == false)
-            {
-                return ValidationResult.Error($"Path not found: {settings.PathToSdCardRoot}");
-            }
-
-            return base.Validate(context, settings);
+            return await Task.FromResult(0);
         }
     }
 }

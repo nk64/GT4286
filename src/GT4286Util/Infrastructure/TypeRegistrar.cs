@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Microsoft.Extensions.DependencyInjection;
 using Spectre.Console.Cli;
 
@@ -17,7 +18,9 @@ namespace GT4286Util.Infrastructure
             return new TypeResolver(_builder.BuildServiceProvider());
         }
 
-        public void Register(Type service, Type implementation)
+#pragma warning disable IL2092 // 'DynamicallyAccessedMemberTypes' on the parameter of method don't match overridden parameter of method. All overridden members must have the same 'DynamicallyAccessedMembersAttribute' usage.
+        public void Register(Type service, [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors)]Type implementation)
+#pragma warning restore IL2092 // 'DynamicallyAccessedMemberTypes' on the parameter of method don't match overridden parameter of method. All overridden members must have the same 'DynamicallyAccessedMembersAttribute' usage.
         {
             _builder.AddSingleton(service, implementation);
         }

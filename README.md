@@ -28,7 +28,7 @@ Hopefully I will get my thoughts together and write up what I have learnt about 
 
 11. [GT4286Uitl](https://github.com/nk64/GT4286/releases) which can currently:
     - identify the generation of an SD Card
-    - refresh the game database from built-in and downloaded roms (you can add roms to the builtin /rom folder if you like)
+    - refresh the game database from built-in and downloaded roms (you can add roms to the built-in ```/rom``` folder if you like)
 
 12. a list of [known Issues](./Known%20Issues.md) with the console out of the box
 

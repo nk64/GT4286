@@ -32,19 +32,19 @@
         },
 
         {
-            "name": "GT4286Util: identify",
+            "name": "GT4286Util: identify-card",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "dotnet: build",
             "program": "${workspaceFolder}/src/GT4286Util/bin/Debug/net8.0/win-x64/GT4286Util.dll",
             "args": [
-                //"identify", "D:",
-                //"identify", "Q:",
-                //"identify", "${workspaceFolder}\\..\\SD Card Images\\GT4286 1619 games", //2023-05-25 via timestamp of /download/sfc folder
-                //"identify", "${workspaceFolder}\\..\\SD Card Images\\Sd-card-for-arcade", // 2023-06-01 via timestamp of /emus/temper/temper file
-                "identify", "${workspaceFolder}\\..\\SD Card Images\\SDCARD1", // 2024-05-26 via timestamp of /download/sfc folder
-                //"identify", "${workspaceFolder}\\..\\SD Card Images\\SDCARD2", // 2024-07-22 via timestamp of /System Volume Information/IndexerVolumeGuid file
-                //"identify", "${workspaceFolder}\\..\\SD Card Images\\TestCard",
+                "identify-card", "D:",
+                //"identify-card", "Q:",
+                //"identify-card", "${workspaceFolder}\\..\\SD Card Images\\GT4286 1619 games", //2023-05-25 via timestamp of /download/sfc folder
+                //"identify-card", "${workspaceFolder}\\..\\SD Card Images\\Sd-card-for-arcade", // 2023-06-01 via timestamp of /emus/temper/temper file
+                //"identify-card", "${workspaceFolder}\\..\\SD Card Images\\SDCARD1", // 2024-05-26 via timestamp of /download/sfc folder
+                //"identify-card", "${workspaceFolder}\\..\\SD Card Images\\SDCARD2", // 2024-07-22 via timestamp of /System Volume Information/IndexerVolumeGuid file
+                //"identify-card", "${workspaceFolder}\\..\\SD Card Images\\TestCard",
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
@@ -52,18 +52,56 @@
         },
 
         {
-            "name": "GT4286Util: brotlicompress",
+            "name": "GT4286Util: brotli-compress",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "dotnet: build",
             "program": "${workspaceFolder}/src/GT4286Util/bin/Debug/net8.0/win-x64/GT4286Util.dll",
             "args": [
-                "brotlicompress", "${workspaceFolder}\\GT4286\\src\\GT4286Util\\Resources\\dats\\FBNeo_-_Arcade.dat",
+                "brotli-compress", "${workspaceFolder}\\GT4286\\src\\GT4286Util\\Resources\\dats\\FBNeo_-_Arcade.dat",
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "console": "integratedTerminal"
         },
+
+
+        {
+            "name": "GT4286Util: generate-patch",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "dotnet: build",
+            "program": "${workspaceFolder}/src/GT4286Util/bin/Debug/net8.0/win-x64/GT4286Util.dll",
+            "args": [
+                "generate-patch",
+                "${workspaceFolder}\\..\\SD Card Images\\TestCard\\emus\\fbneo\\fbneo.bin",
+                "${workspaceFolder}\\..\\SD Card Images\\TestCard\\emus\\fbneo\\fbneo.patched.bin",
+                "${workspaceFolder}\\..\\SD Card Images\\TestCard\\emus\\fbneo\\fbneo.fix_abc.patch",
+            ],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+
+        {
+            "name": "GT4286Util: apply-patch",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "dotnet: build",
+            "program": "${workspaceFolder}/src/GT4286Util/bin/Debug/net8.0/win-x64/GT4286Util.dll",
+            "args": [
+                "apply-patch",
+                "${workspaceFolder}\\..\\SD Card Images\\TestCard\\emus\\fbneo\\fbneo.fix_abc.patch",
+                "${workspaceFolder}\\..\\SD Card Images\\TestCard\\emus\\fbneo\\fbneo",
+                "${workspaceFolder}\\..\\SD Card Images\\TestCard\\emus\\fbneo\\fbneo.newpatched.bin",
+            ],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+
+
+
 
         {
             "name": "GT4286Util: experiment",
@@ -80,13 +118,14 @@
         },
 
         {
-            "name": "GT4286Util: refreshgamedb (D:)",
+            "name": "GT4286Util: refresh-gamedb (D:)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "dotnet: build",
             "program": "${workspaceFolder}/src/GT4286Util/bin/Debug/net8.0/win-x64/GT4286Util.dll",
             "args": [
-                "refreshgamedb", "D:",
+                "refresh-gamedb", "D:",
+                "--alphabetical",
                 //"--verbose",
                 //"--yes",
             ],
@@ -96,14 +135,14 @@
         },
 
         {
-            "name": "GT4286Util: refreshgamedb (testcard)",
+            "name": "GT4286Util: refresh-gamedb (testcard)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "dotnet: build",
             "program": "${workspaceFolder}/src/GT4286Util/bin/Debug/net8.0/win-x64/GT4286Util.dll",
             "args": [
-                //"refreshgamedb", "D:"
-                "refreshgamedb", "${workspaceFolder}\\..\\SD Card Images\\TestCard"
+                //"refresh-gamedb", "D:"
+                "refresh-gamedb", "${workspaceFolder}\\..\\SD Card Images\\TestCard"
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
@@ -111,17 +150,61 @@
         },
 
         {
-            "name": "GT4286Util: humanisearcaderomnames (testcard)",
+            "name": "GT4286Util: humanise-game-names (D:)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "dotnet: build",
             "program": "${workspaceFolder}/src/GT4286Util/bin/Debug/net8.0/win-x64/GT4286Util.dll",
             "args": [
-                "humanisearcaderomnames", "${workspaceFolder}\\..\\SD Card Images\\TestCard"
+                "humanise-game-names", "D:",
+            ],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+
+        {
+            "name": "GT4286Util: humanise-game-names (testcard)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "dotnet: build",
+            "program": "${workspaceFolder}/src/GT4286Util/bin/Debug/net8.0/win-x64/GT4286Util.dll",
+            "args": [
+                "humanise-game-names", "${workspaceFolder}\\..\\SD Card Images\\TestCard",
+                "--verbose",
+            ],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+
+        {
+            "name": "GT4286Util: audit-card (D:)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "dotnet: build",
+            "program": "${workspaceFolder}/src/GT4286Util/bin/Debug/net8.0/win-x64/GT4286Util.dll",
+            "args": [
+                "audit-card", "D:",
+            ],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        },
+
+        {
+            "name": "GT4286Util: audit-card (testcard)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "dotnet: build",
+            "program": "${workspaceFolder}/src/GT4286Util/bin/Debug/net8.0/win-x64/GT4286Util.dll",
+            "args": [
+                "audit-card", "${workspaceFolder}\\..\\SD Card Images\\TestCard",
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "console": "integratedTerminal"
         }
+
     ]
 }

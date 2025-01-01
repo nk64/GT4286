@@ -13,11 +13,11 @@ namespace GT4286Util.CliCommands
         public class Settings: CommandSettings
         {
             [Description("The Path to the Root of the SD Card (or backup folder)")]
-            [CommandArgument(0, "<pathtosdcard>")]
+            [CommandArgument(0, "<path-to-card>")]
             public required string PathToSdCardRoot { get; set; }
 
             [Description("The experiment name")]
-            [CommandArgument(0, "[experimentname]")]
+            [CommandArgument(1, "[experiment-name]")]
             public string? ExperimentName { get; set; }
 
             // [Description("Perform the experiment without making any changes and show what would happen")]
@@ -26,18 +26,48 @@ namespace GT4286Util.CliCommands
             // public bool DryRun { get; set; }
         }
 
+        private readonly IAnsiConsole _console;
         private readonly ILogger _logger;
         private readonly IFileSystem _fileSystem;
 
         ISet<string> KnownExperiments = new HashSet<string>() { "dumpbuiltingames", };
 
-        public GameDbExperimentCommand(ILogger<GameDbExperimentCommand> logger, IFileSystem fileSystem)
+        public GameDbExperimentCommand(
+            IAnsiConsole console,
+            ILogger<IdentifySdCardCommand> logger,
+            IFileSystem fileSystem
+        )
         {
+            _console = console ?? throw new ArgumentNullException(nameof(console));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _fileSystem = fileSystem ?? throw new ArgumentNullException(nameof(fileSystem));
+            _logger.LogDebug(message: "{Command} initialized", nameof(IdentifySdCardCommand));
+        }
+        public override ValidationResult Validate(CommandContext context, Settings settings)
+        {
+            if (_fileSystem.Directory.Exists(settings.PathToSdCardRoot) == false)
+            {
+                return ValidationResult.Error($"Path not found: {settings.PathToSdCardRoot}");
+            }
+
+            string gameDbPath = _fileSystem.Path.Combine(settings.PathToSdCardRoot, "game.db");
+            if (_fileSystem.File.Exists(gameDbPath) == false)
+            {
+                return ValidationResult.Error($"GameDb not found in {settings.PathToSdCardRoot}");
+            }
+
+            if (settings.ExperimentName != null)
+            {
+                if (KnownExperiments.Contains(settings.ExperimentName) == false)
+                {
+                    return ValidationResult.Error($"'{settings.ExperimentName}' is not a known experiment name");
+                }
+            }
+
+            return base.Validate(context, settings);
         }
 
-        public override Task<int> ExecuteAsync(CommandContext context, Settings settings)
+        public override async Task<int> ExecuteAsync(CommandContext context, Settings settings)
         {
             string? experimaneName = settings.ExperimentName;
 
@@ -62,34 +92,11 @@ namespace GT4286Util.CliCommands
                     break;
 
                 default:
-                    return Task.FromResult(1);
+                    return await Task.FromResult(1);
             }
             
-            return Task.FromResult(0);
+            return await Task.FromResult(0);
         }
 
-        public override ValidationResult Validate(CommandContext context, Settings settings)
-        {
-            if (_fileSystem.Directory.Exists(settings.PathToSdCardRoot) == false)
-            {
-                return ValidationResult.Error($"Path not found: {settings.PathToSdCardRoot}");
-            }
-
-            string gameDbPath = _fileSystem.Path.Combine(settings.PathToSdCardRoot, "game.db");
-            if (_fileSystem.File.Exists(gameDbPath) == false)
-            {
-                return ValidationResult.Error($"GameDb not found in {settings.PathToSdCardRoot}");
-            }
-
-            if (settings.ExperimentName != null)
-            {
-                if (KnownExperiments.Contains(settings.ExperimentName) == false)
-                {
-                    return ValidationResult.Error($"'{settings.ExperimentName}' is not a known experiment name");
-                }
-            }
-
-            return base.Validate(context, settings);
-        }
     }
 }

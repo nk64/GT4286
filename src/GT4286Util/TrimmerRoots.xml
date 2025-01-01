@@ -3,4 +3,11 @@
   <assembly fullname="Spectre.Console" preserve="all" />
   <assembly fullname="Spectre.Console.Cli" preserve="all" />
   <assembly fullname="GT4286Util" preserve="all" />
+
+  <!--
+  <assembly fullname="Dapper" preserve="all" />
+  <assembly fullname="Dapper.Contrib" preserve="all" />
+  <assembly fullname="Microsoft.CSharp" preserve="all" />
+  <assembly fullname="System.Linq.Expressions" preserve="all" />
+  -->
 </linker>

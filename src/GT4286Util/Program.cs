@@ -1,12 +1,9 @@
 ﻿using System.IO.Abstractions;
-using System.Reflection;
 using GT4286Util.CliCommands;
-using GT4286Util.Entities;
 using GT4286Util.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Spectre.Console;
 using Spectre.Console.Cli;
 
 namespace GT4286Util
@@ -21,7 +18,6 @@ namespace GT4286Util
             var builder = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
             var configuration = builder.Build();
-
 
             // Services
             var registrations = new ServiceCollection()
@@ -39,38 +35,63 @@ namespace GT4286Util
 
             var app = new CommandApp(registrar);
 
-            var informationalVersionString = typeof(Game).Assembly?.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion!;
-
             app.Configure(config => {
                 config.SetApplicationName("GT4286Util");
-                config.SetApplicationVersion(informationalVersionString);
-                //config.PropagateExceptions();
+                
+                config.UseAssemblyInformationalVersion();
 
-                config.AddCommand<IdentifySdCardCommand>("identify")
+                config.Settings.MaximumIndirectExamples = 50;
+
+                config.AddCommand<IdentifySdCardCommand>("identify-card")
                     .WithDescription("Attempt to identify the generation of the SD Card (or backup folder)")
-                    .WithExample("identify", @"D:")
-                    .WithExample("identify", @"C:\RetroControllerCardBackups\SDCARD1")
-                    .WithExample("identify", @"/mnt/sdcard")
+                    .WithExample("identify-card", @"D:")
+                    .WithExample("identify-card", @"C:\RetroControllerCardBackups\SDCARD1")
+                    .WithExample("identify-card", @"/mnt/sdcard")
                     ;
 
-                config.AddCommand<RefreshGameDbCommand>("refreshgamedb")
-                    .WithDescription("Update the game.db with new and removed roms in /roms and /download")
-                    .WithExample("refreshgamedb", @"D:")
-                    .WithExample("refreshgamedb", @"C:\RetroControllerCardBackups\SDCARD1")
-                    .WithExample("refreshgamedb", @"/mnt/sdcard")
-                    ;
-
-                config.AddCommand<HumaniseArcadeNamesCommand>("humanisearcaderomnames")
+                config.AddCommand<AuditSdCardCommand>("audit-card")
                     .IsHidden()
-                    .WithDescription("")
-                    .WithExample("humanisearcaderomnames", @"D:")
-                    .WithExample("humanisearcaderomnames", @"C:\RetroControllerCardBackups\SDCARD1")
-                    .WithExample("humanisearcaderomnames", @"/mnt/sdcard")
+                    .WithDescription("Audit each file on the SD Card (or backup folder)")
+                    .WithExample("audit-card", @"D:")
+                    .WithExample("audit-card", @"C:\RetroControllerCardBackups\SDCARD1")
+                    .WithExample("audit-card", @"/mnt/sdcard")
                     ;
 
-                config.AddCommand<BrotliCompressCommand>("brotlicompress")
+                config.AddCommand<RefreshGameDbCommand>("refresh-gamedb")
+                    .WithDescription("Update the game.db with new and removed roms in /roms and /download. The default ordering mimics the original ordering which is first by class (in some weird order) then by name. Use --alphabetical to sort the entire list alphabetically")
+                    .WithExample("refresh-gamedb", @"D:")
+                    .WithExample("refresh-gamedb", @"C:\RetroControllerCardBackups\SDCARD1")
+                    .WithExample("refresh-gamedb", @"/mnt/sdcard")
+                    ;
+
+                config.AddCommand<HumaniseArcadeNamesCommand>("humanise-game-names")
+                    .WithDescription("Upgrade FBNeo roms (built-in only at this stage) from cryptic 8 character file names to human readble ones")
+                    .WithExample("humanise-game-names", @"D:")
+                    .WithExample("humanise-game-names", @"C:\RetroControllerCardBackups\SDCARD1")
+                    .WithExample("humanise-game-names", @"/mnt/sdcard")
+                    ;
+
+                config.AddCommand<BrotliCompressCommand>("brotli-compress")
                     .IsHidden()
                     .WithDescription("Compress a file using Brotli compression")
+                    ;
+
+                config.AddCommand<GeneratePatchCommand>("generate-patch")
+                    .WithDescription("Create a patch file")
+                    .WithExample("generate-patch",
+                        @"D:\emus\fbneo\fbneo",
+                        @"D:\emus\fbneo\fbneo.patched_for_abc",
+                        @"D:\emus\fbneo\fbneo.fix_abc.patch"
+                    )
+                    ;
+
+                config.AddCommand<ApplyPatchCommand>("apply-patch")
+                    .WithDescription("apply a patch to a file")
+                    .WithExample("apply-patch",
+                        @"D:\emus\fbneo\fbneo.fix_abc.patch",
+                        @"D:\emus\fbneo\fbneo",
+                        @"D:\emus\fbneo\fbneo.newly_patched_for_abc"
+                    )
                     ;
 
                 config.AddCommand<GameDbExperimentCommand>("experiment")
@@ -78,6 +99,11 @@ namespace GT4286Util
                     .WithDescription("Perform an experiment")
                     .WithExample("experiment", "dumpbuiltingames")
                     ;
+
+                #if DEBUG
+                //config.PropagateExceptions();
+                config.ValidateExamples();
+                #endif
 
                 // config.SetExceptionHandler((ex, resolver) =>
                 // {
@@ -87,11 +113,6 @@ namespace GT4286Util
             });
 
             return await app.RunAsync(args);
-
-            //Experiments.Experiment1();
-            //AnsiConsole.Markup("[underline red]Hello[/] World!");
-            //Experiments.Experiment_CheckIfMAMEFavouriteGamesExist();
-            //Experiments.Experiment_DumpGames();
         }
     }
 }

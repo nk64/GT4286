@@ -3,38 +3,73 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <ImplicitUsings>true</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <PropertyGroup>
     <Version>0.0.0.1</Version>
-    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>    
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <ApplicationIcon>icons/joystick.ico</ApplicationIcon>
   </PropertyGroup>
 
+  <Choose>
+    <When Condition="'$(MyPublishingProfile)' == 'single-file-runtime-dependent'">
+      <PropertyGroup>
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>false</SelfContained>
+        <PublishTrimmed>false</PublishTrimmed>
+        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+      </PropertyGroup>
+    </When>
+    <When Condition="'$(MyPublishingProfile)' == 'single-file-self-contained'">
+      <PropertyGroup>
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <PublishTrimmed>true</PublishTrimmed>
+        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+        <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
+      </PropertyGroup>
+    </When>
+    <When Condition="'$(MyPublishingProfile)' == 'try-aot'">
+      <PropertyGroup>
+        <PublishSingleFile>false</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <PublishTrimmed>true</PublishTrimmed>
+        <PublishAot>true</PublishAot>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <PublishTrimmed>true</PublishTrimmed>
+        <PublishAot>false</PublishAot>
+        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+
   <PropertyGroup>
-    <PublishSingleFile>true</PublishSingleFile>
-    <SelfContained>true</SelfContained>
-    <PublishTrimmed>true</PublishTrimmed>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <PublishAot>false</PublishAot>
-    <!-- <DebugType>embedded</DebugType> -->
-    <!-- <DebugType>none</DebugType> -->
-    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+      <!-- <DebugType>embedded</DebugType> -->
     <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
   </PropertyGroup>
 
   <ItemGroup>
     <TrimmerRootDescriptor Include="TrimmerRoots.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="Resources\dats\FBNeo_-_Arcade.dat.brotli" />
     <EmbeddedResource Include="Resources\GenerationInfo.json" />
+    <EmbeddedResource Include="Resources\patches\fbneo_p1buttons.patch" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CsvHelper" Version="33.0.1" />
     <PackageReference Include="Dapper" Version="2.1.35" />
     <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
+    <PackageReference Include="Dumpify" Version="0.6.6" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.0" />
     <!--
     <PackageReference Include="SkiaSharp" Version="3.116.1" />

@@ -21,7 +21,7 @@ Note:
 1. Replace your MAME emulator binary (```/emus/mame/fbneo```) with the shell script found [here](./sdcard_tweaks/emus/mame)
 2. Copy the premade shell scripts from [here](./sdcard_tweaks/roms/MAME/) to your ```/roms/MAME/``` directry.
 3. Make sure you have this directory too: ```/roms/MAME/output```
-4. Run the ```GT4286Util refreshgamedb <path-to-sd-card>``` command so that these new _rom/scripts_ show up in your game list.
+4. Run the ```GT4286Util refresh-gamedb <path-to-card>``` command so that these new _rom/scripts_ show up in your game list.
 5. Boot the console and run the scripts you are iterested in.
     - The menu appears to freeze for as long as the script takes to run
     - After the command has run there should be brief black screen and then it will come back to the menu

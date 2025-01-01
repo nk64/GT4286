@@ -93,4 +93,84 @@ namespace GT4286Util.Entities
         )
         */
     }
+
+    public class HumaniseEntry
+    {
+        public required bool BuiltIn { get; set; }
+        public required string GameType { get; set; }
+        public string? GameName { get; set; }
+        public string? RomDirFilePath { get; set; }
+        public string? RedirFilename { get; set; }
+        public string? DescriptonFromDat { get; set; }
+        public string? ImageFilePath { get; set; }
+    }
+
+
+
+    public class GameAuditEntry
+    {
+        public required bool Downloaded { get; set; }
+        public required string GameType { get; set; }
+        public string? DbFilename { get; set; }
+        public string? RomDirFilePath { get; set; }
+        public string? RedirFilename { get; set; }
+        public string? DescriptonFromDat { get; set; }
+        public string? ImageFilePath { get; set; }
+        public string? ConfigFilePath { get; set; }
+        /*
+        public string? State0StateFilePath { get; set; }
+        public string? State0PreviewFilePath { get; set; }
+        public string? State1StateFilePath { get; set; }
+        public string? State1PreviewFilePath { get; set; }
+        public string? State2StateFilePath { get; set; }
+        public string? State2PreviewFilePath { get; set; }
+        public string? State3StateFilePath { get; set; }
+        public string? State3PreviewFilePath { get; set; }
+        public string? State4StateFilePath { get; set; }
+        public string? State4PreviewFilePath { get; set; }
+        public string? State5StateFilePath { get; set; }
+        public string? State5PreviewFilePath { get; set; }
+        public string? State6StateFilePath { get; set; }
+        public string? State6PreviewFilePath { get; set; }
+        public string? State7StateFilePath { get; set; }
+        public string? State7PreviewFilePath { get; set; }
+        public string? State8StateFilePath { get; set; }
+        public string? State8PreviewFilePath { get; set; }
+        */
+    }
+
+    [Flags]
+    public enum GT4286FileType : UInt64
+    {
+        Unknown = 0,
+        UnusedFile =  1L << 1,
+
+        Downloaded = 1L << 2,
+        Builtin = 1L << 3,
+
+        GameTypeFBA = 1L << 4,
+        GameTypeFC = 1L << 5,
+        GameTypeGB = 1L << 6,
+        GameTypeGBC = 1L << 7,
+        GameTypeGBA = 1L << 8,
+        GameTypeMAME = 1L << 9,
+        GameTypeMD = 1L << 10,
+        GameTypePCE = 1L << 11,
+        GameTypePS = 1L << 12,
+        GameTypeSFC = 1L << 13,
+
+        GameRomFile = 1L << 14,
+        GameRomRedirection = 1L << 15,
+        GameRedirectTargetFile = 1L << 16,
+        GameImageFile = 1L << 17,
+        GameRomShellScript = 1L << 18,
+
+        StockBinary = 1L << 19,
+        ShellScript = 1L << 20,
+        PatchedBinary = 1L << 21,
+
+        EmulatorConfigFile = 1L << 22,
+        EmulatorOtherFile = 1L << 23,
+        GameConfigFile = 1L << 24,
+    }
 }

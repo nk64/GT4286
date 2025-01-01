@@ -9,7 +9,7 @@ namespace GT4286Util
             using (var stream = ResourceReader.ReadManifestData("GT4286Util/Resources/GenerationInfo.json"))
             {
                 var jsonstring = new StreamReader(stream).ReadToEnd();
-                var generationInfoList = SerializationHelper.DeserializeJsonString<IEnumerable<GenerationInfo>>(jsonstring).ToList();
+                var generationInfoList = SerializationHelper.DeserializeJsonString<IEnumerable<GenerationInfo>>(jsonstring, SerializationHelper.JsonSerializerContext.IEnumerableGenerationInfo).ToList();
                 return generationInfoList;
             }
         }

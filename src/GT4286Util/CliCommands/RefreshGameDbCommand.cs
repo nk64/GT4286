@@ -13,8 +13,11 @@ namespace GT4286Util.CliCommands
         public class Settings: CommandSettings
         {
             [Description("The Path to the Root of the SD Card (or backup folder)")]
-            [CommandArgument(0, "<pathtosdcard>")]
+            [CommandArgument(0, "<path-to-card>")]
             public required string PathToSdCardRoot { get; set; }
+
+            [CommandOption("--alphabetical")]
+            public bool AlphabeticalOrder { get; set; }
 
             [CommandOption("--verbose")]
             public bool Verbose { get; set; }
@@ -22,23 +25,22 @@ namespace GT4286Util.CliCommands
             [Description("Just do it!")]
             [CommandOption("--yes")]
             public bool Yes { get; set; }
-
         }
 
+        private readonly IAnsiConsole _console;
         private readonly ILogger _logger;
         private readonly IFileSystem _fileSystem;
 
-        public RefreshGameDbCommand(ILogger<RefreshGameDbCommand> logger, IFileSystem fileSystem)
+        public RefreshGameDbCommand(
+            IAnsiConsole console,
+            ILogger<IdentifySdCardCommand> logger,
+            IFileSystem fileSystem
+        )
         {
+            _console = console ?? throw new ArgumentNullException(nameof(console));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _fileSystem = fileSystem ?? throw new ArgumentNullException(nameof(fileSystem));
-        }
-
-        public override Task<int> ExecuteAsync(CommandContext context, Settings settings)
-        {
-            AnsiConsole.WriteLine("Reviewing SD Card for game changes...");
-            Experiment_RefreshBuiltinGameDbList(settings.PathToSdCardRoot, settings);
-            return Task.FromResult(0);
+            _logger.LogDebug(message: "{Command} initialized", nameof(IdentifySdCardCommand));
         }
 
         public override ValidationResult Validate(CommandContext context, Settings settings)
@@ -57,7 +59,14 @@ namespace GT4286Util.CliCommands
             return base.Validate(context, settings);
         }
 
-        public void Experiment_RefreshBuiltinGameDbList(string retroArcadeBasePath, Settings settings)
+        public override async Task<int> ExecuteAsync(CommandContext context, Settings settings)
+        {
+            AnsiConsole.WriteLine("Reviewing SD Card for game changes...");
+            RefreshBuiltinGameDbList(settings.PathToSdCardRoot, settings);
+            return await Task.FromResult(0);
+        }
+
+        public void RefreshBuiltinGameDbList(string retroArcadeBasePath, Settings settings)
         {
             bool escapeSingleQuotes = false;
             bool includeFileExtension = false;
@@ -70,11 +79,11 @@ namespace GT4286Util.CliCommands
 
             {
                 var retroSDCardManager = new RetroSDCardManager(retroArcadeBasePath);
-                
+
                 List<Game> gamesFromRomDir = new List<Game>();
 
                 List<Game> gamesFromDownloadDir = new List<Game>();
-                
+
                 foreach (var romSubDir in RetroSDCardManager.RomSubDirs)
                 {
                     var gamesFromRomSubDir = Directory.EnumerateFiles(Path.Combine(retroArcadeBasePath, "roms", romSubDir), "*")
@@ -98,20 +107,21 @@ namespace GT4286Util.CliCommands
                 gamesFromSdCard.AddRange(gamesFromRomDir);
                 gamesFromSdCard.AddRange(gamesFromDownloadDir);
 
-                // This seems to be the default ordering of the system
-                gamesFromSdCard = gamesFromSdCard
-                    .OrderBy(g => g.dwonloadid)
-                    .ThenBy(g => RetroSDCardManager.OrderGameType(g))
-                    .ThenBy(g => g.filename)
-                    .ToList();
-                
+                if (settings.AlphabeticalOrder)
+                {
+                    gamesFromSdCard = StockOrder(gamesFromSdCard);
+                }
+                else
+                {
+                    gamesFromSdCard = AlphabeticalOrder(gamesFromSdCard);
+                }
+
                 //add id
-                int i=1;
+                int i = 1;
                 int dlid = 1;
-                foreach(var g in gamesFromSdCard)
+                foreach (var g in gamesFromSdCard)
                 {
                     g.id = i++;
-
                     if (g.dwonloadid != 0)
                     {
                         g.dwonloadid = dlid;
@@ -120,7 +130,7 @@ namespace GT4286Util.CliCommands
                 }
 
                 // Maintain fav, his and time values where possible
-                foreach(var gameFromSdCard in gamesFromSdCard)
+                foreach (var gameFromSdCard in gamesFromSdCard)
                 {
                     var gameFromGameDB = gamesFromGameDB
                         .Where(dbgame => dbgame.IsEffectivelyTheSameAs(gameFromSdCard))
@@ -142,7 +152,7 @@ namespace GT4286Util.CliCommands
                 List<Game> renumbered = new List<Game>();
                 List<Game> unchanged = new List<Game>();
 
-                foreach(var gameFromSdCard in gamesFromSdCard)
+                foreach (var gameFromSdCard in gamesFromSdCard)
                 {
                     var gameFromGameDB = gamesFromGameDB
                         .Where(dbgame => dbgame.IsEffectivelyTheSameAs(gameFromSdCard))
@@ -153,7 +163,7 @@ namespace GT4286Util.CliCommands
                     }
                 }
 
-                foreach(var gameFromGameDB in gamesFromGameDB)
+                foreach (var gameFromGameDB in gamesFromGameDB)
                 {
                     var gameFromSdCard = gamesFromSdCard
                         .Where(sdcardgame => sdcardgame.IsEffectivelyTheSameAs(gameFromGameDB))
@@ -182,7 +192,7 @@ namespace GT4286Util.CliCommands
                             {
                                 id = gameFromSdCard.id,
                                 gametype = gameFromGameDB.gametype,
-                                
+
                                 fav = gameFromGameDB.fav,
                                 his = gameFromGameDB.his,
                                 time = gameFromGameDB.time,
@@ -197,36 +207,22 @@ namespace GT4286Util.CliCommands
                     }
                 }
 
-                added = added
-                    .OrderBy(g => g.dwonloadid)
-                    .ThenBy(g => RetroSDCardManager.OrderGameType(g))
-                    .ThenBy(g => g.filename)
-                    .ToList();
-
-                removed = removed
-                    .OrderBy(g => g.dwonloadid)
-                    .ThenBy(g => RetroSDCardManager.OrderGameType(g))
-                    .ThenBy(g => g.filename)
-                    .ToList();
-
-                modified = modified
-                    .OrderBy(g => g.dwonloadid)
-                    .ThenBy(g => RetroSDCardManager.OrderGameType(g))
-                    .ThenBy(g => g.filename)
-                    .ToList();
-
-                renumbered =  renumbered
-                    .OrderBy(g => g.dwonloadid)
-                    .ThenBy(g => RetroSDCardManager.OrderGameType(g))
-                    .ThenBy(g => g.filename)
-                    .ToList();
-
-                unchanged =  unchanged
-                    .OrderBy(g => g.dwonloadid)
-                    .ThenBy(g => RetroSDCardManager.OrderGameType(g))
-                    .ThenBy(g => g.filename)
-                    .ToList();
-
+                if (settings.AlphabeticalOrder)
+                {
+                    added = AlphabeticalOrder(added);
+                    removed = AlphabeticalOrder(removed);
+                    modified = AlphabeticalOrder(modified);
+                    renumbered = AlphabeticalOrder(renumbered);
+                    unchanged = AlphabeticalOrder(unchanged);
+                }
+                else
+                {
+                    added = StockOrder(added);
+                    removed = StockOrder(removed);
+                    modified = StockOrder(modified);
+                    renumbered = StockOrder(renumbered);
+                    unchanged = StockOrder(unchanged);
+                }
 
                 if (added.Count > 0 && settings.Verbose)
                 {
@@ -303,6 +299,26 @@ namespace GT4286Util.CliCommands
 
                 AnsiConsole.WriteLine();
             }
+
+            static List<Game> StockOrder(List<Game> source)
+            {
+                // This seems to be the default ordering of the system
+                return source
+                    .OrderBy(g => g.dwonloadid)
+                    .ThenBy(g => RetroSDCardManager.OrderGameType(g))
+                    .ThenBy(g => g.filename)
+                    .ToList();
+            }
+
+            static List<Game> AlphabeticalOrder(List<Game> source)
+            {
+                return source
+                    .OrderBy(g => g.dwonloadid)
+                    .ThenBy(g => g.filename)
+                    .ThenBy(g => RetroSDCardManager.OrderGameType(g))
+                    .ToList();
+            }
+
         }
     }
 }

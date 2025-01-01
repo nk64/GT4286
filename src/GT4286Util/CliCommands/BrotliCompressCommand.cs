@@ -12,25 +12,41 @@ namespace GT4286Util.CliCommands
         public class Settings: CommandSettings
         {
             [Description("The source file to compress")]
-            [CommandArgument(0, "<inputfilename>")]
+            [CommandArgument(0, "<input-filename>")]
             public required string InputFileName { get; set; }
 
             [Description("The destination file")]
-            [CommandArgument(0, "[outputfilename]")]
+            [CommandArgument(1, "[output-filename]")]
             public string? OutputFileName { get; set; }
-
         }
 
+        private readonly IAnsiConsole _console;
         private readonly ILogger _logger;
         private readonly IFileSystem _fileSystem;
 
-        public BrotliCompressCommand(ILogger<BrotliCompressCommand> logger, IFileSystem fileSystem)
+        public BrotliCompressCommand(
+            IAnsiConsole console,
+            ILogger<IdentifySdCardCommand> logger,
+            IFileSystem fileSystem
+        )
         {
+            _console = console ?? throw new ArgumentNullException(nameof(console));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _fileSystem = fileSystem ?? throw new ArgumentNullException(nameof(fileSystem));
+            _logger.LogDebug(message: "{Command} initialized", nameof(IdentifySdCardCommand));
         }
 
-        public override Task<int> ExecuteAsync(CommandContext context, Settings settings)
+        public override ValidationResult Validate(CommandContext context, Settings settings)
+        {
+            if (_fileSystem.File.Exists(settings.InputFileName) == false)
+            {
+                return ValidationResult.Error($"Path not found: {settings.InputFileName}");
+            }
+
+            return base.Validate(context, settings);
+        }
+
+        public override async Task<int> ExecuteAsync(CommandContext context, Settings settings)
         {
             byte[] CompressBrotli(Stream inputString)
             {
@@ -60,7 +76,7 @@ namespace GT4286Util.CliCommands
                             .WithConverter(choice => choice ? "y" : "n"));
                     if (confirmation == false)
                     {
-                        return Task.FromResult(0);
+                        return await Task.FromResult(0);
                     }
                 }
 
@@ -68,17 +84,8 @@ namespace GT4286Util.CliCommands
                 _fileSystem.File.WriteAllBytes(outputFileName, brotliBytes);
                 AnsiConsole.WriteLine($"Brotli compressed file written to: {outputFileName}");
             }
-            return Task.FromResult(0);
+            return await Task.FromResult(0);
         }
 
-        public override ValidationResult Validate(CommandContext context, Settings settings)
-        {
-            if (_fileSystem.File.Exists(settings.InputFileName) == false)
-            {
-                return ValidationResult.Error($"Path not found: {settings.InputFileName}");
-            }
-
-            return base.Validate(context, settings);
-        }
     }
 }

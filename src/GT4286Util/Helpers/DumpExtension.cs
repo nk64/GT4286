@@ -1,11 +1,24 @@
+using System.Diagnostics.CodeAnalysis;
+using Dumpify;
 using Spectre.Console;
 
 namespace GT4286Util.Helpers
 {
     public static class DumpExtension
     {
-        public static void Dump<T>(this IEnumerable<T> source, string? title = null)
+        public static void Dump2<T>(this T o, string? title = null)
         {
+            Dumpify.DumpExtensions.Dump<T>(o, title);
+        }
+
+        public static void Dump<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicProperties)] T>(
+            this IEnumerable<T> source,
+            string? title = null
+        )
+        {
+            Type type = typeof(T);
+            var properties = type.GetProperties(System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public);
+
             // Create a table
             var table = new Table();
             if (string.IsNullOrWhiteSpace(title) == false) {
@@ -15,12 +28,10 @@ namespace GT4286Util.Helpers
             table.Expand();
             table.ShowRowSeparators();
 
-            var fields = typeof(T).GetProperties(System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public);
-
             // Add some columns
-            foreach(var f in fields)
+            foreach(var prop in properties)
             {
-                table.AddColumn(f.Name);
+                table.AddColumn(prop.Name);
             }
 
             // foreach(var c in table.Columns)
@@ -30,14 +41,14 @@ namespace GT4286Util.Helpers
 
             foreach(T item in source)
             {
-                var strings = fields.Select(f=>$"{f.GetValue(item)}".EscapeMarkup()).ToArray();
+                var strings = properties.Select(f=>$"{f.GetValue(item)}".EscapeMarkup()).ToArray();
                 table.AddRow(strings);
             }
-
 
             // Render the table to the console
             AnsiConsole.Write(table);
         }
+
     }
 }
 

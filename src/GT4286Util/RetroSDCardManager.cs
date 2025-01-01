@@ -21,13 +21,13 @@ namespace GT4286Util
                 case "GB": return 3;
                 case "GBA": return 4;
                 case "GBC": return 5;
-                //case "MAME": return 11;
+                case "MAME": return 6;
                 case "PCE": return 7;
                 case "PS1": return 8;
                 case "MD": return 9;
                 case "SFC": return 10;
                 
-                case "MAME": return 11;
+                //case "MAME": return 11;
             }
             return 0;
         }

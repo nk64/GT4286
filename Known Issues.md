@@ -28,4 +28,4 @@ Most emulators are fully stretched to fill the screen. It would be nice to be ab
 
 
 ## Downloaded games don't load via the History and Collection tabs
-If you add games to the ```/download``` folders and then play them and add them to your Collection when you select them from the Collection or History tabs they don't load. This is not a problem for the builtin games.
+If you add games to the ```/download``` folders and then play them and add them to your Collection when you select them from the Collection or History tabs they don't load. This is not a problem for the built-in games.

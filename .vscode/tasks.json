@@ -1,0 +1,53 @@
+ {
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "dotnet",
+            "task": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "label": "dotnet: build"
+        },
+
+        {
+            "label": "dotnet: publish (win-x64)",
+            "command": "dotnet",
+            "type": "process",
+            "options": {
+                "cwd": "${workspaceFolder}/src/GT4286Util",
+            },
+            "args": [
+                "publish",
+                "-p:RuntimeIdentifier=win-x64",
+                //"-p:MyPublishingProfile=single-file-self-contained",
+                //"-p:MyPublishingProfile=single-file-runtime-dependent",
+                //"-p:MyPublishingProfile=try-aot", // don't bother with Aot yet, too many errors
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+
+        {
+            "label": "dotnet: publish (osx-x64)",
+            "command": "dotnet",
+            "type": "process",
+            "options": {
+                "cwd": "${workspaceFolder}/src/GT4286Util",
+            },
+            "args": [
+                "publish",
+                "-p:RuntimeIdentifier=osx-x64"
+            ],
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        }
+
+    ]
+}
