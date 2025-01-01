@@ -28,24 +28,27 @@ I had hoped that the ```fileenglishscan``` column in the game.db would be a good
 
 1. Rename the FBNeo emulator by adding ```.bin``` to the filename eg. ```/emus/fbneo/fbneo``` becomes ```/emus/fbneo/fbneo.bin```
 
-2. Replace your FBNeo emulator binary (```/emus/fbneo/fbneo```) with the shell script called ```fbneo.script_with_rom_name_redirection``` found [here](./sdcard_tweaks/emus/fbneo) (rename it to ```fbneo``` of course)
+2. Copy the shell script ```fbneo.script_with_rom_name_redirection``` found [here](./sdcard_tweaks/emus/fbneo) into the ```/emus/fbneo``` directory and rename it to ```fbneo```.  
+The end result is that you must have the following two files:
+    - ```/emus/fbneo/fbneo.bin``` (The real emulator)
+    - ```/emus/fbneo/fbneo``` (The shell script, that does some manipulation of the rom parameter and then calls the real emulator)
 
-1. Make a new directory ```/roms/FBA/redir```
+3. Make a new directory ```/roms/FBA/redir```
 
-2. Move ```/roms/FBA/b2b.zip``` to ```/roms/FBA/redir```
+4. Move ```/roms/FBA/b2b.zip``` to ```/roms/FBA/redir```
 
-3. Create a text file called ```/roms/FBA/Bang Bang Busters (2010 NCI release) [Protoype].redir``` containing *only* the original zip file name:
+5. Create a text file called ```/roms/FBA/Bang Bang Busters (2010 NCI release) [Protoype].redir``` containing *only* the original zip file name:
     ```b2b.zip```
 
-4. Rename the associated image ```/roms/FBA/image/b2b.jpg``` to match the new name ```/roms/FBA/image/Bang Bang Busters (2010 NCI release) [Protoype].jpg```
+6. Rename the associated image ```/roms/FBA/image/b2b.jpg``` to match the new name ```/roms/FBA/image/Bang Bang Busters (2010 NCI release) [Protoype].jpg```
 
-5. Run the ```GT4286Util refreshgamedb <path-to-sd-card>``` command so that the new _'rom'_ shows up in your game list.
+7. Run the ```GT4286Util refreshgamedb <path-to-sd-card>``` command so that the new _'rom'_ shows up in your game list.
 
-6. Boot the console and:
+8. Boot the console and:
     - confirm that in the FBA class you no longer have ```b2b``` but instead have ```Bang Bang Busters (2010 NCI release) [Protoype]```.
     - confirm that the screenshot is displayed
     - confirm that the game runs
     - confirm that other games that haven't been redirected still work
     - confirm that you can search for ```busters```
 
-7. Now repeat for all the files that you care about in ```/roms/FBA```
+9. Now repeat Steps 4, 5 and 6 for all the files that you care about in ```/roms/FBA``` followed finally by Step 7.
