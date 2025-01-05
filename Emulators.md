@@ -35,18 +35,19 @@ According to the dat files extracted from the emulator, the following systems ar
 * Arcade
 * ColecoVision
 * Sony MSX
-* Neo Geo Pocket
-* Neogeo
+* SNK Neo Geo Pocket
+* SNK Neo Geo Pocket Color
 * Nintendo Entertainment System
 * Nintendo Famicom Disk System
-* PC Engine
-* PC Engine SuperGrafx
+* NEC PC Engine
+* NEC PC Engine SuperGrafx
 * Sega Game Gear
 * Sega Master System
 * Sega MegaDrive (AKA Sega Genesis)
 * Sega SG-1000
 * Sinclair ZX Spectrum
-* TurboGrafx-16
+* NEC TurboGrafx-16
+
 
 ### Command line help (run /emus/fbneo/fbneo without parameters)
 ```

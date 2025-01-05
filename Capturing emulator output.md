@@ -21,3 +21,10 @@ log "Executing wrapped exe: $wrapped_exe"
 
 $wrapped_exe "$@" > $wrapped_exe_logfile 2>&1 && /bin/sync
 ```
+
+
+Note:
+* line endings must be Linux style ```LF``` not Windows Style ```CRLF```
+* call ```/bin/sync``` liberally otherwise file output might not be flushed to the SD Card before you turn it off
+* the current working directory is the emulator's folder eg ```/emu/mame```
+* the path to the SDcard is ```/mnt/extsd/```
