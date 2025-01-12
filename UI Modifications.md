@@ -11,22 +11,22 @@
     ```"font":"/mnt/extsd/ui/comic.ttf"```
 
 
-## Background music
-[Original Post](https://github.com/nk64/GT4286/discussions/5#discussioncomment-11683578) by horsiezoo
-
-Replace ```/ui/bg_music.wav``` with a wav file of your choice.
-
-
-## Disabling the background music
-You can disable the repetitive background music by renaming ```/ui/logo_music.wav``` to ```/ui/logo_music.wav.disabled``` but doing that seems to mean that a normal keytones don't work.
-
-So if you want the annoying beeps but you don't want the background music, then you would need to make or find a wav file with a bit of silence and save it as ```/ui/logo_music.wav``` (untested feedback requested).
-
-
 ## Properly muting the 'Keytone' sounds
 1. Use the stock menu to visit the ```Settings Page``` and the go to ```Keytone Setting``` and select ```mute```.
 2. Now you don't have annoying beep sounds, but you instead have an annoying fraction of a second of silence interrupting your background music on every joystick and button input.
 3. Rename ```/ui/mute.wav``` to ```/ui/mute.wav.disabled``` on your SD Card.
+
+
+## Background music
+Replace ```/ui/bg_music.wav``` with a wav file of your choice.
+
+
+## Disabling the background music
+You can disable the repetitive background music by renaming ```/ui/bg_music.wav``` to ```/ui/bg_music.wav.disabled``` but doing that seems to mean that a normal keytones don't work.
+
+If you want the keytones but you don't want the background music then:
+1. Rename ```/ui/bg_music.wav``` to ```/ui/logo_music.wav.original``` 
+2. Make a copy of ```/ui/mute.wav``` and rename it to ```/ui/bg_music.wav```
 
 
 ## Disabling the boot logo and boot music cleanly
@@ -72,7 +72,6 @@ Like: ```/roms/FBA/sf2.zip``` -> ```/roms/FBA/image/sf2.jpg```
 
 or if you have applied the [humanise names](./Humanise%20Names.md) trick...  
 Like: ```/roms/FBA/Street Fighter II.redir``` -> ```/roms/FBA/image/Street Fighter II.jpg```
-
 
 
 ## Adding a default preview image for games that don't have one

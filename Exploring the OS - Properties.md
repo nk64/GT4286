@@ -4,16 +4,16 @@ This section is a very incomplete work in progress.
 
 TODO: Explain the property system
 
+Note: The property name/key must be 31 characters or less in length
 
-## Property System: ```/bin/getprop``` & ```/bin/setprop```
+## ```/bin/getprop``` & ```/bin/setprop```
 ```
 usage: setprop <key> <value>
 usage: getprop
 usage: getprop <key>
 ```
 
-# getprop (listing all properties)
-
+### getprop (listing all properties)
 |           Property            |               Value               |
 |-------------------------------|-----------------------------------|
 | init.svc.adbd                 | running                           |
@@ -51,6 +51,7 @@ usage: getprop <key>
 | sys.usb.state                 | adb                               |
 | sys.zkupgrade.force           | 1                                 |
 
+
 ## Properties whos name starts with ```persist``` persist across reboots
 |           Property            |               Value               |
 |-------------------------------|-----------------------------------|
@@ -59,16 +60,47 @@ usage: getprop <key>
 | persist.sys.zkdebug           | 1                                 |
 
 
-## I think that gmenu2x uses these to remember where it was at after the emulator runs and then quits
+## gmenu2x uses these properties to remember where it was at after the emulator runs and then quits
 |      Property Name      | Property Type |                 Known Values                  |                         Description                         |
 |-------------------------|---------------|-----------------------------------------------|-------------------------------------------------------------|
-| prop.gameclassselection | Integer       |                                               | The number of the Selected game Class                       |
-| prop.inputstr           | String        |                                               | Maybe the text that has been entered in the search screen   |
-| prop.keysel             | Integer       |                                               | ?cursel                                                     |
-| prop.kind               | Integer       |                                               | ?mListType                                                  |
 | prop.logoboot           | Integer       | 0, 1                                          | Whether the Boot animation has been played                  |
-| prop.numorletter        | Integer       |                                               | ?_ZNK6ZKBase9isVisibleEv(mListViewKeyBoardPtr);              |
-| prop.selection          | Integer       |                                               | Maybe the number of the currently selected game in the list |
-| persist.sys.lang        | Integer       | 1-?                                           | System Language                                             |
-| prop.title              | String        | 0 , ALL, DOWNLOAD, GAMELIST, SEARCHFTU             | The Main screen tab that was active                         |
+| prop.title              | String        | 0 , ALL, DOWNLOAD, GAMELIST, SEARCHFTU        | The Main screen tab that was active                         |
+| prop.kind               | Integer       | 0, 2, 3                 | when prop.title="ALL": 0=List, 2=History, 3=Collect                                        |
+| prop.selection          | Integer       |                                               | 0 based index of the currently selected game in the list    |
+| prop.gameclassselection | Integer       | 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 | 0 based index of the selected game Class: 0=FBA, 1=FC, 2=GB, 3=GBA, 4=GBC, 5=MD, 6=SFC, 7=PS1, 8=MAME, 9=PCE |
+| prop.inputstr           | String        |                                               | The text that has been entered in the search screen         |
+| prop.keysel             | Integer       |                                               | ???                                                         |
+| prop.numorletter        | Integer       | 0, 1       | The type of the keyboard in the search screen: 0=Numeric Keyboard, 1=Alphabet Keyboard               |
 
+
+## We can force gmenu2x to open at a specific screen
+
+```bash
+    ## List ##
+    /bin/setprop "prop.title" "ALL"
+    /bin/setprop "prop.kind" "0"
+    /bin/setprop "prop.selection" "0" # position in list (0=first entry in list)
+
+    ## Class ##
+    /bin/setprop "prop.title" "GAMELIST"
+    # Class 0=FBA, 1=FC, 2=GB, 3=GBA, 4=GBC, 5=MD, 6=SFC, 7=PS1, 8=MAME, 9=PCE
+    /bin/setprop "prop.gameclassselection" "0"
+    /bin/setprop "prop.selection" "0" # position in list (0=first entry in list)
+
+    ## History ##
+    /bin/setprop "prop.title" "ALL"
+    /bin/setprop "prop.kind" "2"
+    /bin/setprop "prop.selection" "0" # position in list (0=first entry in list)
+
+    ## Collect ##
+    /bin/setprop "prop.title" "ALL"
+    /bin/setprop "prop.kind" "3"
+    /bin/setprop "prop.selection" "0" # position in list (0=first entry in list)
+
+    ## Search ##
+    /bin/setprop "prop.title" "SEARCHFTU"
+    /bin/setprop "prop.inputstr" "street fi" # the text that has been entered into the search
+    /bin/setprop "prop.keysel" "0"      # ??
+    /bin/setprop "prop.numorletter" "1" # 0=Numeric Keyboard, 1=Alphabet Keyboard
+    /bin/setprop "prop.selection" "0"   # position in list (0=first entry in list)
+```

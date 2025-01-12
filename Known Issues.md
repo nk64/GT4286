@@ -17,7 +17,7 @@ FBNeo emulator (and it's clone MAME) have a misconfiguration which means that th
 (this is fixable by patching emulator and adding a keyremap files)
 
 
-## FBNeo//MAME Arcade roms names are cryptic
+## FBNeo/MAME Arcade roms names are cryptic
 FBNeo games are listed as their cryptic rom .zip file name which is ugly by comparison to the other emulators which can have nice human readable names. (See page 10 in the [manual](https://media.jaycar.com.au/product/resources/GT4286_manualMain_130153.pdf) for an example of this).  
 (we can do something about this)
 
@@ -29,3 +29,11 @@ Most emulators are fully stretched to fill the screen. It would be nice to be ab
 
 ## Downloaded games don't load via the History and Collection tabs
 If you add games to the ```/download``` folders and then play them and add them to your Collection when you select them from the Collection or History tabs they don't load. This is not a problem for the built-in games.
+
+This is because the `gmenu2x` tries to load the rom from the built-in roms directory (`/roms/{class}`) rather than the downloaded roms directory (`/download/{class}`)
+
+
+## Images for downloaded games must be placed alongside the images for built-in games
+If you add games to a ```/download/{class}``` directory you must place their screenshot images in the equivalient built-in `/roms/{class}/image` directory.
+
+This is because the `gmenu2x` tries to load the image from the built-in roms directory (`/roms/{class}/image`) rather than the downloaded roms directory (`/download/{class}/image`)

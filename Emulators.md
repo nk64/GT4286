@@ -2,18 +2,18 @@
 
 The UI divides Roms up by Class, there is some overlap in the systems that are emulated by each emulator and some emulators are reused in more than one class.
 
-| Class |    Emulator Command Line     |                       Emulated System                        | Builtin Rom Dir | Download Rom Dir |
-|-------|------------------------------|--------------------------------------------------------------|-----------------|------------------|
-| FBA   | /emus/fbneo/fbneo            | Arcade                                                       | /roms/fba       | /download/fba    |
-| FC    | /emus/fceux/fceux            | Nintendo - Nintendo Entertainment System/Famicom             | /roms/fc        | /download/fc     |
-| GB    | /emus/gamebatte/gambatte_sdl | Nintendo - Gamboy                                            | /roms/gb        | /download/gb     |
-| GBA   | /emus/gpsp/gpsp              | Nintendo - Gamboy Advance                                    | /roms/gba       | /download/gba    |
-| GBC   | /emus/gamebatte/gambatte_sdl | Nintendo - Gamboy Color                                      | /roms/gbc       | /download/gbc    |
-| MD    | /emus/picodrive/PicoDrive    | Sega - Megadrive/Genesis                                     | /roms/md        | /download/md     |
-| SFC   | /emus/snes9x4d/snes9x4d.dge  | Nintendo - Super Nintendo Entertainment System/Super Famicom | /roms/sfc       | /download/sfc    |
-| PS1   | /emus/pcsx4all/pcsx -cdfile  | Sony - Playstation 1                                         | /roms/ps        | /download/ps     |
-| MAME  | /emus/mame/fbneo             | Arcade                                                       | /roms/mame      | /download/mame   |
-| PCE   | /emus/temper/temper          | PC-Engine/TurboGrafix-16                                     | /roms/pce       | /download/pce    |
+| Class |    Emulator Command Line     |                       Emulated System                        | Builtin Rom Dir | Download Rom Dir | Keymap Filename |
+|-------|------------------------------|--------------------------------------------------------------|-----------------|------------------|-----------------|
+| FBA   | /emus/fbneo/fbneo            | Arcade                                                       | /roms/fba       | /download/fba    | fbneo.keymap    |
+| FC    | /emus/fceux/fceux            | Nintendo - Nintendo Entertainment System/Famicom             | /roms/fc        | /download/fc     | fceux.keymap    |
+| GB    | /emus/gamebatte/gambatte_sdl | Nintendo - Gamboy                                            | /roms/gb        | /download/gb     | gambatte.keymap |
+| GBA   | /emus/gpsp/gpsp              | Nintendo - Gamboy Advance                                    | /roms/gba       | /download/gba    | gpsp.keymap     |
+| GBC   | /emus/gamebatte/gambatte_sdl | Nintendo - Gamboy Color                                      | /roms/gbc       | /download/gbc    | gambatte.keymap |
+| MD    | /emus/picodrive/PicoDrive    | Sega - Megadrive/Genesis                                     | /roms/md        | /download/md     | pico.keymap     |
+| SFC   | /emus/snes9x4d/snes9x4d.dge  | Nintendo - Super Nintendo Entertainment System/Super Famicom | /roms/sfc       | /download/sfc    | sfc.keymap      |
+| PS1   | /emus/pcsx4all/pcsx -cdfile  | Sony - Playstation 1                                         | /roms/ps        | /download/ps     | pcsx.keymap     |
+| MAME  | /emus/mame/fbneo             | Arcade                                                       | /roms/mame      | /download/mame   | fbneo.keymap    |
+| PCE   | /emus/temper/temper          | PC-Engine/TurboGrafix-16                                     | /roms/pce       | /download/pce    | temper.keymap   |
 
 ### Notes:
 * All Console Emulators Except PCE (```/emus/temper/temper```) support zipped single roms.
@@ -184,7 +184,8 @@ Hash: ```[SHA-256] 9B86B683EBC3216DDAEB538692D0C2E4BE22C8078A0800B63954449FD2AFA
 
 
 ## Class: PS1
-Emulator: PCSX or PCSX4ALL  
+Emulator: PCSX or PCSX4ALL or PCSX-ReARMed  
+Version String: PCSX Version 1.9 (Nov 29 2021).
 Binary: ```/emus/pcsx4all/pcsx```  
 Command line: ```/emus/pcsx4all/pcsx -cdfile```
 Hash: ```[SHA-256] 56A02A9FCE4C2A6FB58C098FEA424078E208C4DEA7854B8B14246936FA2FAB6C```  
