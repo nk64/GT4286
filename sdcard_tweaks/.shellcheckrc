@@ -1,0 +1,9 @@
+# .shellcheckrc
+external-sources=true
+enable=require-variable-braces
+disable=SC3030
+disable=SC3030
+disable=SC3054
+disable=SC3043
+disable=SC3053
+disable=SC3055

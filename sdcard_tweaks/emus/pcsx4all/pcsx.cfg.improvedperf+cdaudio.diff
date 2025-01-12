@@ -1,0 +1,5 @@
+Bios = SCPH1001.BIN
+Cdda = 1
+gpu_neon.enhancement_enable = 1
+gpu_peopsgl.bUseFastMdec = 1
+new_dynarec_hacks = 1

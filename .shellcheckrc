@@ -1,0 +1,5 @@
+# .shellcheckrc
+
+external-sources=true
+enable=require-variable-braces
+disable=SC1017
