@@ -1,4 +1,9 @@
-## Exploring the OS (the hard way)
+# Exploring the OS
+
+The steps below have been codified into the [Runtime Script Framework](./Runtime%20Script%20Framework.md).
+Please follow the istructions there.
+
+## Deprecated: Exploring the OS (the hard way)
 
 The key to exploring the running OS of the system (if you care) is to replace one of the emulator binaries eg ```/emus/mame/fbneo``` with a bash style (actually [mksh](https://www.mirbsd.org/mksh.htm)) shell script and then loading up any rom in that emulator which will cause the script to be run instead.
 
@@ -17,7 +22,7 @@ Note:
 * the path to the SDcard is ```/mnt/extsd/```
 
 
-## Exploring the OS like a Boss
+## Deprecated: Exploring the OS like a Boss
 1. Replace your MAME emulator binary (```/emus/mame/fbneo```) with the shell script found [here](./sdcard_tweaks/emus/mame)
 2. Copy the premade shell scripts from [here](./sdcard_tweaks/roms/MAME/) to your ```/roms/MAME/``` directry.
 3. Make sure you have this directory too: ```/roms/MAME/output```
@@ -31,46 +36,65 @@ Script output will end up in ```/roms/MAME/output```.
 
 ## Current Scripts
 
-### Standard Linux Commands
-```cpuinfo```  
 
-```meminfo```  
+### Linux/Android Debugging Commands
+- `debug-dmesg`
+- `debug-kmsg`
+- `debug-env`
+    - dump all the environment variables of the shell
+- `debug-logcat`
+- `debug-getprop`
 
-```mount```  
+### Static Info
+- `os-info-static`  
+    - ```cpuinfo```  
+    - ```meminfo```  
+    - ```mount```  
 
-```ps```  
+- `os-dump-flash`
+    - Dump the Flash MTD devices to disk for further inspection
 
-```df```  
+### Dynamic Info
+- `os-info-dynamic`
+    - ```ps```  
+    - ```uptime```
+    - ```df```  
+- `os-dump-ls`
+    - list the contents of the mounted file systems
+- `os-dump-files`
+    - Copy as much of the flash filesystem as we can.
+        * Soft links don't survive the transition 
 
-```env```  
-dump all the environment variables of the shell
-
-```ls```  
-list the contents of the mounted file systems
-
-```touch```  
-create a file if it doesn't exist. This is not particularly useful but it was the first command I ran blind before I knew what binaries we had available to us.
-
-### Emulator command line help
-```emu-help-fbneo```  
-
-```emu-help-fceux```  
-
-```emu-help-gambatte```  
-
-```emu-help-pcsx```  
-
-```emu-help-snes9x4d```  
-
+### Emulator Related
+- `emu-help`
+    - dump the command line help for emulators that provide it
 
 ### Other fun scripts
-```fbneo-dat-files```  
-Cause the FBNeo emulator to dump out dat files for the systems it supports
+- `emu-fbneo-dat-files`
+    - Cause the FBNeo emulator to dump out dat files for the systems it supports
+- `boot-logo-disable` & `boot-logo-enable`
+- `byo-busybox-help`
+    - play around with a more fully features busybox
+- `reboot`
+    - Reboots the console
+- `test-framebuffer`
+- `zkdebug-disable` & `zkdebug-enable`
+    - There seems to be a property that might disable debugging to some extent, this needs more investigation of the effects.
 
-```filecopy```  
-Copy as much of the flash filesystem as we can.
-* Soft links don't survive the transition 
-* Refer to the output of ```ls``` for the available ```busybox``` commands
+- `hello-world`
+    - a simple `hello_world.c`
+        ```c
+        #include <stdio.h>
+        int main()
+        {
+            printf("Hello, World!");
+            return 0;
+        }
+        ```
+    - Compiled with the Windows [Arm GNU Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
+        - `arm-gnu-toolchain-14.2.rel1-mingw-w64-x86_64-arm-none-linux-gnueabihf.zip`
 
-```logcat```  
-some interesting debuging info
+    1. `C:\arm-gnu-toolchain\bin>`arm-none-linux-gnueabihf-gcc.exe -static hello_world.c -o hello_world
+    2. `C:\arm-gnu-toolchain\bin>`arm-none-linux-gnueabihf-strip.exe hello_world
+
+
