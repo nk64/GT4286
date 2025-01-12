@@ -8,7 +8,7 @@ enable_hack_handle_gmenu2x_download_bug=true
 enable_hack_humanise_names=true
 enable_hack_custom_scripts=true
 enable_hack_custom_keymaps=true
-enable_hack_fbneo_sybsystems=true
+enable_hack_fbneo_subsystems=true
 
 #region Functions
 get_file_extension()
@@ -238,7 +238,7 @@ fi
 #endregion Script Handling
 
 #region Handle FBNeo Subsystem games
-if ${enable_hack_fbneo_sybsystems}; then
+if ${enable_hack_fbneo_subsystems}; then
     fbneo_subsystem=""
     if [ "${emulator_class}" = "FBA" ]; then
         split_file_path_into_parts "${filename}"

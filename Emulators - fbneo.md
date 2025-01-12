@@ -18,18 +18,51 @@ You will need to know the `prefixcode` for the console system:
 * Sega SG-1000: `sg1k`
 * Sinclair ZX Spectrum: `spec`
 * NEC TurboGrafx-16: `tg`
+* SNK Neo Geo CDZ: `neocdz`
+
+Additional Bios files may be required:  
+* Neo Geo CDZ Subsystem  
+`/bios/neocdz.zip` must contain two files:
+    - `000-lo.lo`: crc=5A86CFF2
+    - `neocd.bin`: crc=DF9DE490
 
 
 The original FBNeo emulator requires you to run the emulator like so: `fbneo {prefix}_{gamename}` where `gamename` is the zip file without the `zip|7z` extension.
 
-But the GT4286 fbneo is run like: `fbneo {romdir}/{gamename}.zip` eg `fbneo /roms/FBA/sf2.zip`.  
+But the GT4286 fbneo is run (bygmenu2x) like: `fbneo {romdir}/{gamename}.zip` eg `fbneo /roms/FBA/sf2.zip`.  
 Internally the emulator splits the single parameter up into the `romdir=/roms/FBA` and `gamename=sf2`.  
 It adds `{romdir}` to it's list of places to search for files and then starts the emulation with the game driver for `{gamename}`. The emulator then looks for `{gamename}.zip` (or `.7z`) in `{romdir}`.
 
 We will need to work hard to trick fbneo into loading console games.
 
+The [Runtime Script Framework](./Runtime%20Script%20Framework.md) has formalised this and made it a bit easier
 
-## The lesser way (proof of concept)
+
+## The current way
+This procedure  requires that you can run `GT4286Util refresh-gamedb <path-to-card>`
+and that you have deployed the [Runtime Script Framework](./Runtime%20Script%20Framework.md)
+
+1. For example, picking a console and game at random:  
+    Console: ColecoVision (`cv`)  
+    Game Name: `heist`  
+    Game Description: `The Heist`  
+    Rom File: `heist.zip`  
+
+2. Make a new directory for the console code `/roms/FBA/redir/cv`.
+3. Put the ColecoVision rom `heist.zip` in `/roms/FBA/redir/cv`.
+4. Create a descriptive name file `[CV] The Heist.redir` in `/roms/FBA` with the single line contents:
+        ```
+        cv/heist.zip
+        ```
+
+6. Run `GT4286Util refresh-gamedb <path-to-card>`.
+7. You will find in your game list the new entry:
+    - `[CV] The Heist`
+8. If you select `[CV] The Heist` FBNeo should load the ColecoVision version of `The Heist`.
+
+
+
+## Deprecated: The proof of concept
 This procedure only requires that you can run `GT4286Util refresh-gamedb <path-to-card>`
 
 1. For example, picking a console and game at random:  
@@ -47,7 +80,8 @@ This procedure only requires that you can run `GT4286Util refresh-gamedb <path-t
 6. If you select `cv_heist` FBNeo should load the ColecoVision version of `The Heist`.
 7. The game entry `heist` doesn't do anything.
 
-## The better way
+
+## Deprecated: The better way
 This procedure required that the [Humanise Names](./Humanise%20Names.md) procedure has been applied and that you can run `GT4286Util refresh-gamedb <path-to-card>`
 
 1. Using to ColecoVision game "The Heist" from the example in `The lesser way`  
@@ -59,10 +93,16 @@ This procedure required that the [Humanise Names](./Humanise%20Names.md) procedu
 2. Make a new directory for the console code `/roms/FBA/redir/cv`.
 3. Put the ColecoVision rom `heist.zip` in `/roms/FBA/redir/cv`.
 4. Create a descriptive name file `[CV] The Heist.redir` in `/roms/FBA` with the single line contents:
-    ```
-    cv/cv_heist.zip
-    ```
-5. Note the deliberate discrepancy between the file name in the `.redir` file (`cv_heist.zip`) and the actual zip file (`heist.zip`) on disk.
+    * If you have followed the instructions for the [Runtime Script Framework](./Runtime%20Script%20Framework.md)
+        ```
+        cv/heist.zip
+        ```
+    * Otherwise if you are yet to deploy the [Runtime Script Framework](./Runtime%20Script%20Framework.md)
+        ```
+        cv/cv_heist.zip
+        ```
+        - Note the deliberate discrepancy between the file name in the `.redir` file (`cv_heist.zip`) and the actual zip file (`heist.zip`) on disk.
+
 6. Run `GT4286Util refresh-gamedb <path-to-card>`.
 7. You will find in your game list the new entry:
     - `[CV] The Heist`
