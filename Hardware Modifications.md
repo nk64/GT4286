@@ -1,7 +1,7 @@
 # Hardware Modifications
 
-## Turn the GT4268 into a USB Controller for a PC (or Raspberry Pi etc)
-Please see [Original Post](https://www.ozbargain.com.au/comment/16111194/redir) by ThighHighDemise
+## Turn the GT4268 into a USB Controller
+Please see [Original Post](https://www.ozbargain.com.au/comment/16111194/redir) by `ThighHighDemise`
 
 > For those more interested in potentially picking one of these up to adapt into a usb controller to connect to an external PC (or raspberry pi/whatever else) instead of dealing with the included SOC, it's quite easy to accomplish. All the USB lines are clearly labelled on the IO board. Hooked up to a Linux/Windows PC shows up as two separate HID devices (p1/p2) and generic drivers work fine. For $50, I'm happy
 
@@ -10,6 +10,24 @@ Please see [Original Post](https://www.ozbargain.com.au/comment/16111194/redir) 
 ![Detected Game Controllers](./img/hardware/twin-usb-gamepad-vid0810-pid0001.png)
 
 > You could also rewire the buttons to an arcade USB io board if you didn't want to solder (eg. https://www.jaycar.com.au/usb-interface-for-joystick-and-but… - cheaper on ebay or aliexpress) but this would be a lot more involved.
+
+### Snake eating its tail
+[Original Post](https://www.ozbargain.com.au/comment/16133099/redir) by `YeahBabi`
+
+> cut the cable between the 2 pcb's, then solder a usb cable to the joystick pcb.
+Then just plug the male end of the cable to the back of the unit usb socket and use it normally.
+No connection to pc, just boot the unit up and enjoy.
+
+> If you want to use the controller for the pc, just disconnect the USB cable from the back of the unit and plug it into the pc, dont need to plug anything else in, so disconnect the power and disconnect the hdmi and just use it as a wired joystick.
+
+![Internal Picture](./img/hardware/snake_eating_tail_mod/internal.jpg)
+
+![External Picture](./img/hardware/snake_eating_tail_mod/external.jpg)
+
+### Rotary Switch Option
+[Original Post](https://github.com/nk64/GT4286/discussions/22) by `Hello-dot-Jpg`
+
+![Wiring Diagram](./img/hardware/rotary_switch_mod/wiring-diagram.jpg)
 
 
 ## Transplant boards from the GT4268 to [10" Screen](https://www.jaycar.com.au/10-inch-screen-raspberry-pi-retro-arcade-game-console/p/XC9064) in place of a Raspberry Pi
@@ -29,3 +47,6 @@ I just need to fit PCB inside on bottom base with motherboard risers and drill h
 
 > I encountered sound issue as stated in HDMI but might be a setting in the menu of the $64 arcade machine and have not worked it out as yet as i has internal speakers and audio out port. I am drilling holes in back of case for PCB outputs,
 You need to take one button off at a time and rewire it correctly, I thought of taking photos of the wiring colour but it was easier and quicker to do one by one.
+
+
+
