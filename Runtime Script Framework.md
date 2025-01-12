@@ -2,7 +2,7 @@
 
 ## Description
 Consolidate all the emulators to run through one main script (and gmenu2x to another).
-These script perform a variaety of hacks
+These script perform a variety of hacks
 
 gmenu2x:
 * enable_disable_boot_logo
