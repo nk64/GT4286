@@ -59,3 +59,14 @@ The following commands appear to be compiled in to /bin/busybox but are missing 
 - unlink
 
 ```/data``` is a writeable filesystem that we could use as location to set up some links if we want to use these tools
+
+## BusyBox
+[BusyBox Documentation](https://www.busybox.net/downloads/BusyBox.html)
+
+The built-in BusyBox is fairly limited.
+
+We can use a statically compiled busbyox (for arm) from somewhere like:
+- https://github.com/EXALAB/Busybox-static/tree/main/busybox_arm  (v1.31.1)
+- https://busybox.net/downloads/binaries/1.21.1/busybox-armv7l (v.21.1)
+
+
