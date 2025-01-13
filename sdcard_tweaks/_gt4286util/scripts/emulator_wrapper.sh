@@ -6,7 +6,7 @@ emulator_exe_logfile="${emulator_exe}.log"
 
 enable_hack_handle_gmenu2x_download_bug=true
 enable_hack_humanise_names=true
-enable_hack_custom_scripts=true
+enable_hack_user_scripts=true
 enable_hack_custom_keymaps=true
 enable_hack_fbneo_subsystems=true
 
@@ -217,8 +217,8 @@ fi
 #endregion Handle Redirected (aka humanised) names
 
 #region Script Handling
-if ${enable_hack_custom_scripts}; then
-    # Check if rom is actually a custom script to run
+if ${enable_hack_user_scripts}; then
+    # Check if rom is actually a user script to be run
     log "*** Handle Scripts ***"
     if [ "$(get_file_extension "${filename}")" = "sh" ]; then
         if [ -f "${filename}" ]; then

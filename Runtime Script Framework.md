@@ -11,7 +11,7 @@ gmenu2x:
 emulator hacks:
 * handle_gmenu2x_download_bug
 * humanise_names
-* custom_scripts
+* user_scripts
 * custom_keymaps
 * fbneo_subsystems
 
@@ -55,8 +55,8 @@ emulator hacks:
 * `humanise_names`
     - Includes the hack from [Humanise Names](./Humanise%20Names.md)
 
-* `custom_scripts`
-    - Scripts can be placed in any of the (built-in) rom directories (default to `/roms/MAME` becase the MAME emulator is a clone). They will show up in the games list (after running `GT4286Util refresh-gamedb <path-to-card>`)
+* `user_scripts`
+    - Scripts can be placed in any of the (built-in) rom directories (default to `/roms/MAME` becase the MAME emulator is a clone). They will show up in the games list (after running `GT4286Util refresh-gamedb <path-to-card>`) where they can be run by the user.
     - This is a formalisation of [Exploring the OS like a Boss](./Exploring%20the%20OS.md)
 
 * `custom_keymaps`  
