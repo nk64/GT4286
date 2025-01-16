@@ -36,17 +36,13 @@ else
     # D/zkgui   (  936): Open key:/dev/input/event70 
     # D/zkgui   (  936): open [/dev/input/event70] [15] sucess
 
-
     ${byobb} bzcat "${GT4286UTIL_HOME}/res/BGRAx1280x1440x32_blue.raw.bz2" > /dev/fb0
 
-    "${evtest}" --grab /dev/input/event0 > "${output_dir}/test-evtest-event0.txt" 2>&1 &
-    pid1=$!
-    "${evtest}" --grab /dev/input/event1 > "${output_dir}/test-evtest-event1.txt" 2>&1 &
-    pid2=$!
-    "${evtest}" --grab /dev/input/event69 > "${output_dir}/test-evtest-event69.txt" 2>&1 &
-    pid3=$!
-    "${evtest}" --grab /dev/input/event70 > "${output_dir}/test-evtest-event70.txt" 2>&1 &
-    pid4=$!
+    for file_path in /dev/input/event*; do
+        file_name="${file_path##*/}"
+        log "Capture events from  '${file_path}' to '${output_dir}/test-evtest-${file_name}.txt'"
+        "${evtest}" --grab "${file_path}" > "${output_dir}/test-evtest-${file_name}.txt" 2>&1 &
+    done
 
     ${byobb} bzcat "${GT4286UTIL_HOME}/res/BGRAx1280x1440x32_green.raw.bz2" > /dev/fb0
 
@@ -56,17 +52,33 @@ else
 
     ${byobb} bzcat "${GT4286UTIL_HOME}/res/BGRAx1280x1440x32_blue.raw.bz2" > /dev/fb0
 
+    ## Job Control ##
     # kill %1 # The first job
     # kill %- # The last job
     # kill $! # As long as you don't launch any other process in the background you can use $! directly
+    # JOBS=$(jobs -p)
+    # for pid in "${JOBS[@]}"; do
+    #     kill -TERM "${pid}";
+    # done
 
-    log "Kill event capture"
-    kill -TERM ${pid1}
-    kill -TERM ${pid2}
-    kill -TERM ${pid3}
-    kill -TERM ${pid4}
+
+    JOBS=$(jobs -p)
+    #log "Kill event capture Jobs: ${JOBS[*]}"
+
+    for pid in ${JOBS}; do
+        log "Kill event capture Job: ${pid}"
+        kill -TERM "${pid}";
+    done
+    ${byobb} sleep 1
+
+    JOBS=$(jobs -p)
+    for pid in ${JOBS}; do
+        log "Unkilled Job: ${pid}"
+    done
+
     /bin/sync
     
     ${byobb} bzcat "${GT4286UTIL_HOME}/res/BGRAx1280x1440x32_red.raw.bz2" > /dev/fb0
     log "Done"
+
 fi

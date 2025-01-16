@@ -63,6 +63,7 @@ if [ ! -f "${byobb}" ]; then
     log "Put it in: ${GT4286UTIL_HOME}/bin/busybox_arm"
 else
     log "BYO Busybox found: ${byobb}"
+
     log "Running lsusb"
     ${byobb} lsusb > "${output_dir}/os-info-static-lsusb.txt" 2>&1; /bin/sync
 
@@ -71,4 +72,12 @@ else
 
     log "Dumping framebuffer settings"
     ${byobb} fbset > "${output_dir}/os-info-static-fbset.txt" 2>&1; /bin/sync
+
+    log "Dumping Supported Filesystems"
+    cat /proc/filesystems > "${output_dir}/os-info-static-proc-filesystems.txt" 2>&1; /bin/sync
+
+    log "Dumping /proc/kallsyms"
+    cat cat /proc/kallsyms > "${output_dir}/os-info-static-proc-kallsyms.txt" 2>&1; /bin/sync
+
+
 fi

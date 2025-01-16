@@ -15,6 +15,8 @@ cat /dev/urandom > /dev/fb0
 
 # Lets try catting /dev/kmsg in the background, sleeping for a while and then killing it gently.
 
+byobb="${GT4286UTIL_HOME}/bin/busybox_arm"
+
 if [ ! -f "${byobb}" ]; then
     log "The built-in busybox doesn't have this command."
     log "Try: https://github.com/EXALAB/Busybox-static/tree/main/busybox_arm"
@@ -22,9 +24,8 @@ if [ ! -f "${byobb}" ]; then
 else
     log "BYO Busybox found: ${byobb}"
 
-
     log "Running cat in the background"
-    cat /dev/kmsg > "${output_dir}/debug-kmsg.txt" 2>&1 & 
+    cat /dev/kmsg > "${output_dir}/debug-kmsg.txt" 2>&1 &
     cat_pid=$!
 
     # kill %1 #The first job

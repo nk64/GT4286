@@ -77,7 +77,7 @@ fi
 if [ "${log_exe}" = "true" ];
 then
     log "Executing wrapped exe with logging: ${wrapped_exe}"
-    ${wrapped_exe} "$@" > "${wrapped_exe_logfile}" 2>&1; /bin/sync
+    ${wrapped_exe} "$@" >> "${wrapped_exe_logfile}" 2>&1; /bin/sync
 else
     log "Executing wrapped exe without logging: ${wrapped_exe}"
     ${wrapped_exe} "$@"

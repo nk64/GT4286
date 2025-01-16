@@ -10,13 +10,13 @@ cat /dev/urandom > /dev/fb0
 
 byobb="${GT4286UTIL_HOME}/bin/busybox_arm"
 
-log "Running dmesg"
-
 if [ ! -f "${byobb}" ]; then
     log "The built-in busybox doesn't have this command."
     log "Try: https://github.com/EXALAB/Busybox-static/tree/main/busybox_arm"
     log "Put it in: ${GT4286UTIL_HOME}/bin/busybox_arm"
 else
     log "BYO Busybox found: ${byobb}"
+
+    log "Running dmesg"
     ${byobb} dmesg > "${output_dir}/debug-dmesg.txt" 2>&1; /bin/sync
 fi

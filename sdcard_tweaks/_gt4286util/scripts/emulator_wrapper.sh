@@ -275,7 +275,7 @@ if ${enable_hack_custom_keymaps}; then
         game_filename="${rom_file_path##*/}"
         game_name=${game_filename%.*}
 
-        destination_keymap_file_path="/keyremp/${keymap_filename}"
+        destination_keymap_file_path="/mnt/extsd/keyremap/${keymap_filename}"
 
         log "    Checking for a custom keymap for '${rom_file_path}' (${game_name}) in '${custom_keymap_dir}' to copy to '${destination_keymap_file_path}'"
 
@@ -395,13 +395,9 @@ if [ "${log_exe}" = true ]; then
     "${emulator_exe}" "${@}" >> "${emulator_exe_logfile}" 2>&1; /bin/sync
 
     if false; then
+        # It can be useful to capture the results of logcat after running an emulator for extra debugging details
         echo "    ----------------------------- logcat --------------" >> "${emulator_exe_logfile}"; /bin/sync
         /bin/logcat -d >> "${emulator_exe_logfile}"; /bin/sync
-    fi
-
-    if true; then
-        echo "    ----------------------------- getprop --------------" >> "${emulator_exe_logfile}"; /bin/sync
-        /bin/getprop >> "${emulator_exe_logfile}"; /bin/sync
     fi
 else
     log "    Executing wrapped exe without logging: ${emulator_exe} ${*}"
