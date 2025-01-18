@@ -12,7 +12,7 @@ Hopefully I will get my thoughts together and write up what I have learnt about 
 
 3. a [remap](./sdcard_tweaks/keyremap) file for the (patched) FBNeo emulator that orders the 6 buttons (of each player) correctly for Street Fighter 2 (and probably other 6 button fighting games).
 
-4. some [information](./sdcard_tweaks/roms/MAME/output/) extracted from the running system
+4. a description of the [boot process](./Exploring%20the%20OS%20-%20Boot%20Process.md)
 
 5. a [list](./dats/built-in%20roms.txt) of the 157 built-in games (of the current generation of SD Cards).
 

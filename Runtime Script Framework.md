@@ -79,3 +79,9 @@ emulator hacks:
 
 * `fbneo_subsystems`
     - Refer to the [details](./Emulators%20-%20fbneo.md) of supported subsystems
+
+
+Note:
+* All shell script line endings must be Linux style ```LF``` not Windows Style ```CRLF```
+* call ```/bin/sync``` liberally otherwise file output might not be flushed to the SD Card before you turn it off
+* the path to the SDcard is ```/mnt/extsd/```

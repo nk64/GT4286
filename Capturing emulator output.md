@@ -1,3 +1,5 @@
+# Capturing emulator output
+
 1. Pick an [emulator](https://github.com/nk64/GT4286/blob/main/Emulators.md) to study eg ```/emus/gamebatte/gambatte_sdl``` (note that there is a misspelling in the directory name of this emulator) (also note that ```/emus/gbc``` is unused)
 2. Rename the emulator by adding ```.bin``` to the filename eg. ```/emus/gamebatte/gambatte_sdl``` becomes ```/emus/gamebatte/gambatte_sdl.bin```
 3. Then replace emulator with the shell script below.
