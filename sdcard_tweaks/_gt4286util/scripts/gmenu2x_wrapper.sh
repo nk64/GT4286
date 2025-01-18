@@ -1,11 +1,8 @@
 #!/bin/sh
-export GT4286UTIL_HOME="/mnt/extsd/_gt4286util"
-
 wrapped_exe="$0.bin"
 wrapped_exe_logfile="${wrapped_exe}.log"
-/bin/sync
 
-log_exe=true
+log_exe=false
 
 #log "---------------------------------------------------"
 #log "Arg0: $0"
@@ -80,7 +77,7 @@ then
     ${wrapped_exe} "$@" >> "${wrapped_exe_logfile}" 2>&1; /bin/sync
 else
     log "Executing wrapped exe without logging: ${wrapped_exe}"
-    ${wrapped_exe} "$@"
+    ${wrapped_exe} "$@" > /dev/null 2>&1
 fi
 
 #log "After gmenu2x. How did we get here. Did we invoke kill? or reboot?"

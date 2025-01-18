@@ -4,6 +4,8 @@ log "emulator_wrapper.sh"
 emulator_exe="${0}.bin"
 emulator_exe_logfile="${emulator_exe}.log"
 
+log_exe=false
+
 enable_hack_handle_gmenu2x_download_bug=true
 enable_hack_humanise_names=true
 enable_hack_user_scripts=true
@@ -107,7 +109,7 @@ keymap_filename_array=(
 )
 #endregion Emulator related arrays
 
-log_exe=true
+
 log "Arg0: ${0}"
 log "ArgCount: ${#}"
 log "ArgAll: ${*}"
@@ -401,7 +403,7 @@ if [ "${log_exe}" = true ]; then
     fi
 else
     log "    Executing wrapped exe without logging: ${emulator_exe} ${*}"
-    "${emulator_exe}" "${@}"
+    "${emulator_exe}" "${@}" > /dev/null 2>&1
 fi
 
 /bin/sync

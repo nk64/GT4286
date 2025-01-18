@@ -1,7 +1,10 @@
 #!/bin/sh
-export GT4286UTIL_HOME=/mnt/extsd/_gt4286util
+export GT4286UTIL_HOME="/mnt/extsd/_gt4286util"
+
 this_file=${0}
-logfile="${this_file}.log"; log () { echo "${this_file}: ${1}" >> "${logfile}" && /bin/sync; }
+output_dir="${GT4286UTIL_HOME}/output"
+mkdir -p "${output_dir}"
+logfile="${output_dir}/log.txt"; log () { echo "${this_file}: ${1}" >> "${logfile}" && /bin/sync; }
 
 log "---------------------------------------------------"
 log "Arg0: $0"
